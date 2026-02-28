@@ -339,6 +339,125 @@ export default function PlantDetail({ id, navigate }: PlantDetailProps) {
           </div>
         )}
 
+        {/* Living Presence — The Gift of Proximity */}
+        {plant.presenceEnergetics && (
+          <div className="lg:col-span-2 relative overflow-hidden rounded-2xl p-6"
+               style={{
+                 background: 'linear-gradient(135deg, rgba(94, 234, 212, 0.06) 0%, rgba(13, 12, 20, 0.88) 40%, rgba(148, 163, 184, 0.04) 100%)',
+                 border: '1px solid rgba(94, 234, 212, 0.10)',
+                 boxShadow: 'inset 0 1px 0 0 rgba(94, 234, 212, 0.06), 0 0 40px -12px rgba(94, 234, 212, 0.08), 0 4px 24px -4px rgba(0, 0, 0, 0.3)'
+               }}>
+            {/* Cool ambient orb */}
+            <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full pointer-events-none"
+                 style={{ background: 'rgba(94, 234, 212, 0.05)', filter: 'blur(80px)' }} />
+
+            <div className="relative">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-2xl opacity-60" style={{ color: 'rgba(94, 234, 212, 0.8)' }}>{'\u2734'}</span>
+                <h2 className="section-title mb-0" style={{
+                  background: 'linear-gradient(135deg, #5eead4, #94a3b8)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}>Living Presence</h2>
+              </div>
+              <p className="text-earth-400 text-xs italic mb-5 pl-10 font-display">
+                When we live with plants, their field becomes part of ours {'\u2014'} no consumption needed.
+              </p>
+
+              {/* 3+2 Dimension Grid */}
+              <div className="grid grid-cols-3 gap-3 mb-3">
+                {/* Home Placement */}
+                <div className="rounded-xl p-4 transition-all duration-200 ease-out-expo"
+                     style={{
+                       background: 'rgba(13, 12, 20, 0.5)',
+                       border: '1px solid rgba(255, 255, 255, 0.04)',
+                       borderTop: '2px solid rgba(94, 234, 212, 0.3)',
+                       boxShadow: 'inset 0 1px 0 0 rgba(255, 255, 255, 0.02)'
+                     }}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm">{'\uD83C\uDFE0'}</span>
+                    <span className="text-[11px] uppercase tracking-[0.12em] font-medium" style={{ color: 'rgba(94, 234, 212, 0.7)' }}>
+                      Home Placement
+                    </span>
+                  </div>
+                  <p className="text-earth-300 text-sm leading-relaxed">{plant.presenceEnergetics.home_placement}</p>
+                </div>
+
+                {/* Field Interaction */}
+                <div className="rounded-xl p-4 transition-all duration-200 ease-out-expo"
+                     style={{
+                       background: 'rgba(13, 12, 20, 0.5)',
+                       border: '1px solid rgba(255, 255, 255, 0.04)',
+                       borderTop: '2px solid rgba(167, 139, 250, 0.3)',
+                       boxShadow: 'inset 0 1px 0 0 rgba(255, 255, 255, 0.02)'
+                     }}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm" style={{ color: 'rgba(167, 139, 250, 0.8)' }}>{'\u25C9'}</span>
+                    <span className="text-[11px] uppercase tracking-[0.12em] font-medium" style={{ color: 'rgba(167, 139, 250, 0.7)' }}>
+                      Field Interaction
+                    </span>
+                  </div>
+                  <p className="text-earth-300 text-sm leading-relaxed">{plant.presenceEnergetics.field_interaction}</p>
+                </div>
+
+                {/* Energetic Gift */}
+                <div className="rounded-xl p-4 transition-all duration-200 ease-out-expo"
+                     style={{
+                       background: 'rgba(13, 12, 20, 0.5)',
+                       border: '1px solid rgba(255, 255, 255, 0.04)',
+                       borderTop: '2px solid rgba(251, 191, 36, 0.3)',
+                       boxShadow: 'inset 0 1px 0 0 rgba(255, 255, 255, 0.02)'
+                     }}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm" style={{ color: 'rgba(251, 191, 36, 0.8)' }}>{'\u2726'}</span>
+                    <span className="text-[11px] uppercase tracking-[0.12em] font-medium" style={{ color: 'rgba(251, 191, 36, 0.7)' }}>
+                      Energetic Gift
+                    </span>
+                  </div>
+                  <p className="text-earth-300 text-sm leading-relaxed">{plant.presenceEnergetics.energetic_gift}</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3 mb-5">
+                {/* Presence Practice */}
+                <div className="rounded-xl p-4 transition-all duration-200 ease-out-expo"
+                     style={{
+                       background: 'rgba(13, 12, 20, 0.5)',
+                       border: '1px solid rgba(255, 255, 255, 0.04)',
+                       borderTop: '2px solid rgba(244, 114, 182, 0.3)',
+                       boxShadow: 'inset 0 1px 0 0 rgba(255, 255, 255, 0.02)'
+                     }}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm">{'\uD83E\uDDD8'}</span>
+                    <span className="text-[11px] uppercase tracking-[0.12em] font-medium" style={{ color: 'rgba(244, 114, 182, 0.7)' }}>
+                      Presence Practice
+                    </span>
+                  </div>
+                  <p className="text-earth-300 text-sm leading-relaxed">{plant.presenceEnergetics.presence_practice}</p>
+                </div>
+
+                {/* Spatial Influence */}
+                <div className="rounded-xl p-4 transition-all duration-200 ease-out-expo"
+                     style={{
+                       background: 'rgba(13, 12, 20, 0.5)',
+                       border: '1px solid rgba(255, 255, 255, 0.04)',
+                       borderTop: '2px solid rgba(148, 163, 184, 0.3)',
+                       boxShadow: 'inset 0 1px 0 0 rgba(255, 255, 255, 0.02)'
+                     }}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm" style={{ color: 'rgba(148, 163, 184, 0.8)' }}>{'\u2727'}</span>
+                    <span className="text-[11px] uppercase tracking-[0.12em] font-medium" style={{ color: 'rgba(148, 163, 184, 0.7)' }}>
+                      Spatial Influence
+                    </span>
+                  </div>
+                  <p className="text-earth-300 text-sm leading-relaxed">{plant.presenceEnergetics.spatial_influence}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Contraindications */}
         {plant.contraindications && plant.contraindications.length > 0 && (
           <div className="card p-5 lg:col-span-2"

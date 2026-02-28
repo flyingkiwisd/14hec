@@ -30,7 +30,8 @@ function createSchema(): void {
   const migrations = [
     '001-initial-schema.sql',
     '002-body-systems.sql',
-    '003-teachings-journal.sql'
+    '003-teachings-journal.sql',
+    '004-presence-energetics.sql'
   ]
 
   for (const migration of migrations) {
@@ -48,6 +49,9 @@ function createSchema(): void {
 }
 
 function getEmbeddedSchema(migration: string): string {
+  if (migration === '004-presence-energetics.sql') {
+    return getEmbeddedPresenceSchema()
+  }
   if (migration === '003-teachings-journal.sql') {
     return getEmbeddedTeachingsJournalSchema()
   }
@@ -333,5 +337,24 @@ CREATE INDEX IF NOT EXISTS idx_teachings_plant ON plant_teachings(plant_id);
 CREATE INDEX IF NOT EXISTS idx_journal_prompts_plant ON journal_prompts(plant_id);
 CREATE INDEX IF NOT EXISTS idx_journal_entries_plant ON journal_entries(plant_id);
 CREATE INDEX IF NOT EXISTS idx_journal_entries_date ON journal_entries(entry_date);
+  `
+}
+
+function getEmbeddedPresenceSchema(): string {
+  return `
+-- Plant Presence Energetics: How plants interact with our field through living proximity
+-- Not consumption — the gift of sharing space with living plant intelligence
+CREATE TABLE IF NOT EXISTS plant_presence_energetics (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  plant_id INTEGER NOT NULL UNIQUE REFERENCES plants(id),
+  home_placement TEXT,
+  field_interaction TEXT,
+  energetic_gift TEXT,
+  presence_practice TEXT,
+  spatial_influence TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_presence_plant ON plant_presence_energetics(plant_id);
   `
 }

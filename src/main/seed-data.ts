@@ -272,6 +272,28 @@ function seedTeachingsAndJournal(db: Database.Database): void {
     }
   }
 
+  // ── Insert plant presence energetics ──────────────────────────────────────
+  const insertPresence = db.prepare(`
+    INSERT INTO plant_presence_energetics (plant_id, home_placement, field_interaction, energetic_gift, presence_practice, spatial_influence)
+    VALUES (@plant_id, @home_placement, @field_interaction, @energetic_gift, @presence_practice, @spatial_influence)
+  `)
+
+  if (data.presence_energetics) {
+    for (const presence of data.presence_energetics) {
+      const plant = getPlant.get(presence.plant) as { id: number } | undefined
+      if (plant) {
+        insertPresence.run({
+          plant_id: plant.id,
+          home_placement: presence.home_placement,
+          field_interaction: presence.field_interaction,
+          energetic_gift: presence.energetic_gift,
+          presence_practice: presence.presence_practice,
+          spatial_influence: presence.spatial_influence
+        })
+      }
+    }
+  }
+
   // ── Insert journal prompts ──────────────────────────────────────
   const insertPrompt = db.prepare(`
     INSERT INTO journal_prompts (plant_id, prompt_text, prompt_category)

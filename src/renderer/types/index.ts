@@ -69,6 +69,7 @@ export interface PlantDetail extends Plant {
   researchNotes: ResearchNote[]
   contraindications: Contraindication[]
   teachings: PlantTeaching | null
+  presenceEnergetics: PlantPresenceEnergetics | null
 }
 
 export interface PlanetAssociation {
@@ -217,6 +218,18 @@ export interface PlantTeaching {
   created_at: string
 }
 
+// ── Plant Presence Energetics ──────────────────────────────────────
+export interface PlantPresenceEnergetics {
+  id: number
+  plant_id: number
+  home_placement: string
+  field_interaction: string
+  energetic_gift: string
+  presence_practice: string
+  spatial_influence: string
+  created_at: string
+}
+
 // ── Journal ──────────────────────────────────────
 export interface JournalPrompt {
   id: number
@@ -314,6 +327,9 @@ declare global {
 
       // Plant Teachings
       getTeachingsByPlantId: (plantId: number) => Promise<PlantTeaching | null>
+
+      // Plant Presence Energetics
+      getPresenceByPlantId: (plantId: number) => Promise<PlantPresenceEnergetics | null>
 
       // Journal
       getJournalPrompts: (filters?: { plantId?: number | null; category?: string }) => Promise<JournalPrompt[]>

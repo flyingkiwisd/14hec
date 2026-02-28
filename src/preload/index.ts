@@ -34,6 +34,9 @@ const api = {
   // Plant Teachings
   getTeachingsByPlantId: (plantId: number) => ipcRenderer.invoke('db:teachings:getByPlantId', plantId),
 
+  // Plant Presence Energetics
+  getPresenceByPlantId: (plantId: number) => ipcRenderer.invoke('db:presence:getByPlantId', plantId),
+
   // Journal
   getJournalPrompts: (filters?: any) => ipcRenderer.invoke('db:journal:getPrompts', filters),
   getJournalEntries: (filters?: any) => ipcRenderer.invoke('db:journal:getEntries', filters),

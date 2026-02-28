@@ -111,6 +111,8 @@ export function registerIpcHandlers(): void {
 
     const teachings = db.prepare('SELECT * FROM plant_teachings WHERE plant_id = ?').get(id) || null
 
+    const presenceEnergetics = db.prepare('SELECT * FROM plant_presence_energetics WHERE plant_id = ?').get(id) || null
+
     return {
       ...plant,
       parts,
@@ -120,7 +122,8 @@ export function registerIpcHandlers(): void {
       compounds,
       researchNotes,
       contraindications,
-      teachings
+      teachings,
+      presenceEnergetics
     }
   })
 
@@ -402,6 +405,12 @@ export function registerIpcHandlers(): void {
   ipcMain.handle('db:teachings:getByPlantId', (_event, plantId: number) => {
     const db = getDb()
     return db.prepare('SELECT * FROM plant_teachings WHERE plant_id = ?').get(plantId) || null
+  })
+
+  // ── Plant Presence Energetics ──────────────────────────────────
+  ipcMain.handle('db:presence:getByPlantId', (_event, plantId: number) => {
+    const db = getDb()
+    return db.prepare('SELECT * FROM plant_presence_energetics WHERE plant_id = ?').get(plantId) || null
   })
 
   // ── Journal Prompts ──────────────────────────────────
