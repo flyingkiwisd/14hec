@@ -1,0 +1,548 @@
+[
+  {
+    "name": "Psilocybin",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Serotonin 5-HT2A receptor agonist; prodrug of psilocin. Produces profound alterations in perception, cognition, and emotion. Promotes neuroplasticity and has demonstrated efficacy in treatment-resistant depression and existential distress.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Psilocin",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Active metabolite of psilocybin. Direct serotonin 5-HT2A receptor agonist responsible for the visionary and consciousness-expanding effects of psilocybin mushrooms. Rapidly crosses the blood-brain barrier.",
+    "psychoactive": 1
+  },
+  {
+    "name": "DMT (N,N-Dimethyltryptamine)",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Potent serotonin receptor agonist and sigma-1 receptor agonist. Endogenous to the human brain. Produces intense, short-duration visionary states when smoked; prolonged experiences when combined with MAOIs (as in ayahuasca). Implicated in dream states and near-death experiences.",
+    "psychoactive": 1
+  },
+  {
+    "name": "THC (Delta-9-Tetrahydrocannabinol)",
+    "compound_type": "cannabinoid",
+    "pharmacological_action": "CB1 and CB2 cannabinoid receptor agonist. Produces euphoria, altered perception, pain relief, appetite stimulation, and anti-emetic effects. Modulates the endocannabinoid system, which regulates mood, pain, inflammation, and homeostasis.",
+    "psychoactive": 1
+  },
+  {
+    "name": "CBD (Cannabidiol)",
+    "compound_type": "cannabinoid",
+    "pharmacological_action": "Non-intoxicating cannabinoid with broad pharmacological activity. Anxiolytic, anti-inflammatory, anticonvulsant, and neuroprotective. Modulates the endocannabinoid system without producing euphoria. Demonstrates synergy with other cannabinoids (entourage effect).",
+    "psychoactive": 0
+  },
+  {
+    "name": "Mescaline",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Phenethylamine psychedelic acting primarily on serotonin 5-HT2A receptors. Found in peyote and San Pedro cacti. Produces long-duration visionary experiences characterized by vivid color perception, synesthesia, and profound introspective insight.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Ibogaine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Complex pharmacology acting on multiple receptor systems including opioid, serotonin, NMDA, and nicotinic receptors. Produces extended visionary states and has demonstrated remarkable efficacy in interrupting addiction patterns, particularly opioid dependence.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Salvinorin A",
+    "compound_type": "terpene",
+    "pharmacological_action": "Selective kappa-opioid receptor agonist. The most potent naturally occurring psychoactive compound by weight. Produces intense, short-duration dissociative and visionary states. Unique among psychoactives in that it acts on the opioid rather than serotonin system.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Nuciferine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Aporphine alkaloid found in sacred lotus. Dopamine receptor antagonist with sedative and anxiolytic properties. Produces mild relaxation and dreamy, contemplative states. Traditionally used to enhance meditation and promote lucid dreaming.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Apomorphine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Dopamine receptor agonist derived from morphine but without opioid activity. Found in trace amounts in blue lotus. Produces mild euphoria and enhanced sensory appreciation. Used medically for Parkinson's disease.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Thujone",
+    "compound_type": "terpene",
+    "pharmacological_action": "GABA-A receptor antagonist found in wormwood, sage, and thuja. In low doses, produces mental clarity and mild stimulation. In high doses, can cause convulsions. The compound historically associated with absinthe's reputation for visionary effects.",
+    "psychoactive": 1
+  },
+  {
+    "name": "1,8-Cineole (Eucalyptol)",
+    "compound_type": "terpene",
+    "pharmacological_action": "Monoterpenoid with potent expectorant, mucolytic, and anti-inflammatory properties. Opens airways, thins mucus, and reduces bronchial inflammation. Also demonstrates antibacterial and antifungal activity. Found in eucalyptus, rosemary, and sage.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Camphor",
+    "compound_type": "terpene",
+    "pharmacological_action": "Bicyclic monoterpene with counterirritant, analgesic, and decongestant properties. Stimulates cold receptors and increases local blood flow when applied topically. Used for pain relief, respiratory congestion, and as a circulatory stimulant.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Linalool",
+    "compound_type": "terpene",
+    "pharmacological_action": "Monoterpene alcohol with anxiolytic, sedative, and anti-inflammatory properties. Modulates glutamate and GABA neurotransmission. Found abundantly in lavender, producing calming and sleep-promoting effects. Also demonstrates local anesthetic activity.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Withanolides",
+    "compound_type": "other",
+    "pharmacological_action": "Steroidal lactones found in ashwagandha (Withania somnifera). Adaptogenic compounds that modulate the HPA axis, reduce cortisol, and support adrenal function. Anti-inflammatory, immunomodulating, and neuroprotective. Enhance GABA receptor activity for anxiolytic effects.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Chamazulene",
+    "compound_type": "terpene",
+    "pharmacological_action": "Sesquiterpene formed during steam distillation of chamomile. Potent anti-inflammatory that inhibits leukotriene synthesis. Responsible for the deep blue color of chamomile essential oil. Soothes inflamed tissues and promotes wound healing.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Rosmarinic Acid",
+    "compound_type": "phenol",
+    "pharmacological_action": "Polyphenolic compound found in rosemary, lemon balm, and many Lamiaceae family herbs. Potent antioxidant and anti-inflammatory. Inhibits complement activation and prostaglandin synthesis. Demonstrates antiviral activity, particularly against herpes simplex.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Hypericin",
+    "compound_type": "other",
+    "pharmacological_action": "Naphthodianthrone compound from St. John's Wort. Inhibits reuptake of serotonin, dopamine, and norepinephrine, producing antidepressant effects. Also demonstrates antiviral and photodynamic properties. Requires consistent dosing over weeks for full therapeutic effect.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Silymarin",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "Flavonolignan complex from milk thistle (Silybum marianum). Potent hepatoprotective agent that stabilizes liver cell membranes, stimulates protein synthesis for liver regeneration, and acts as a free radical scavenger. The gold standard botanical for liver support.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Allicin",
+    "compound_type": "other",
+    "pharmacological_action": "Organosulfur compound released when garlic cloves are crushed or chopped. Broad-spectrum antimicrobial effective against bacteria, viruses, fungi, and parasites. Also demonstrates cardiovascular benefits including blood pressure reduction and cholesterol modulation.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Gingerols",
+    "compound_type": "phenol",
+    "pharmacological_action": "Pungent phenolic compounds found in fresh ginger rhizome. Anti-inflammatory (COX-2 inhibition), anti-emetic, and carminative. Stimulate digestive secretions, warm the core, and promote circulation. 6-Gingerol is the primary bioactive form.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Shogaols",
+    "compound_type": "phenol",
+    "pharmacological_action": "Dehydration products of gingerols found in dried ginger. More pungent and pharmacologically potent than gingerols. Stronger anti-inflammatory, antioxidant, and anticancer activity. Preferentially formed during the drying and cooking process.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Curcumin",
+    "compound_type": "phenol",
+    "pharmacological_action": "Principal curcuminoid of turmeric. Potent anti-inflammatory that inhibits NF-kB, COX-2, and multiple inflammatory cascades. Antioxidant, neuroprotective, and anticancer properties. Poor oral bioavailability is enhanced by piperine and lipid carriers.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Berberine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Isoquinoline alkaloid found in goldenseal, Oregon grape, and barberry. Broad-spectrum antimicrobial, blood sugar regulator (activates AMPK), and cholagogue. Demonstrates efficacy comparable to metformin for blood glucose management.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Harmine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Beta-carboline alkaloid and reversible MAO-A inhibitor found in Banisteriopsis caapi (ayahuasca vine) and Syrian rue. Enables oral activity of DMT by inhibiting its metabolic breakdown. Also demonstrates neurogenic and anti-tremor properties independently.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Harmaline",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Beta-carboline alkaloid and reversible MAO-A inhibitor, closely related to harmine. Found in ayahuasca vine and Syrian rue. Contributes to the visionary and purgative effects of ayahuasca. Produces dreamy, trance-like states and vivid closed-eye imagery.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Muscimol",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Isoxazole compound from Amanita muscaria. Selective GABA-A receptor agonist producing sedative, dissociative, and deliriant effects. Distinct from serotonergic psychedelics in its mechanism and phenomenology. Used traditionally in Siberian shamanic practice.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Myristicin",
+    "compound_type": "phenol",
+    "pharmacological_action": "Phenylpropanoid found in nutmeg and parsley. Weak MAO inhibitor. In large doses, metabolized to MMDA-like compounds with psychoactive properties. At culinary doses, contributes to the warming, carminative, and mildly sedative effects of nutmeg.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Apigenin",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "Flavone found in chamomile, parsley, and celery. Binds to benzodiazepine receptors producing anxiolytic and mildly sedative effects without the risks of pharmaceutical benzodiazepines. Also anti-inflammatory, antioxidant, and demonstrates anticancer activity.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Quercetin",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "Ubiquitous flavonol found in many fruits, vegetables, and herbs. Potent antioxidant, anti-inflammatory, and antihistamine. Stabilizes mast cells, inhibits inflammatory enzymes, and supports cardiovascular health. Enhances the bioavailability of other compounds.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Beta-Caryophyllene",
+    "compound_type": "terpene",
+    "pharmacological_action": "Sesquiterpene found in black pepper, cloves, and cannabis. Unique among terpenes as a selective CB2 cannabinoid receptor agonist. Anti-inflammatory, analgesic, and gastroprotective without psychoactive effects. Considered a dietary cannabinoid.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Ursolic Acid",
+    "compound_type": "terpene",
+    "pharmacological_action": "Pentacyclic triterpenoid found in holy basil, rosemary, and apple peel. Anti-inflammatory, hepatoprotective, and anticancer. Inhibits COX-2 and NF-kB pathways. Promotes muscle growth and fat metabolism. Adaptogenic support for stress resilience.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Valerenic Acid",
+    "compound_type": "terpene",
+    "pharmacological_action": "Sesquiterpenoid found in valerian root. Modulates GABA-A receptors, producing sedative and anxiolytic effects. Enhances GABAergic neurotransmission without benzodiazepine-like dependency. The primary compound responsible for valerian's sleep-promoting action.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Eugenol",
+    "compound_type": "phenol",
+    "pharmacological_action": "Phenylpropanoid found in cloves, basil, and cinnamon. Potent analgesic (dental pain), anti-inflammatory, and antimicrobial. Inhibits cyclooxygenase and lipoxygenase. Traditional use in dentistry as a topical anesthetic and antiseptic.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Thymol",
+    "compound_type": "terpene",
+    "pharmacological_action": "Monoterpene phenol found in thyme and oregano. Powerful antiseptic, antifungal, and anthelmintic. Disrupts microbial cell membranes. Used historically as a wound disinfectant and respiratory antiseptic. Active ingredient in many natural mouthwashes.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Ginsenosides",
+    "compound_type": "saponin",
+    "pharmacological_action": "Triterpene saponins found in ginseng (Panax species). Adaptogenic compounds that modulate the HPA axis, enhance cognitive function, support immune response, and improve physical endurance. Different ginsenosides have opposing but balancing effects (stimulating vs. calming).",
+    "psychoactive": 0
+  },
+  {
+    "name": "Glycyrrhizin",
+    "compound_type": "saponin",
+    "pharmacological_action": "Triterpene saponin from licorice root (Glycyrrhiza glabra). Anti-inflammatory, antiviral, and adrenal-supportive. Inhibits 11-beta-hydroxysteroid dehydrogenase, prolonging cortisol activity. Demulcent and expectorant. Requires careful dosing due to mineralocorticoid effects.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Anethole",
+    "compound_type": "phenol",
+    "pharmacological_action": "Phenylpropanoid found in anise, fennel, and star anise. Carminative, antispasmodic, and galactagogue (promotes milk production). Estrogenic activity supports female reproductive health. Antimicrobial and expectorant properties support respiratory function.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Kavalactones",
+    "compound_type": "other",
+    "pharmacological_action": "Lactone compounds found in kava (Piper methysticum). Anxiolytic and muscle-relaxant properties mediated through GABA, dopamine, and sodium channel modulation. Produce a state of calm alertness distinct from alcohol or benzodiazepines. Six major kavalactones contribute to the overall effect profile.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Bisabolol",
+    "compound_type": "terpene",
+    "pharmacological_action": "Monocyclic sesquiterpene alcohol found in chamomile and candeia. Anti-inflammatory, wound-healing, and antimicrobial. Enhances skin penetration of other compounds. Gentle enough for sensitive skin applications. Soothes mucosal inflammation in the GI tract.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Menthol",
+    "compound_type": "terpene",
+    "pharmacological_action": "Cyclic monoterpene alcohol found in peppermint and other mints. Activates TRPM8 cold receptors producing cooling sensation. Analgesic, antispasmodic, and decongestant. Relaxes smooth muscle in the GI tract (IBS relief) and opens respiratory passages.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Echinacoside",
+    "compound_type": "phenol",
+    "pharmacological_action": "Caffeic acid glycoside found in echinacea species. Immunostimulant that activates macrophages and natural killer cells. Anti-inflammatory, antiviral, and antioxidant. Supports the body's frontline immune defense against respiratory infections.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Alkylamides",
+    "compound_type": "other",
+    "pharmacological_action": "Lipophilic compounds found in echinacea that produce a tingling sensation on the tongue. Interact with cannabinoid CB2 receptors, modulating immune response and inflammation. Enhance phagocytosis and cytokine production for acute immune activation.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Ginkgolides",
+    "compound_type": "terpene",
+    "pharmacological_action": "Diterpene lactones unique to Ginkgo biloba. Potent platelet-activating factor (PAF) antagonists that improve cerebral blood flow and microcirculation. Neuroprotective against oxidative stress and ischemia. Support cognitive function and memory.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Bilobalide",
+    "compound_type": "terpene",
+    "pharmacological_action": "Sesquiterpene trilactone from Ginkgo biloba. Neuroprotective agent that preserves mitochondrial function during ischemia. Modulates GABA-A receptors and glutamate signaling. Works synergistically with ginkgolides for cognitive enhancement.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Vitexin",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "C-glycosylated flavone found in hawthorn, passionflower, and bamboo leaves. Cardioprotective through antioxidant and anti-inflammatory mechanisms. Hypotensive, antispasmodic, and neuroprotective. Supports healthy cardiac rhythm and vascular tone.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Procyanidins",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "Oligomeric proanthocyanidins (OPCs) found in grape seed, pine bark, and hawthorn. Powerful antioxidants that strengthen capillary walls, improve microcirculation, and protect collagen from degradation. Cardiovascular protective and anti-aging.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Ergine (d-Lysergic Acid Amide)",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Naturally occurring lysergamide found in morning glory and Hawaiian baby woodrose seeds. Serotonin receptor agonist producing mild psychedelic effects including visual enhancement, introspective insight, and altered time perception. Structurally related to LSD but less potent.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Mitragynine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Indole alkaloid from kratom (Mitragyna speciosa). Partial mu-opioid receptor agonist and adrenergic receptor agonist. At low doses produces stimulation and focus; at higher doses produces opioid-like analgesia and sedation. Dose-dependent dual pharmacology.",
+    "psychoactive": 1
+  },
+  {
+    "name": "7-Hydroxymitragynine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Oxidized derivative of mitragynine found in kratom. Approximately 13 times more potent than morphine at mu-opioid receptors. Primarily responsible for kratom's analgesic and sedative effects at higher doses. Present in smaller quantities than mitragynine.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Ephedrine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Phenethylamine alkaloid from Ephedra sinica (ma huang). Sympathomimetic amine that stimulates alpha and beta adrenergic receptors. Bronchodilator, decongestant, and metabolic stimulant. Increases heart rate, blood pressure, and thermogenesis.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Catechins",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "Flavan-3-ol polyphenols found abundantly in green tea (Camellia sinensis). Potent antioxidants, particularly EGCG (epigallocatechin gallate). Anti-inflammatory, cardioprotective, and metabolic-enhancing. Support healthy weight management and cognitive function.",
+    "psychoactive": 0
+  },
+  {
+    "name": "L-Theanine",
+    "compound_type": "other",
+    "pharmacological_action": "Non-protein amino acid found almost exclusively in tea (Camellia sinensis). Crosses the blood-brain barrier and increases alpha brain wave activity, producing alert relaxation. Modulates GABA, dopamine, and serotonin. Synergistic with caffeine for focused calm.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Caffeine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Methylxanthine alkaloid found in coffee, tea, cacao, and guarana. Adenosine receptor antagonist that promotes wakefulness and mental alertness. Enhances dopamine signaling, increases metabolic rate, and improves physical performance. The world's most consumed psychoactive compound.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Resveratrol",
+    "compound_type": "phenol",
+    "pharmacological_action": "Stilbenoid polyphenol found in grape skins, Japanese knotweed, and berries. Activates sirtuins (SIRT1) and AMPK, promoting cellular longevity pathways. Anti-inflammatory, cardioprotective, and neuroprotective. Modulates estrogen receptors and inhibits platelet aggregation.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Tannins",
+    "compound_type": "phenol",
+    "pharmacological_action": "Polyphenolic compounds found in many barks, leaves, and fruits. Astringent action tightens and tones tissues, reduces secretions, and protects mucosal surfaces. Antimicrobial, antidiarrheal, and hemostatic. Bind and precipitate proteins, which underlies their therapeutic effects.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Mucilage",
+    "compound_type": "other",
+    "pharmacological_action": "Complex polysaccharides that form a soothing gel when mixed with water. Found in marshmallow, slippery elm, and aloe vera. Demulcent action coats and protects inflamed mucosal tissues throughout the digestive and respiratory tracts. Prebiotic activity supports gut microbiome.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Saponins",
+    "compound_type": "saponin",
+    "pharmacological_action": "Glycosidic compounds found in many plants that produce foam when agitated in water. Diverse pharmacology including expectorant, immune-modulating, and adaptogenic activity. Enhance absorption of other compounds. Some saponins are directly cytotoxic to cancer cells.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Anthocyanins",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "Water-soluble pigments responsible for red, purple, and blue colors in fruits and flowers. Potent antioxidants that protect against oxidative stress, support cardiovascular health, improve night vision, and demonstrate anti-inflammatory and neuroprotective effects.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Chlorogenic Acid",
+    "compound_type": "phenol",
+    "pharmacological_action": "Ester of caffeic acid and quinic acid found in coffee, artichoke, and many fruits. Modulates glucose metabolism by inhibiting glucose-6-phosphatase. Antioxidant, anti-inflammatory, and hepatoprotective. Supports healthy blood sugar regulation and liver function.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Inulin",
+    "compound_type": "other",
+    "pharmacological_action": "Fructooligosaccharide storage carbohydrate found in chicory, dandelion, and burdock roots. Prebiotic fiber that selectively feeds beneficial Bifidobacteria and Lactobacillus species. Improves calcium absorption, supports gut barrier integrity, and modulates blood sugar.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Artemisinin",
+    "compound_type": "terpene",
+    "pharmacological_action": "Sesquiterpene lactone from sweet wormwood (Artemisia annua). Reacts with iron in parasite-infected red blood cells to produce free radicals that destroy the parasite. Nobel Prize-winning antimalarial compound. Also demonstrates anticancer and anti-inflammatory activity.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Escin",
+    "compound_type": "saponin",
+    "pharmacological_action": "Triterpene saponin mixture from horse chestnut (Aesculus hippocastanum). Anti-inflammatory and venotonic agent that reduces capillary permeability and improves venous return. Clinically validated for chronic venous insufficiency and edema reduction.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Parthenolide",
+    "compound_type": "terpene",
+    "pharmacological_action": "Sesquiterpene lactone from feverfew (Tanacetum parthenium). Inhibits NF-kB and serotonin release from platelets, reducing migraine frequency and severity. Anti-inflammatory and antispasmodic. Requires consistent dosing over weeks for prophylactic effect.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Capsaicin",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Vanilloid compound from cayenne and chili peppers. TRPV1 receptor agonist that initially stimulates then desensitizes pain-transmitting neurons. Topical analgesic, circulatory stimulant, and metabolic activator. Releases endorphins and substance P depletion produces lasting pain relief.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Piperine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Alkaloid from black pepper (Piper nigrum). Bioavailability enhancer that inhibits hepatic and intestinal glucuronidation, dramatically increasing absorption of other compounds (curcumin by 2000%). Thermogenic, digestive stimulant, and serotonin/dopamine modulator.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Cinnamaldehyde",
+    "compound_type": "phenol",
+    "pharmacological_action": "Aldehyde compound responsible for cinnamon's characteristic flavor and aroma. Blood sugar regulating (enhances insulin sensitivity), antimicrobial, anti-inflammatory, and circulatory warming. TRPA1 receptor agonist that promotes peripheral blood flow.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Arctigenin",
+    "compound_type": "other",
+    "pharmacological_action": "Lignan compound from burdock (Arctium lappa). Anti-inflammatory through NF-kB inhibition, antiviral, and anticancer. Promotes healthy immune response and supports detoxification pathways. Demonstrates selective toxicity toward cancer cells while sparing normal cells.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Sanguinarine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Benzophenanthridine alkaloid from bloodroot (Sanguinaria canadensis). Potent antimicrobial and anti-inflammatory. Intercalates DNA and inhibits multiple enzyme systems. Used in dental care for plaque and gingivitis. Requires careful dosing; escharotic in concentrated form.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Diosgenin",
+    "compound_type": "saponin",
+    "pharmacological_action": "Steroidal sapogenin from wild yam (Dioscorea villosa) and fenugreek. Precursor for pharmaceutical synthesis of progesterone and cortisone. In the body, modulates steroid hormone pathways, supports reproductive health, and demonstrates anti-inflammatory and anticancer properties.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Rutin",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "Flavonoid glycoside found in buckwheat, rue, and citrus. Strengthens capillary walls and reduces vascular permeability. Anti-inflammatory, antioxidant, and antiplatelet. Supports healthy circulation, reduces bruising, and protects against venous insufficiency.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Baicalin",
+    "compound_type": "flavonoid",
+    "pharmacological_action": "Flavone glycoside from Chinese skullcap (Scutellaria baicalensis). Broad-spectrum antiviral, anti-inflammatory, and neuroprotective. Modulates GABA receptors producing anxiolytic effects. Inhibits lipoxygenase and has demonstrated activity against influenza and hepatitis viruses.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Magnolol",
+    "compound_type": "phenol",
+    "pharmacological_action": "Biphenyl neolignan from magnolia bark. Anxiolytic GABA-A receptor modulator, anti-inflammatory, and antioxidant. Produces calming effects without significant sedation. Demonstrates synergy with honokiol for stress and anxiety relief.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Honokiol",
+    "compound_type": "phenol",
+    "pharmacological_action": "Biphenyl neolignan from magnolia bark. GABA-A receptor positive allosteric modulator producing anxiolytic and neuroprotective effects. Crosses the blood-brain barrier readily. Anti-inflammatory, anticancer, and antimicrobial. More potent than magnolol at GABA receptors.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Forskolin",
+    "compound_type": "terpene",
+    "pharmacological_action": "Labdane diterpene from Coleus forskohlii. Directly activates adenylate cyclase, increasing intracellular cAMP levels. Bronchodilator, inotropic (strengthens heart contractions), and lipolytic. Used for asthma, glaucoma, and metabolic support.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Andrographolide",
+    "compound_type": "terpene",
+    "pharmacological_action": "Labdane diterpene from Andrographis paniculata (king of bitters). Potent immunostimulant and anti-inflammatory. Inhibits NF-kB activation and multiple viral replication mechanisms. Clinically validated for reducing duration and severity of upper respiratory infections.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Boswellic Acids",
+    "compound_type": "terpene",
+    "pharmacological_action": "Pentacyclic triterpenes from frankincense (Boswellia serrata). Selective 5-lipoxygenase inhibitors that reduce leukotriene synthesis. Anti-inflammatory without the GI side effects of NSAIDs. Clinically effective for osteoarthritis, IBD, and asthma. AKBA is the most potent form.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Carvacrol",
+    "compound_type": "terpene",
+    "pharmacological_action": "Monoterpene phenol found in oregano and thyme essential oils. Broad-spectrum antimicrobial that disrupts bacterial cell membranes. Antifungal (effective against Candida), antiparasitic, and antioxidant. One of the most potent natural antimicrobials available.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Geraniol",
+    "compound_type": "terpene",
+    "pharmacological_action": "Monoterpenoid alcohol found in rose, citronella, and palmarosa. Antimicrobial, anti-inflammatory, and insect-repellent. Neuroprotective through antioxidant mechanisms. Modulates multiple cell signaling pathways with demonstrated anticancer potential.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Alpha-Pinene",
+    "compound_type": "terpene",
+    "pharmacological_action": "Bicyclic monoterpene found in pine, rosemary, and cannabis. Bronchodilator, anti-inflammatory, and acetylcholinesterase inhibitor (supports memory). The most widely encountered terpene in nature. Counteracts some of THC's memory-impairing effects.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Limonene",
+    "compound_type": "terpene",
+    "pharmacological_action": "Monocyclic monoterpene found in citrus peels, dill, and caraway. Mood-elevating, anxiolytic, and gastric acid neutralizing. Enhances absorption of other compounds through skin and mucous membranes. Demonstrates anticancer activity through multiple mechanisms including apoptosis induction.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Citral",
+    "compound_type": "terpene",
+    "pharmacological_action": "Monoterpene aldehyde mixture (geranial + neral) found in lemongrass, melissa, and lemon myrtle. Antimicrobial, anti-inflammatory, and analgesic. Insect-repellent properties. Modulates pain perception through TRPV1 and TRPA1 channels.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Scopolamine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Tropane alkaloid found in datura, henbane, and scopolia. Muscarinic acetylcholine receptor antagonist. In low doses, prevents motion sickness and reduces secretions. In higher doses, produces delirium, amnesia, and vivid hallucinations. Historically used in shamanic and witch's flying ointment traditions.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Atropine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Tropane alkaloid from belladonna, datura, and mandrake. Competitive muscarinic acetylcholine receptor antagonist. Dilates pupils, reduces secretions, increases heart rate, and relaxes smooth muscle. Medically essential but highly toxic in excess. Named for Atropos, the Fate who cuts the thread of life.",
+    "psychoactive": 1
+  },
+  {
+    "name": "5-MeO-DMT",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Methoxylated tryptamine found in various plants and the venom of Incilius alvarius (Sonoran Desert toad). Potent serotonin 5-HT2A agonist producing intense, ego-dissolving mystical experiences. Distinct from DMT in producing less visual but more somatic and unitive states. Emerging therapeutic potential for depression and PTSD.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Bufotenine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Tryptamine alkaloid found in Anadenanthera peregrina (yopo) seeds and various toad venoms. Serotonin receptor agonist producing short-duration psychedelic effects when insufflated or smoked. Cardiovascular effects distinguish it from other tryptamines. Used in South American snuff preparations for millennia.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Nicotine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Pyridine alkaloid from tobacco (Nicotiana species). Nicotinic acetylcholine receptor agonist that enhances attention, memory, and cognitive processing. Stimulates dopamine release in the reward pathway. Sacred plant teacher in Indigenous traditions; highly addictive in isolated or commercial forms.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Theobromine",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Methylxanthine alkaloid found in cacao (Theobroma cacao). Milder and longer-lasting than caffeine. Vasodilator, bronchodilator, and mood elevator. Enhances blood flow to the heart and brain. The compound behind cacao's reputation as a heart-opening medicine and gentle euphoric.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Anandamide",
+    "compound_type": "other",
+    "pharmacological_action": "Endogenous cannabinoid (endocannabinoid) found in cacao. Named from the Sanskrit word for bliss. Binds CB1 receptors producing mild euphoria and well-being. Cacao also contains compounds that inhibit anandamide breakdown, prolonging its mood-enhancing effects.",
+    "psychoactive": 0
+  },
+  {
+    "name": "Cathinone",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Monoamine alkaloid from khat (Catha edulis). Amphetamine-like stimulant that promotes release of dopamine and norepinephrine. Produces euphoria, increased energy, and enhanced sociability. Rapidly converts to less active cathine upon leaf drying.",
+    "psychoactive": 1
+  },
+  {
+    "name": "Arecoline",
+    "compound_type": "alkaloid",
+    "pharmacological_action": "Pyridine alkaloid from betel nut (Areca catechu). Muscarinic and nicotinic acetylcholine receptor agonist. Produces mild stimulation, increased alertness, and euphoria. Parasympathomimetic effects include increased salivation and GI motility. One of the most widely used psychoactive substances globally.",
+    "psychoactive": 1
+  }
+]

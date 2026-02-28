@@ -1,0 +1,160 @@
+[
+  {
+    "name": "Infusion (Tea)",
+    "solvent": "Hot water",
+    "best_plant_parts": ["Flowers", "Leaves"],
+    "absorption_speed": "Moderate",
+    "concentration": "Low-Medium",
+    "shelf_life": "Hours",
+    "description": "A simple hot water extraction ideal for delicate aerial parts of plants. Infusions gently draw out water-soluble compounds from flowers and leaves, preserving volatile aromatics and subtle energetic qualities. The ritual of tea-making itself becomes a meditative act of connection with the plant.",
+    "general_instructions": [
+      "Bring fresh, filtered water to a rolling boil (approximately 200-212 F).",
+      "Place 1-2 teaspoons of dried herb (or 2-3 teaspoons fresh) per cup into a teapot or heat-safe vessel.",
+      "Pour the hot water over the herbs and cover immediately to trap volatile oils.",
+      "Steep for 5-15 minutes depending on the plant material. Flowers require 5-7 minutes; leaves 10-15 minutes.",
+      "Strain through a fine mesh strainer or cheesecloth.",
+      "Drink warm or at room temperature. May be lightly sweetened with honey if desired.",
+      "For medicinal strength, steep longer (up to 30 minutes) in a covered vessel."
+    ],
+    "safety_notes": "Use within a few hours of preparation; do not store at room temperature for extended periods as microbial growth can occur. Some herbs should not be steeped in boiling water as it may destroy delicate compounds. Always confirm the identity of the plant before use. Pregnant or nursing individuals should consult a qualified herbalist."
+  },
+  {
+    "name": "Decoction",
+    "solvent": "Boiling water",
+    "best_plant_parts": ["Roots", "Bark", "Seeds"],
+    "absorption_speed": "Moderate",
+    "concentration": "Medium-High",
+    "shelf_life": "Days",
+    "description": "A prolonged boiling extraction designed for tough, woody, or dense plant material. Decoctions break down the rigid cell walls of roots, bark, and seeds to release deeply held minerals, tannins, and alkaloids that a simple infusion cannot access. This method yields a stronger, more concentrated medicine.",
+    "general_instructions": [
+      "Measure 1-2 tablespoons of dried root, bark, or seed material per cup of water.",
+      "Place the herb in a saucepan with cold, filtered water. Use stainless steel, ceramic, or glass (avoid aluminum).",
+      "Bring slowly to a boil over medium heat.",
+      "Reduce to a gentle simmer and cover. Allow to simmer for 20-45 minutes, depending on the density of the material.",
+      "The liquid should reduce by approximately one-third.",
+      "Remove from heat and strain through a fine mesh strainer while still warm.",
+      "Drink warm, 1-3 cups per day. Can be refrigerated for up to 72 hours."
+    ],
+    "safety_notes": "Do not decoct volatile or aromatic herbs as prolonged boiling destroys their essential oils. Some roots (e.g., those containing toxic alkaloids) require careful dosing. Always positively identify the plant material. Refrigerate unused portions promptly. Discard if any off-smell or cloudiness develops."
+  },
+  {
+    "name": "Tincture",
+    "solvent": "Alcohol + water",
+    "best_plant_parts": ["All parts"],
+    "absorption_speed": "Fast (sublingual)",
+    "concentration": "Very High",
+    "shelf_life": "Years",
+    "description": "An alcohol-based extraction that captures the full spectrum of a plant's chemistry, including compounds insoluble in water. Tinctures are highly concentrated, rapidly absorbed (especially when taken sublingually), and have an exceptionally long shelf life. They represent one of the most potent and portable forms of herbal medicine.",
+    "general_instructions": [
+      "Chop or grind the fresh or dried herb finely to increase surface area.",
+      "Place the herb in a clean glass jar, filling it loosely (fresh herb) or one-third to one-half full (dried herb).",
+      "Pour high-proof alcohol (typically 80-100 proof vodka or brandy) over the herb until fully submerged with 1-2 inches of liquid above the plant material.",
+      "Seal tightly and label with the herb name, alcohol percentage, and date.",
+      "Store in a cool, dark place and shake the jar daily for 4-6 weeks.",
+      "Strain through cheesecloth, squeezing to extract all liquid. Then fine-filter through a coffee filter if desired.",
+      "Transfer to dark amber dropper bottles for storage.",
+      "Standard dosage: 30-60 drops (1-2 dropperfuls) in a small amount of water, 2-3 times daily."
+    ],
+    "safety_notes": "Not appropriate for individuals avoiding alcohol, children, or those with liver disease unless using glycerin-based alternatives. Always use food-grade alcohol. Some plants are toxic in concentrated tincture form and require precise dosing by a trained practitioner. Label all tinctures clearly and store out of reach of children."
+  },
+  {
+    "name": "Flower Essence",
+    "solvent": "Sun/water (vibrational)",
+    "best_plant_parts": ["Flowers only"],
+    "absorption_speed": "Immediate (energetic)",
+    "concentration": "Vibrational",
+    "shelf_life": "4-5 years",
+    "description": "A vibrational preparation that captures the energetic imprint of a flower in water, potentized by sunlight. Flower essences work on the emotional and spiritual planes rather than through biochemistry. They address the root emotional patterns behind physical illness, gently shifting consciousness and restoring psycho-spiritual equilibrium.",
+    "general_instructions": [
+      "Select freshly bloomed flowers on a clear, sunny morning. Choose blossoms at their peak vitality.",
+      "Fill a clear glass bowl with pure spring water and place it in direct sunlight near the plant.",
+      "Using leaves or a natural implement (not fingers), gently float the blossoms on the surface of the water until it is covered.",
+      "Allow the bowl to sit in direct sunlight for 3-4 hours, letting the sun imprint the flower's vibration into the water.",
+      "Remove the flowers using a twig or leaf. This sun-infused water is the Mother Essence.",
+      "Preserve the Mother Essence by adding an equal part brandy (or vegetable glycerin) to the water.",
+      "To make a Stock Bottle: add 2-7 drops of Mother Essence to a 30ml dropper bottle filled with 50/50 brandy and water.",
+      "To make a Dosage Bottle: add 2-4 drops from the Stock Bottle to a 30ml dropper bottle of spring water with a small amount of brandy as preservative.",
+      "Take 4 drops under the tongue, 4 times daily, or as intuitively guided."
+    ],
+    "safety_notes": "Flower essences are extremely gentle and generally considered safe for all ages, including children and animals. The brandy preservative contains trace alcohol; glycerin can be substituted. These are not substitutes for medical treatment of serious conditions. Work with a qualified practitioner for complex emotional issues."
+  },
+  {
+    "name": "Smoked",
+    "solvent": "Combustion / heat",
+    "best_plant_parts": ["Leaves", "Flowers", "Resins"],
+    "absorption_speed": "Very Fast (lungs)",
+    "concentration": "Medium",
+    "shelf_life": "N/A (use fresh)",
+    "description": "Direct inhalation of plant smoke provides the fastest absorption route, delivering active compounds through the vast alveolar surface of the lungs directly into the bloodstream. Smoking herbs is an ancient ceremonial and medicinal practice. This method is best suited for plants traditionally used in this way and should be approached with respect and moderation.",
+    "general_instructions": [
+      "Ensure the herb is properly dried and finely crumbled or cut for even burning.",
+      "Use a clean pipe, water pipe, or roll the herb in unbleached natural paper.",
+      "For ceremonial smudging, bundle dried herbs and light the end, allowing them to smolder rather than flame.",
+      "Inhale gently and moderately. Deep, harsh inhalation is unnecessary and irritating to the lungs.",
+      "For medicinal smoking blends, combine the primary herb with soothing base herbs such as mullein or raspberry leaf.",
+      "Use in a well-ventilated area or outdoors.",
+      "Practice moderation. Medicinal smoking is typically done in small quantities for specific purposes, not habitually."
+    ],
+    "safety_notes": "All smoke inhalation carries respiratory risk. This method is not recommended for individuals with asthma, COPD, or other respiratory conditions. Never smoke plants that have not been positively identified as safe for inhalation. Some plants produce toxic fumes when burned. Pregnant and nursing individuals should avoid smoking herbs. This method should be used sparingly and intentionally, not as a habitual practice."
+  },
+  {
+    "name": "Ground/Capsule",
+    "solvent": "None (dry)",
+    "best_plant_parts": ["Roots", "Bark", "Seeds"],
+    "absorption_speed": "Slow (digestive)",
+    "concentration": "Full spectrum",
+    "shelf_life": "1-2 years",
+    "description": "Dried plant material ground to a fine powder and encapsulated for oral consumption. This method preserves the full spectrum of the plant's chemistry, including fiber and mineral content, delivering it through the digestive system. Capsules offer convenience, precise dosing, and are ideal for herbs with strong or unpleasant tastes.",
+    "general_instructions": [
+      "Begin with thoroughly dried plant material. Ensure it is completely moisture-free to prevent mold in storage.",
+      "Grind the dried herb to a fine, uniform powder using a dedicated herb grinder or mortar and pestle.",
+      "Sift the powder through a fine mesh to remove any large fibrous pieces that may not pack well.",
+      "Fill size 00 or 0 vegetable-based capsules using a capsule filling machine or by hand.",
+      "Each 00 capsule holds approximately 500-750mg of powdered herb depending on density.",
+      "Store filled capsules in a cool, dry, dark place in an airtight container with a desiccant packet.",
+      "Standard dosage: 2-4 capsules, 2-3 times daily with water, or as directed by a practitioner.",
+      "Take with food to enhance absorption and reduce stomach irritation."
+    ],
+    "safety_notes": "Ensure correct identification of all plant material before grinding. Some herbs can cause digestive irritation when taken in powdered form. Capsules bypass the taste receptors, which for some bitter herbs is actually part of their medicinal action (stimulating digestive secretions). Consider whether a tea or tincture might be more appropriate. Store away from heat and moisture. Check for allergic reactions with a small initial dose."
+  },
+  {
+    "name": "Whole Food",
+    "solvent": "None (raw/cooked)",
+    "best_plant_parts": ["All edible parts"],
+    "absorption_speed": "Slow (digestive)",
+    "concentration": "Low (gentle)",
+    "shelf_life": "Perishable",
+    "description": "The most ancient and intuitive form of plant medicine: eating the plant itself as food. Whole food preparations deliver gentle, sustained nourishment along with fiber, water content, and the full matrix of the plant's chemistry in its natural state. Many of the most powerful medicinal plants are also common foods, and daily dietary inclusion provides cumulative, foundational healing.",
+    "general_instructions": [
+      "Select fresh, organically grown plant material whenever possible.",
+      "Wash thoroughly under running water to remove soil, debris, and any surface contaminants.",
+      "Consume raw when appropriate (salads, juicing, smoothies) to preserve heat-sensitive enzymes and vitamins.",
+      "For cooking, use gentle methods such as steaming, light sauteing, or slow simmering to retain maximum nutrition.",
+      "Incorporate medicinal foods daily in meals: garlic, ginger, turmeric, leafy greens, mushrooms, berries.",
+      "For juicing, use a cold-press juicer to minimize oxidation and nutrient loss.",
+      "Combine with healthy fats (olive oil, coconut oil) to enhance absorption of fat-soluble compounds.",
+      "Eat mindfully, chewing thoroughly to initiate proper digestion and maximize nutrient extraction."
+    ],
+    "safety_notes": "Always positively identify wild plants before consumption. Some medicinal plants require cooking to neutralize naturally occurring toxins (e.g., elderberries must be cooked). Be aware of potential allergies and introduce new foods gradually. Some raw plants contain oxalates, lectins, or other anti-nutrients that are reduced by cooking. Consult a knowledgeable practitioner when using food as medicine for specific conditions."
+  },
+  {
+    "name": "Spagyric",
+    "solvent": "Alchemical (salt, sulfur, mercury)",
+    "best_plant_parts": ["All parts"],
+    "absorption_speed": "Moderate-Fast",
+    "concentration": "Very High + Energetic",
+    "shelf_life": "Years",
+    "description": "The alchemical art of spagyrics separates a plant into its three philosophical principles (Salt/body, Sulfur/soul, Mercury/spirit), purifies each individually, and reunites them into a medicine of extraordinary potency. This process yields a preparation that is both chemically concentrated and energetically elevated, carrying the complete essence of the plant on physical, emotional, and spiritual levels.",
+    "general_instructions": [
+      "Mercury (Spirit) Extraction: macerate the fresh or dried plant in high-proof grape alcohol for 2-4 weeks, shaking daily. Filter and set aside the tincture (this is the Mercury/Spirit).",
+      "Sulfur (Soul) Extraction: the essential oils are considered the Sulfur principle. These may be captured during distillation or are often already present within the alcohol extract.",
+      "Salt (Body) Extraction: take the remaining plant matter (marc) after tincturing and dry it completely.",
+      "Calcination: burn the dried marc in a heat-safe crucible until reduced to white or grey ash. This may require multiple cycles of burning and grinding.",
+      "Purification: dissolve the ash in distilled water, filter to remove impurities, and slowly evaporate to crystallize the purified mineral salts.",
+      "Cohobation (Reunion): add the purified salt crystals back into the tincture (Mercury). Seal and allow to circulate for several days to weeks.",
+      "The final spagyric tincture now contains all three principles reunited in purified form.",
+      "Dosage: typically 7-15 drops under the tongue, 1-3 times daily."
+    ],
+    "safety_notes": "Spagyric preparation requires significant training in both herbalism and alchemical philosophy. The calcination process involves high heat and fire safety precautions are essential. Ensure proper ventilation during burning. Not all plants are suitable for spagyric preparation. The resulting medicine is highly concentrated and should be dosed conservatively. Work under the guidance of an experienced spagyric practitioner. Keep out of reach of children."
+  }
+]

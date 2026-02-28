@@ -1,0 +1,527 @@
+[
+  {
+    "name": "Insomnia",
+    "category": "physical",
+    "body_system": "Nervous system",
+    "description": "A persistent inability to fall asleep, stay asleep, or achieve restorative sleep. Insomnia disrupts the body's circadian rhythm and undermines the regenerative processes that occur during deep sleep, leading to cascading effects on mood, cognition, and immune function.",
+    "symptoms": ["Difficulty falling asleep", "Frequent nighttime waking", "Waking too early", "Daytime fatigue and irritability", "Poor concentration", "Feeling unrefreshed upon waking"]
+  },
+  {
+    "name": "Chronic Inflammation",
+    "category": "physical",
+    "body_system": "Immune system",
+    "description": "A prolonged, low-grade inflammatory response in which the body's immune system remains activated beyond the resolution of an acute threat. Chronic inflammation is now understood to underlie many modern diseases, silently damaging tissues and organs over months and years.",
+    "symptoms": ["Persistent body aches", "Swelling and redness", "Fatigue", "Elevated inflammatory markers", "Joint stiffness", "Digestive disturbance"]
+  },
+  {
+    "name": "Digestive Stagnation",
+    "category": "physical",
+    "body_system": "Digestive system",
+    "description": "A condition of sluggish or impaired digestion in which food moves too slowly through the gastrointestinal tract, leading to fermentation, bloating, and poor nutrient absorption. Digestive stagnation reflects a loss of the body's natural peristaltic rhythm and enzymatic vitality.",
+    "symptoms": ["Bloating and gas", "Constipation", "Feeling of fullness after small meals", "Sluggish bowel movements", "Abdominal discomfort", "Loss of appetite"]
+  },
+  {
+    "name": "Menstrual Irregularity",
+    "category": "physical",
+    "body_system": "Reproductive system",
+    "description": "A disruption of the natural menstrual cycle, including irregular timing, abnormal flow, or absence of menstruation. Menstrual irregularity often reflects deeper hormonal imbalances and can be influenced by stress, nutrition, environmental toxins, and constitutional factors.",
+    "symptoms": ["Irregular cycle length", "Heavy or scanty flow", "Missed periods", "Painful cramping", "PMS symptoms", "Hormonal mood swings", "Spotting between periods"]
+  },
+  {
+    "name": "Chronic Pain",
+    "category": "physical",
+    "body_system": "Nervous system / Musculoskeletal",
+    "description": "Persistent pain lasting beyond normal tissue healing time, typically more than three months. Chronic pain involves both peripheral tissue signals and central nervous system sensitization, often becoming a self-reinforcing cycle that affects every dimension of life.",
+    "symptoms": ["Persistent aching or burning pain", "Increased sensitivity to touch or pressure", "Muscle tension and stiffness", "Fatigue", "Sleep disruption", "Reduced mobility", "Emotional distress"]
+  },
+  {
+    "name": "Headaches",
+    "category": "physical",
+    "body_system": "Nervous system / Vascular",
+    "description": "Recurrent pain in the head or upper neck region, ranging from mild tension headaches to severe migraines. Headaches may arise from vascular changes, muscular tension, nervous system imbalance, hormonal shifts, or toxin accumulation, and often serve as the body's signal of deeper systemic imbalance.",
+    "symptoms": ["Throbbing or pressing head pain", "Sensitivity to light and sound", "Nausea", "Visual disturbances (aura)", "Neck and shoulder tension", "Scalp tenderness"]
+  },
+  {
+    "name": "Respiratory Issues",
+    "category": "physical",
+    "body_system": "Respiratory system",
+    "description": "Conditions affecting the lungs and airways, including chronic cough, congestion, bronchial inflammation, and restricted breathing. The respiratory system is the body's primary interface with the atmosphere, and its health reflects both environmental exposure and the vitality of the breath of life.",
+    "symptoms": ["Persistent cough", "Shortness of breath", "Chest tightness", "Excess mucus production", "Wheezing", "Difficulty breathing deeply", "Sinus congestion"]
+  },
+  {
+    "name": "Joint Pain",
+    "category": "physical",
+    "body_system": "Musculoskeletal",
+    "description": "Pain, stiffness, and inflammation in the joints, which may result from age-related degeneration, autoimmune processes, injury, or constitutional imbalance. Joint pain restricts movement and can significantly diminish quality of life when chronic.",
+    "symptoms": ["Joint stiffness especially in morning", "Swelling around joints", "Reduced range of motion", "Grinding or clicking sensations", "Pain worsened by cold or damp weather", "Weakness in surrounding muscles"]
+  },
+  {
+    "name": "High Blood Pressure",
+    "category": "physical",
+    "body_system": "Cardiovascular system",
+    "description": "Sustained elevation of arterial blood pressure, placing excessive strain on the heart and blood vessels. Hypertension is often called the silent condition because it frequently produces no obvious symptoms while progressively damaging the cardiovascular system, kidneys, and brain.",
+    "symptoms": ["Often asymptomatic in early stages", "Headaches", "Dizziness", "Shortness of breath", "Chest discomfort", "Visual changes", "Facial flushing"]
+  },
+  {
+    "name": "Nausea",
+    "category": "physical",
+    "body_system": "Digestive system",
+    "description": "An unpleasant sensation of queasiness and the urge to vomit. Nausea can arise from digestive disturbance, motion sickness, hormonal changes, emotional stress, or as a side effect of various substances. It represents the body's protective mechanism against ingested threats.",
+    "symptoms": ["Queasiness", "Urge to vomit", "Loss of appetite", "Increased salivation", "Cold sweats", "Abdominal discomfort", "Dizziness"]
+  },
+  {
+    "name": "Fatigue",
+    "category": "physical",
+    "body_system": "Endocrine / Adrenal",
+    "description": "A persistent state of physical and mental exhaustion that is not proportional to recent activity and is not fully relieved by rest. Fatigue reflects depletion of the body's vital reserves, often involving adrenal insufficiency, mitochondrial dysfunction, or chronic stress burden.",
+    "symptoms": ["Persistent tiredness", "Lack of motivation", "Difficulty concentrating", "Muscle weakness", "Slow recovery from exertion", "Need for excessive sleep", "Feeling drained upon waking"]
+  },
+  {
+    "name": "Immune Deficiency",
+    "category": "physical",
+    "body_system": "Immune system",
+    "description": "A weakened or underperforming immune system that leaves the body vulnerable to frequent infections, slow wound healing, and incomplete recovery from illness. Immune deficiency may result from chronic stress, poor nutrition, environmental toxins, or constitutional weakness.",
+    "symptoms": ["Frequent colds and infections", "Slow wound healing", "Chronic low-grade infections", "Swollen lymph nodes", "Fatigue", "Recurrent fungal or bacterial overgrowth"]
+  },
+  {
+    "name": "Wound Healing",
+    "category": "physical",
+    "body_system": "Integumentary / Immune",
+    "description": "Impaired or slow healing of cuts, abrasions, burns, or other tissue damage. Proper wound healing requires coordinated action of the immune system, vascular supply, and tissue regeneration mechanisms. When any of these are compromised, wounds may heal slowly or incompletely.",
+    "symptoms": ["Slow closure of wounds", "Excessive scarring", "Wound infection", "Persistent redness or swelling", "Delayed tissue regeneration", "Poor skin integrity"]
+  },
+  {
+    "name": "Anxiety",
+    "category": "emotional",
+    "body_system": "Nervous system",
+    "description": "A state of persistent worry, nervousness, and unease that activates the body's stress response even in the absence of immediate danger. Anxiety creates a feedback loop between mind and body, manifesting as both psychological distress and physical symptoms through the autonomic nervous system.",
+    "symptoms": ["Persistent worry and dread", "Restlessness and inability to relax", "Rapid heartbeat and palpitations", "Shallow breathing", "Muscle tension", "Difficulty sleeping", "Digestive upset", "Racing thoughts"]
+  },
+  {
+    "name": "Depression",
+    "category": "emotional",
+    "body_system": "Nervous system / Endocrine",
+    "description": "A persistent state of low mood, diminished interest in life, and reduced vital energy. Depression involves complex interactions between neurotransmitter balance, hormonal function, gut health, inflammation, and existential meaning. It is both a biochemical and a spiritual condition.",
+    "symptoms": ["Persistent sadness or emptiness", "Loss of interest in activities", "Changes in appetite and weight", "Sleep disturbances", "Fatigue and low energy", "Difficulty concentrating", "Feelings of worthlessness", "Social withdrawal"]
+  },
+  {
+    "name": "Grief",
+    "category": "emotional",
+    "body_system": "Heart / Respiratory",
+    "description": "The deep emotional and somatic response to significant loss, whether of a loved one, a relationship, an identity, or a way of life. Grief is not a disorder but a necessary process. However, when grief becomes stuck or overwhelming, it can manifest as physical illness, particularly affecting the heart and lungs.",
+    "symptoms": ["Deep sadness and longing", "Chest tightness and heartache", "Difficulty breathing deeply", "Waves of intense emotion", "Fatigue and withdrawal", "Loss of appetite", "Feeling of emptiness", "Difficulty finding meaning"]
+  },
+  {
+    "name": "Stress",
+    "category": "emotional",
+    "body_system": "Adrenal / Nervous system",
+    "description": "The body's sustained activation of the fight-or-flight response in response to ongoing life pressures. Chronic stress floods the system with cortisol and adrenaline, disrupting sleep, digestion, immunity, and hormonal balance. It is the foundational imbalance underlying many modern health conditions.",
+    "symptoms": ["Feeling overwhelmed", "Irritability and mood swings", "Muscle tension especially in neck and shoulders", "Digestive problems", "Insomnia or restless sleep", "Elevated heart rate", "Weakened immunity", "Difficulty concentrating"]
+  },
+  {
+    "name": "Spiritual Disconnection",
+    "category": "spiritual",
+    "body_system": "Pineal gland / Crown",
+    "description": "A felt sense of separation from the sacred, from nature, from one's own deeper purpose, or from the interconnected web of life. Spiritual disconnection is the root malaise of modern industrial culture, manifesting as meaninglessness, alienation, and a pervasive feeling that something essential is missing.",
+    "symptoms": ["Feeling of emptiness or meaninglessness", "Disconnection from nature", "Loss of sense of purpose", "Numbness to beauty and wonder", "Existential restlessness", "Inability to feel awe or gratitude", "Sense of isolation from the whole"]
+  },
+  {
+    "name": "Dream Enhancement",
+    "category": "spiritual",
+    "body_system": "Pineal gland / Nervous system",
+    "description": "The desire to deepen, vivify, and remember one's dream life as a pathway to self-knowledge, healing, and communication with the unconscious. Many traditional cultures consider dreaming a vital faculty that can be cultivated and strengthened through plant allies and spiritual practice.",
+    "symptoms": ["Poor dream recall", "Shallow or fragmented dreams", "Desire for lucid dreaming", "Feeling disconnected from dream messages", "Restless or unrestorative sleep", "Longing for visionary experience"]
+  },
+  {
+    "name": "Consciousness Expansion",
+    "category": "spiritual",
+    "body_system": "Pineal gland / Nervous system",
+    "description": "The aspiration to move beyond ordinary waking consciousness into expanded states of awareness, perception, and understanding. This is the ancient human impulse toward gnosis, the direct experiential knowledge of reality beyond the everyday mind, facilitated by plant teachers across every culture.",
+    "symptoms": ["Feeling of being stuck in routine perception", "Curiosity about non-ordinary states", "Desire for deeper self-knowledge", "Seeking connection with the numinous", "Interest in meditation and contemplative practice", "Feeling limited by ordinary awareness"]
+  },
+  {
+    "name": "Existential Distress",
+    "category": "spiritual",
+    "body_system": "Heart / Psyche",
+    "description": "A profound crisis of meaning, identity, or purpose that transcends ordinary emotional difficulty. Existential distress may arise at life transitions, in the face of mortality, or during periods of deep questioning. It is both a wound and a doorway, often preceding significant personal transformation.",
+    "symptoms": ["Questioning the meaning of life", "Fear of death or non-existence", "Feeling of cosmic loneliness", "Loss of previously held beliefs", "Identity confusion", "Deep inner turmoil", "Sense that life lacks direction or significance"]
+  },
+  {
+    "name": "Lack of Clarity",
+    "category": "spiritual",
+    "body_system": "Nervous system / Third eye",
+    "description": "A foggy, scattered, or confused state of mind in which clear thinking, intuitive knowing, and decisive action feel inaccessible. Lack of clarity may stem from information overload, spiritual bypassing, unprocessed emotions, or simply the need for stillness and re-centering.",
+    "symptoms": ["Mental fog and confusion", "Difficulty making decisions", "Inability to see the bigger picture", "Scattered attention", "Loss of intuitive sense", "Feeling overwhelmed by options", "Disconnection from inner guidance"]
+  },
+  {
+    "name": "Skin Conditions",
+    "category": "physical",
+    "body_system": "Integumentary",
+    "description": "Chronic or recurring disorders of the skin, including eczema, psoriasis, acne, and dermatitis. The skin is the body's largest organ and its outermost boundary, and skin conditions often reflect internal imbalances in detoxification, digestion, hormones, or emotional processing.",
+    "symptoms": ["Rashes or redness", "Itching and irritation", "Dry or flaking skin", "Acne or blemishes", "Inflammation", "Slow skin healing", "Sensitivity to products or environment"]
+  },
+  {
+    "name": "Hormonal Imbalance",
+    "category": "physical",
+    "body_system": "Endocrine system",
+    "description": "A disruption in the delicate interplay of hormones that regulate metabolism, reproduction, mood, growth, and nearly every bodily function. Hormonal imbalance can arise from chronic stress, environmental endocrine disruptors, poor nutrition, or constitutional factors, creating wide-ranging systemic effects.",
+    "symptoms": ["Mood swings", "Weight fluctuations", "Fatigue", "Irregular menstruation", "Acne or skin changes", "Sleep disturbances", "Reduced libido", "Hair thinning or excess growth"]
+  },
+  {
+    "name": "Liver Stagnation",
+    "category": "physical",
+    "body_system": "Hepatic / Digestive",
+    "description": "A condition of sluggish liver function in which the liver's ability to filter blood, metabolize hormones, and process toxins is compromised. Liver stagnation is a central concept in both traditional Chinese medicine and Western herbalism, recognized as a root cause of many downstream health issues.",
+    "symptoms": ["Fatigue especially after meals", "Difficulty digesting fats", "Irritability and frustration", "Skin problems", "Hormonal imbalances", "Dark circles under eyes", "Bitter taste in mouth", "Right-sided abdominal discomfort"]
+  },
+  {
+    "name": "Allergies",
+    "category": "physical",
+    "body_system": "Immune system",
+    "description": "An exaggerated immune response to normally harmless substances such as pollen, dust, animal dander, or foods. Allergies represent a misdirection of immune vigilance, where the body mounts a full inflammatory defense against substances that pose no real threat, depleting resources and causing chronic discomfort.",
+    "symptoms": ["Sneezing and runny nose", "Itchy watery eyes", "Skin rashes or hives", "Sinus congestion", "Throat irritation", "Fatigue from chronic immune activation", "Digestive upset from food sensitivities"]
+  },
+  {
+    "name": "Urinary Tract Issues",
+    "category": "physical",
+    "body_system": "Urinary / Renal",
+    "description": "Conditions affecting the kidneys, bladder, and urinary passages, including infections, inflammation, and stones. The urinary system is the body's primary filtration mechanism, and its health is essential for eliminating metabolic waste and maintaining fluid and electrolyte balance.",
+    "symptoms": ["Burning during urination", "Frequent urgent need to urinate", "Cloudy or strong-smelling urine", "Lower back or pelvic pain", "Incomplete emptying sensation", "Mild fever with infection"]
+  },
+  {
+    "name": "Cold and Flu",
+    "category": "physical",
+    "body_system": "Immune / Respiratory",
+    "description": "Acute viral infections of the upper respiratory tract characterized by inflammation of the nasal passages, throat, and bronchi. While self-limiting, colds and flu represent critical moments where herbal intervention can significantly reduce duration and severity by supporting the body's innate immune response.",
+    "symptoms": ["Sore throat", "Nasal congestion and runny nose", "Cough", "Body aches", "Fever and chills", "Headache", "Fatigue", "Sneezing"]
+  },
+  {
+    "name": "Parasitic Infections",
+    "category": "physical",
+    "body_system": "Digestive / Immune",
+    "description": "Infestations by parasitic organisms including intestinal worms, protozoa, and external parasites. Parasites are far more common than modern medicine acknowledges, and many traditional herbal systems include regular antiparasitic protocols as a foundation of health maintenance.",
+    "symptoms": ["Digestive disturbance", "Unexplained weight changes", "Fatigue", "Anal itching", "Abdominal cramping", "Nutrient deficiencies", "Teeth grinding during sleep", "Skin irritation"]
+  },
+  {
+    "name": "Fungal Infections",
+    "category": "physical",
+    "body_system": "Integumentary / Immune",
+    "description": "Overgrowth of fungal organisms on the skin, nails, or internal mucous membranes, including candidiasis, athlete's foot, and ringworm. Fungal infections often indicate underlying immune weakness, microbiome disruption, or excessive sugar consumption that creates an environment favorable to fungal proliferation.",
+    "symptoms": ["Itchy skin patches", "White coating on tongue or throat", "Nail discoloration and thickening", "Recurring yeast infections", "Digestive bloating", "Skin redness and cracking", "Sugar and carbohydrate cravings"]
+  },
+  {
+    "name": "Digestive Ulcers",
+    "category": "physical",
+    "body_system": "Digestive system",
+    "description": "Erosions in the mucosal lining of the stomach or duodenum caused by the breakdown of the protective mucus barrier. While H. pylori bacteria and NSAID use are primary triggers, chronic stress and constitutional weakness of the stomach lining create vulnerability to ulceration.",
+    "symptoms": ["Burning stomach pain", "Pain that worsens on empty stomach", "Nausea", "Bloating", "Heartburn", "Loss of appetite", "Dark stools indicating bleeding", "Pain relieved temporarily by eating"]
+  },
+  {
+    "name": "Prostate Issues",
+    "category": "physical",
+    "body_system": "Reproductive / Urinary",
+    "description": "Conditions affecting the prostate gland, including benign prostatic hyperplasia (BPH), prostatitis, and associated urinary symptoms. The prostate is influenced by hormonal balance, particularly the ratio of testosterone to estrogen and DHT levels, all of which are modifiable through herbal intervention.",
+    "symptoms": ["Frequent urination especially at night", "Weak urine stream", "Difficulty starting urination", "Feeling of incomplete bladder emptying", "Pelvic discomfort", "Reduced sexual function"]
+  },
+  {
+    "name": "Menopausal Symptoms",
+    "category": "physical",
+    "body_system": "Endocrine / Reproductive",
+    "description": "The constellation of symptoms arising during the transition from reproductive to post-reproductive life, driven by declining ovarian hormone production. Menopause is not a disease but a natural life passage that can be eased significantly through plant allies that support hormonal transition.",
+    "symptoms": ["Hot flashes and night sweats", "Mood swings and irritability", "Vaginal dryness", "Sleep disturbance", "Bone density loss", "Weight gain especially around middle", "Memory fog", "Decreased libido"]
+  },
+  {
+    "name": "Dental and Gum Issues",
+    "category": "physical",
+    "body_system": "Oral / Integumentary",
+    "description": "Conditions affecting the teeth, gums, and oral mucosa, including gingivitis, periodontitis, tooth decay, and oral infections. Oral health is intimately connected to systemic health, with gum disease linked to cardiovascular disease, diabetes, and chronic inflammation throughout the body.",
+    "symptoms": ["Bleeding gums", "Tooth pain and sensitivity", "Gum recession", "Bad breath", "Mouth sores", "Loose teeth", "Oral inflammation"]
+  },
+  {
+    "name": "Eye Health",
+    "category": "physical",
+    "body_system": "Nervous system / Vascular",
+    "description": "Conditions affecting visual acuity and eye comfort, including eye strain, macular degeneration, cataracts, and poor night vision. The eyes are extensions of the brain and their health reflects cerebrovascular circulation, antioxidant status, and liver function according to traditional Chinese medicine.",
+    "symptoms": ["Blurred or declining vision", "Eye strain and fatigue", "Dry or irritated eyes", "Poor night vision", "Sensitivity to light", "Floaters", "Difficulty focusing"]
+  },
+  {
+    "name": "Heart Palpitations",
+    "category": "physical",
+    "body_system": "Cardiovascular system",
+    "description": "An awareness of the heart beating irregularly, too fast, too hard, or fluttering. While often benign, palpitations signal nervous system dysregulation, electrolyte imbalance, or cardiac irritability. The heart is both a physical pump and an energetic center, and its rhythm reflects emotional and spiritual states.",
+    "symptoms": ["Sensation of heart pounding", "Skipped or extra heartbeats", "Fluttering in chest", "Anxiety accompanying palpitations", "Dizziness", "Shortness of breath", "Chest tightness"]
+  },
+  {
+    "name": "Edema and Water Retention",
+    "category": "physical",
+    "body_system": "Cardiovascular / Renal",
+    "description": "Accumulation of excess fluid in the body's tissues, causing swelling and puffiness. Edema may result from poor circulation, kidney weakness, lymphatic stagnation, hormonal imbalance, or excessive sodium intake. It reflects a breakdown in the body's fluid regulation mechanisms.",
+    "symptoms": ["Swollen ankles and feet", "Puffy face or hands", "Stiff joints from swelling", "Weight fluctuation", "Skin that holds indentation when pressed", "Tight-feeling skin", "Abdominal bloating"]
+  },
+  {
+    "name": "Low Libido",
+    "category": "emotional",
+    "body_system": "Endocrine / Reproductive",
+    "description": "Diminished sexual desire and vitality that may arise from hormonal depletion, chronic stress, emotional disconnection, or energetic stagnation. Low libido reflects not merely a lack of sexual appetite but a deeper diminishment of creative life force and vital engagement with existence.",
+    "symptoms": ["Reduced sexual desire", "Difficulty with arousal", "Lack of sexual fantasies", "Emotional disconnection from partner", "Fatigue and low energy", "Hormonal symptoms", "Feeling of going through the motions"]
+  },
+  {
+    "name": "Addiction Recovery",
+    "category": "spiritual",
+    "body_system": "Nervous system / Dopamine pathways",
+    "description": "The process of overcoming compulsive dependency on substances or behaviors that have hijacked the brain's reward circuitry. Addiction is understood across traditional cultures not merely as a chemical dependency but as a spiritual crisis — a misguided quest for connection, meaning, or relief from suffering.",
+    "symptoms": ["Compulsive substance use despite consequences", "Withdrawal symptoms", "Tolerance requiring increasing amounts", "Loss of control over use", "Neglect of responsibilities", "Social isolation", "Cycling between craving and shame"]
+  },
+  {
+    "name": "Trauma and PTSD",
+    "category": "emotional",
+    "body_system": "Nervous system / Limbic",
+    "description": "The lasting psychological and somatic impact of overwhelming experiences that exceed the nervous system's capacity to process. Trauma becomes stored in the body, creating patterns of hypervigilance, dissociation, and emotional reactivity that persist long after the original event.",
+    "symptoms": ["Flashbacks and intrusive memories", "Hypervigilance and startle response", "Emotional numbness or dissociation", "Nightmares and sleep disturbance", "Avoidance of triggers", "Difficulty trusting others", "Chronic tension and pain", "Feeling unsafe in the body"]
+  },
+  {
+    "name": "Anger and Irritability",
+    "category": "emotional",
+    "body_system": "Hepatic / Nervous system",
+    "description": "Excessive or poorly regulated anger, frustration, and irritability that disrupts relationships and well-being. In traditional Chinese medicine, anger is the emotion of the liver, and chronic irritability often signals liver qi stagnation. Anger may also mask deeper emotions like grief, fear, or powerlessness.",
+    "symptoms": ["Quick temper and short fuse", "Disproportionate emotional reactions", "Muscle tension especially in jaw and shoulders", "Headaches", "Digestive disturbance", "Difficulty sleeping", "Redness in face and eyes", "Frustration with self and others"]
+  },
+  {
+    "name": "Nerve Pain and Neuralgia",
+    "category": "physical",
+    "body_system": "Nervous system",
+    "description": "Sharp, shooting, or burning pain caused by damaged, compressed, or irritated nerves. Neuralgia can arise from injury, viral infection (such as shingles), diabetes, or autoimmune processes. The pain follows nerve pathways and can be debilitating, often resistant to conventional pain medications.",
+    "symptoms": ["Sharp shooting pain along nerve pathways", "Burning or tingling sensations", "Numbness in affected areas", "Hypersensitivity to touch", "Muscle weakness in affected area", "Pain triggered by light touch or temperature change"]
+  },
+  {
+    "name": "Vertigo and Dizziness",
+    "category": "physical",
+    "body_system": "Nervous system / Vestibular",
+    "description": "A sensation of spinning, lightheadedness, or loss of balance that may originate from the inner ear, brain, or cervical spine. Vertigo reflects a disruption in the body's spatial orientation systems and can be profoundly disorienting, affecting confidence and daily functioning.",
+    "symptoms": ["Spinning sensation", "Lightheadedness", "Loss of balance", "Nausea with movement", "Difficulty focusing eyes", "Feeling of being pulled to one side", "Worsening with head position changes"]
+  },
+  {
+    "name": "Blood Sugar Imbalance",
+    "category": "physical",
+    "body_system": "Endocrine / Pancreatic",
+    "description": "Dysregulation of blood glucose levels, including insulin resistance, hypoglycemia, and metabolic syndrome. Blood sugar imbalance is a foundational metabolic disruption that cascades into inflammation, hormonal disruption, weight gain, and cognitive decline when left unaddressed.",
+    "symptoms": ["Energy crashes after meals", "Sugar and carbohydrate cravings", "Shakiness when meals are delayed", "Brain fog", "Excess thirst and urination", "Slow wound healing", "Weight gain especially around abdomen", "Mood instability tied to eating"]
+  },
+  {
+    "name": "Poor Circulation",
+    "category": "physical",
+    "body_system": "Cardiovascular / Vascular",
+    "description": "Inadequate blood flow to the extremities and peripheral tissues, resulting in cold hands and feet, numbness, and slow tissue repair. Poor circulation may arise from sedentary lifestyle, vascular disease, or constitutional cold and deficiency, and impairs the delivery of nutrients and oxygen to every cell.",
+    "symptoms": ["Cold hands and feet", "Numbness and tingling in extremities", "Pale or bluish skin", "Slow wound healing", "Muscle cramps", "Varicose veins", "Fatigue", "Swollen ankles"]
+  },
+  {
+    "name": "Pregnancy",
+    "category": "physical",
+    "body_system": "Reproductive system",
+    "description": "The state of carrying a developing embryo or fetus within the uterus. During pregnancy, many herbs that are otherwise therapeutic become potentially dangerous due to their effects on uterine tone, hormonal balance, blood flow, and fetal development. Caution with herbal medicines during pregnancy is a cornerstone of every traditional medical system.",
+    "symptoms": ["Nausea and morning sickness", "Fatigue", "Hormonal fluctuations", "Increased sensitivity to substances", "Changes in metabolism", "Altered blood volume and circulation"]
+  },
+  {
+    "name": "Breastfeeding",
+    "category": "physical",
+    "body_system": "Reproductive / Endocrine",
+    "description": "The period during which a mother nurses an infant. Many plant compounds pass into breast milk and can affect the nursing child, whose immature liver and kidneys cannot metabolize these substances effectively. Herbs with strong pharmacological actions, psychoactive properties, or bitter compounds require particular caution during lactation.",
+    "symptoms": ["Infant sensitivity to maternal diet", "Potential changes in milk production", "Transfer of compounds through breast milk", "Infant digestive sensitivity"]
+  },
+  {
+    "name": "Liver Disease",
+    "category": "physical",
+    "body_system": "Hepatic",
+    "description": "Significant impairment of liver function due to hepatitis, cirrhosis, fatty liver disease, or toxic damage. When liver function is already compromised, hepatotoxic herbs or those requiring extensive liver metabolism can accelerate damage. The liver processes virtually every ingested substance, making it the primary organ of concern in herbal safety.",
+    "symptoms": ["Jaundice", "Abdominal pain and swelling", "Chronic fatigue", "Nausea", "Dark urine", "Easy bruising", "Confusion", "Elevated liver enzymes"]
+  },
+  {
+    "name": "Kidney Disease",
+    "category": "physical",
+    "body_system": "Renal",
+    "description": "Significant impairment of kidney function affecting the body's ability to filter blood, regulate fluid balance, and eliminate waste products. Many herbal compounds are eliminated through the kidneys, and impaired renal function can lead to dangerous accumulation of plant alkaloids, minerals, and other active constituents.",
+    "symptoms": ["Reduced urine output", "Swelling in legs and ankles", "Fatigue", "Nausea", "Confusion", "Elevated creatinine and BUN", "Electrolyte imbalances", "High blood pressure"]
+  },
+  {
+    "name": "Seizure Disorders",
+    "category": "physical",
+    "body_system": "Nervous system",
+    "description": "Neurological conditions characterized by recurrent seizures due to abnormal electrical activity in the brain, including epilepsy. Certain herbs can lower the seizure threshold, interfere with anticonvulsant medications, or have direct convulsant properties. Herbs affecting GABA, glutamate, or sodium channels require particular caution.",
+    "symptoms": ["Recurrent seizures", "Loss of consciousness", "Muscle spasms and convulsions", "Confusion after episodes", "Aura or warning sensations", "Dependence on anticonvulsant medication"]
+  },
+  {
+    "name": "Bleeding Disorders",
+    "category": "physical",
+    "body_system": "Circulatory / Hematologic",
+    "description": "Conditions involving impaired blood clotting, including hemophilia, thrombocytopenia, and anticoagulant therapy. Herbs with blood-thinning, antiplatelet, or anticoagulant properties can dangerously potentiate bleeding risk, especially before surgery or in combination with pharmaceutical anticoagulants like warfarin.",
+    "symptoms": ["Easy or excessive bruising", "Prolonged bleeding from cuts", "Heavy menstrual bleeding", "Nosebleeds", "Blood in urine or stool", "Petechiae", "Use of blood-thinning medication"]
+  },
+  {
+    "name": "Autoimmune Conditions",
+    "category": "physical",
+    "body_system": "Immune system",
+    "description": "Conditions in which the immune system attacks the body's own tissues, including lupus, rheumatoid arthritis, multiple sclerosis, and Hashimoto's thyroiditis. Immunostimulating herbs can worsen autoimmune flares by further activating an already overactive immune response, making immune-modulating herbs preferable to immune-stimulating ones.",
+    "symptoms": ["Chronic inflammation", "Fatigue", "Joint pain and swelling", "Skin rashes", "Organ-specific symptoms", "Flare and remission cycles", "Use of immunosuppressant medication"]
+  },
+  {
+    "name": "Heart Disease",
+    "category": "physical",
+    "body_system": "Cardiovascular system",
+    "description": "Significant cardiac conditions including coronary artery disease, heart failure, arrhythmias, and valvular disease. Herbs with cardiac glycosides, strong stimulant properties, or vasoconstrictive effects can be dangerous in compromised hearts. Many cardiac patients also take medications with narrow therapeutic windows that interact with herbal compounds.",
+    "symptoms": ["Chest pain or angina", "Shortness of breath", "Irregular heartbeat", "Swelling in legs", "Fatigue", "Use of cardiac medications", "History of heart attack or surgery"]
+  },
+  {
+    "name": "Hormone-Sensitive Cancers",
+    "category": "physical",
+    "body_system": "Endocrine / Oncology",
+    "description": "Cancers whose growth is stimulated by hormones, particularly estrogen and testosterone, including certain breast, ovarian, uterine, and prostate cancers. Phytoestrogenic herbs and those that affect hormone metabolism can potentially stimulate the growth of hormone-dependent tumors or interfere with hormonal cancer therapies.",
+    "symptoms": ["Diagnosed hormone-receptor-positive cancer", "Use of hormone-blocking medications", "History of hormone-sensitive tumors", "Family history of hormonal cancers", "Endocrine therapy side effects"]
+  },
+  {
+    "name": "Psychiatric Conditions",
+    "category": "emotional",
+    "body_system": "Nervous system",
+    "description": "Significant mental health conditions including schizophrenia, bipolar disorder, severe psychotic episodes, and conditions requiring psychiatric medication. Psychoactive herbs, particularly entheogens and those affecting serotonin, dopamine, or GABA pathways, can trigger psychotic episodes, dangerous interactions with psychiatric medications, or destabilizing altered states.",
+    "symptoms": ["History of psychosis or psychotic episodes", "Bipolar disorder with manic episodes", "Schizophrenia or schizoaffective disorder", "Use of SSRI or MAOI medications", "Use of antipsychotic medications", "Severe dissociative conditions"]
+  },
+  {
+    "name": "Multiple Sclerosis",
+    "category": "physical",
+    "body_system": "Nervous system / Immune",
+    "description": "A chronic autoimmune condition in which the immune system attacks the myelin sheath that insulates nerve fibers in the brain and spinal cord, disrupting communication between the central nervous system and the rest of the body. Multiple sclerosis progresses unpredictably through cycles of relapse and remission, gradually eroding neurological function. From an energetic perspective, MS reflects a profound confusion of the body's protective intelligence, where the forces meant to defend become destructive, suggesting a deep need for re-establishing harmony between the immune fire and the nervous system's delicate conductivity.",
+    "symptoms": ["Numbness or tingling in limbs", "Vision problems including optic neuritis", "Muscle weakness and spasticity", "Fatigue that is disproportionate to activity", "Balance and coordination difficulties", "Cognitive fog and memory problems", "Bladder and bowel dysfunction", "Electric shock sensations with neck movement"]
+  },
+  {
+    "name": "PCOS (Polycystic Ovary Syndrome)",
+    "category": "physical",
+    "body_system": "Endocrine / Reproductive",
+    "description": "A complex hormonal disorder characterized by elevated androgens, insulin resistance, and the formation of multiple small cysts on the ovaries. PCOS disrupts the delicate feedback loop between the pituitary gland, ovaries, and adrenal glands, affecting fertility, metabolism, and appearance. In the holistic view, PCOS represents a stagnation of the creative and reproductive life force, where the body's cyclical wisdom becomes locked in a pattern of incomplete expression, often reflecting unresolved tensions between metabolic demands and hormonal rhythm.",
+    "symptoms": ["Irregular or absent menstrual periods", "Excess facial and body hair growth", "Acne and oily skin", "Weight gain especially around the midsection", "Difficulty conceiving", "Thinning hair on the scalp", "Darkening of skin in creases", "Mood swings and depression"]
+  },
+  {
+    "name": "Endometriosis",
+    "category": "physical",
+    "body_system": "Reproductive system",
+    "description": "A condition in which tissue resembling the uterine lining grows outside the uterus, attaching to the ovaries, fallopian tubes, bowel, and pelvic lining, causing chronic inflammation, adhesions, and often severe pain. Endometriosis is driven by estrogen dominance and immune dysregulation, and is frequently underdiagnosed for years. Energetically, endometriosis reflects the creative and nurturing energy of the womb extending beyond its natural boundaries, a powerful life force that has lost its containment and generates suffering through its misplaced expression.",
+    "symptoms": ["Severe menstrual cramping and pelvic pain", "Pain during or after intercourse", "Heavy or irregular menstrual bleeding", "Pain with bowel movements or urination during periods", "Chronic lower back and abdominal pain", "Infertility or difficulty conceiving", "Fatigue and exhaustion during menstruation", "Bloating and digestive disturbance around periods"]
+  },
+  {
+    "name": "Hyperthyroidism",
+    "category": "physical",
+    "body_system": "Endocrine system",
+    "description": "A condition of excessive thyroid hormone production that accelerates the body's metabolism beyond its natural pace, placing strain on the heart, nervous system, and bones. The most common cause is Graves' disease, an autoimmune condition. Hyperthyroidism represents a state of metabolic overdrive, where the body's internal fire burns too hot and too fast, consuming resources faster than they can be replenished and generating a restless, anxious energy that cannot find stillness.",
+    "symptoms": ["Unexplained weight loss despite increased appetite", "Rapid or irregular heartbeat and palpitations", "Anxiety, nervousness, and irritability", "Trembling hands and fingers", "Increased sweating and heat intolerance", "Difficulty sleeping", "Frequent bowel movements", "Bulging eyes in Graves' disease"]
+  },
+  {
+    "name": "Hypothyroidism",
+    "category": "physical",
+    "body_system": "Endocrine system",
+    "description": "A condition in which the thyroid gland produces insufficient thyroid hormones, slowing metabolism and diminishing the body's vital processes. Hypothyroidism affects energy production, temperature regulation, cognitive function, and mood. From a traditional perspective, hypothyroidism reflects a depletion of the body's metabolic fire, a dampening of the vital warmth that drives transformation and movement at every level, leaving the system sluggish, cold, and struggling to maintain its natural rhythm of renewal.",
+    "symptoms": ["Persistent fatigue and sluggishness", "Unexplained weight gain", "Cold intolerance and feeling chilled", "Dry skin and brittle hair", "Constipation", "Depression and low mood", "Muscle weakness and joint stiffness", "Brain fog and poor memory"]
+  },
+  {
+    "name": "Night Terrors",
+    "category": "physical",
+    "body_system": "Nervous system / Sleep",
+    "description": "Episodes of intense fear, screaming, and thrashing during sleep that occur during transitions between deep non-REM sleep stages, distinct from nightmares in that the person typically has no memory of the event. Night terrors reflect a disruption in the architecture of sleep itself, where the nervous system becomes trapped between waking and sleeping states. In traditional understanding, night terrors suggest an unresolved disturbance in the spirit's nocturnal journey, a failure of the protective mechanisms that should guard consciousness during its most vulnerable passage through the depths of sleep.",
+    "symptoms": ["Screaming or shouting during sleep", "Intense fear expression while still asleep", "Thrashing or sitting up in bed", "Rapid heartbeat and heavy breathing during episodes", "Difficulty being awakened during an episode", "No memory of the event upon waking", "Sleepwalking accompanying the episodes", "Confusion and disorientation if awakened"]
+  },
+  {
+    "name": "Rheumatoid Arthritis",
+    "category": "physical",
+    "body_system": "Immune / Musculoskeletal",
+    "description": "A chronic autoimmune disorder in which the immune system mistakenly attacks the synovial membranes lining the joints, causing painful inflammation, cartilage erosion, and eventual joint deformity. Unlike osteoarthritis, rheumatoid arthritis is driven by systemic immune dysfunction and can affect organs beyond the joints. Energetically, RA represents the body's protective forces turning inward in a destructive pattern, eroding the very structures that enable movement and flexibility, often reflecting deeply held rigidity or unprocessed anger stored in the body.",
+    "symptoms": ["Symmetrical joint pain and swelling", "Morning stiffness lasting more than an hour", "Warmth and redness around affected joints", "Fatigue and general malaise", "Joint deformity over time", "Reduced grip strength", "Low-grade fever during flares", "Nodules under the skin near joints"]
+  },
+  {
+    "name": "Lupus (SLE)",
+    "category": "physical",
+    "body_system": "Immune system",
+    "description": "Systemic lupus erythematosus is a complex autoimmune disease in which the immune system produces antibodies against the body's own DNA and cellular components, causing widespread inflammation that can damage the skin, joints, kidneys, heart, lungs, brain, and blood cells. Lupus cycles unpredictably between flares and remission, and its triggers include sunlight, stress, and infection. From a holistic perspective, lupus reflects the deepest confusion of self-recognition, where the body's intelligence can no longer distinguish its own tissues from foreign invaders, suggesting a need for profound inner reconciliation.",
+    "symptoms": ["Butterfly-shaped facial rash across cheeks and nose", "Joint pain and swelling", "Extreme fatigue and malaise", "Photosensitivity and sun-triggered flares", "Kidney inflammation and dysfunction", "Chest pain with deep breathing", "Hair loss and oral ulcers", "Raynaud's phenomenon in fingers and toes"]
+  },
+  {
+    "name": "Hashimoto's Thyroiditis",
+    "category": "physical",
+    "body_system": "Endocrine / Immune",
+    "description": "An autoimmune condition in which the immune system gradually destroys the thyroid gland, leading to progressive hypothyroidism. Hashimoto's is the most common cause of thyroid underactivity and involves the production of antibodies against thyroid peroxidase and thyroglobulin. The condition represents a slow erosion of the body's metabolic thermostat by its own defensive forces, a gradual dimming of the thyroid's fire that mirrors, in traditional understanding, a conflict between the body's protective instincts and its capacity for self-sustaining warmth and vitality.",
+    "symptoms": ["Gradual fatigue and energy decline", "Weight gain resistant to diet and exercise", "Sensitivity to cold", "Dry skin and puffy face", "Thinning hair and brittle nails", "Muscle aches and joint stiffness", "Depression and mental sluggishness", "Enlarged thyroid gland or goiter"]
+  },
+  {
+    "name": "Fibromyalgia",
+    "category": "physical",
+    "body_system": "Nervous system / Musculoskeletal",
+    "description": "A chronic condition characterized by widespread musculoskeletal pain, heightened pain sensitivity, and profound fatigue, now understood to involve central sensitization of the nervous system's pain processing pathways. Fibromyalgia amplifies pain signals and lowers the threshold at which ordinary sensations become painful. In the holistic view, fibromyalgia represents a state in which the nervous system has become trapped in a hypervigilant mode, unable to return to baseline, often following accumulated stress, trauma, or prolonged illness that has overwhelmed the body's capacity to reset.",
+    "symptoms": ["Widespread pain across multiple body regions", "Tender points at specific anatomical locations", "Chronic fatigue unrelieved by sleep", "Cognitive difficulties known as fibro fog", "Sleep disturbances and unrestorative sleep", "Heightened sensitivity to touch, light, and sound", "Headaches and jaw pain", "Irritable bowel symptoms"]
+  },
+  {
+    "name": "Crohn's Disease",
+    "category": "physical",
+    "body_system": "Digestive / Immune",
+    "description": "A chronic inflammatory bowel disease that can affect any part of the gastrointestinal tract from mouth to anus, though it most commonly involves the terminal ileum and colon. Crohn's causes transmural inflammation that penetrates through the full thickness of the intestinal wall, leading to ulceration, strictures, and fistulas. The condition reflects an immune system in destructive dialogue with the gut microbiome and intestinal lining, a breakdown of the delicate truce between the body's inner world and the vast ecosystem of organisms inhabiting the digestive tract.",
+    "symptoms": ["Chronic abdominal pain and cramping", "Persistent diarrhea often with blood", "Unintended weight loss and malnutrition", "Fatigue and low energy", "Fever during active flares", "Mouth sores and perianal fissures", "Reduced appetite and nausea", "Joint pain and skin rashes outside the gut"]
+  },
+  {
+    "name": "Ulcerative Colitis",
+    "category": "physical",
+    "body_system": "Digestive / Immune",
+    "description": "A chronic inflammatory bowel disease that specifically affects the mucosal lining of the colon and rectum, causing continuous inflammation, ulceration, and bleeding. Unlike Crohn's disease, ulcerative colitis is confined to the large intestine and involves only the superficial mucosal layer. The condition represents an immune-mediated assault on the colon's protective lining, disrupting the organ responsible for water absorption, electrolyte balance, and the final stage of elimination, reflecting a deep disturbance in the body's ability to process and release what no longer serves it.",
+    "symptoms": ["Bloody diarrhea with mucus", "Urgent and frequent bowel movements", "Abdominal pain and cramping on the left side", "Rectal pain and tenesmus", "Weight loss and reduced appetite", "Fatigue from chronic blood loss and inflammation", "Fever during severe flares", "Anemia from persistent intestinal bleeding"]
+  },
+  {
+    "name": "Celiac Disease",
+    "category": "physical",
+    "body_system": "Digestive / Immune",
+    "description": "An autoimmune condition triggered by the ingestion of gluten in genetically predisposed individuals, causing the immune system to attack and destroy the villi of the small intestine, severely impairing nutrient absorption. Celiac disease is not a food allergy but a systemic autoimmune response with far-reaching consequences for nutrition, bone health, neurological function, and fertility. It reflects a fundamental incompatibility between a modern dietary staple and the body's ancient immune programming, where a common food protein is perceived as a dangerous invader.",
+    "symptoms": ["Chronic diarrhea or constipation", "Bloating and abdominal pain after eating gluten", "Fatigue and iron-deficiency anemia", "Unexplained weight loss", "Skin rash known as dermatitis herpetiformis", "Bone pain and osteoporosis from malabsorption", "Tingling numbness in hands and feet", "Mouth ulcers and dental enamel defects"]
+  },
+  {
+    "name": "Type 1 Diabetes",
+    "category": "physical",
+    "body_system": "Endocrine / Pancreatic",
+    "description": "An autoimmune condition in which the immune system destroys the insulin-producing beta cells of the pancreas, resulting in absolute insulin deficiency and the inability to regulate blood glucose. Type 1 diabetes requires lifelong insulin replacement and careful management to prevent dangerous fluctuations in blood sugar. The condition represents the immune system's destruction of the body's own metabolic regulator, severing the pancreas from its ability to respond to the fundamental metabolic currency of glucose and leaving the body dependent on external replacement of what it can no longer produce.",
+    "symptoms": ["Excessive thirst and frequent urination", "Unexplained weight loss despite normal or increased eating", "Extreme fatigue and weakness", "Blurred vision", "Slow-healing cuts and infections", "Mood changes and irritability", "Nausea and abdominal pain at onset", "Fruity-smelling breath indicating ketoacidosis"]
+  },
+  {
+    "name": "Psoriatic Arthritis",
+    "category": "physical",
+    "body_system": "Immune / Integumentary / Musculoskeletal",
+    "description": "An inflammatory arthritis associated with psoriasis in which the immune system attacks both the skin and the joints, causing painful swelling, stiffness, and progressive joint damage alongside characteristic scaly skin plaques. Psoriatic arthritis bridges the integumentary and musculoskeletal systems through a shared autoimmune mechanism. It reflects the body's inflammatory intelligence misdirected at two of its most visible and functional systems, the outer boundary of the skin and the inner architecture of movement, simultaneously eroding protection and mobility.",
+    "symptoms": ["Joint pain and swelling especially in fingers and toes", "Sausage-like swelling of entire fingers or toes", "Psoriasis skin plaques with silvery scales", "Nail pitting, crumbling, or separation from nail bed", "Lower back pain and sacroiliac involvement", "Morning stiffness and reduced range of motion", "Fatigue and general malaise", "Eye inflammation and redness"]
+  },
+  {
+    "name": "Sjögren's Syndrome",
+    "category": "physical",
+    "body_system": "Immune / Glandular",
+    "description": "A chronic autoimmune disorder in which the immune system attacks the moisture-producing glands, primarily the salivary and lacrimal glands, causing persistent dryness of the eyes, mouth, and other mucosal surfaces. Sjögren's often accompanies other autoimmune conditions and can affect the kidneys, lungs, and nervous system. The condition represents an immune-mediated desiccation of the body's lubricating and moistening functions, a drying of the waters that nourish and protect the body's surfaces and interfaces, reflecting in traditional terms a depletion of yin and fluid essence.",
+    "symptoms": ["Persistent dry eyes with burning or gritty sensation", "Dry mouth and difficulty swallowing", "Dental cavities from reduced saliva", "Swollen salivary glands", "Joint pain and fatigue", "Vaginal dryness", "Dry skin and nasal dryness", "Persistent dry cough"]
+  },
+  {
+    "name": "Raynaud's Phenomenon",
+    "category": "physical",
+    "body_system": "Cardiovascular / Immune",
+    "description": "A condition of exaggerated vasospasm in the small arteries of the fingers and toes in response to cold or emotional stress, causing dramatic color changes from white to blue to red as blood flow is temporarily cut off and then restored. Raynaud's can occur on its own or as a feature of autoimmune conditions like lupus or scleroderma. It represents a hypersensitive contraction of the vascular periphery, where the body's circulation retreats from its extremities under minimal provocation, reflecting an energetic pattern of withdrawal and an inability to maintain warmth and flow at the boundaries of the self.",
+    "symptoms": ["Fingers and toes turning white then blue in cold", "Numbness and tingling in affected digits", "Painful throbbing upon rewarming", "Color changes triggered by cold exposure or stress", "Skin ulcers on fingertips in severe cases", "Cold hands and feet even in mild temperatures", "Difficulty with fine motor tasks during episodes"]
+  },
+  {
+    "name": "Chronic Fatigue Syndrome",
+    "category": "physical",
+    "body_system": "Immune / Nervous / Endocrine",
+    "description": "A debilitating condition characterized by profound, persistent fatigue that is not improved by rest and is worsened by physical or mental exertion, a hallmark symptom known as post-exertional malaise. Chronic fatigue syndrome involves immune dysfunction, autonomic nervous system disturbance, mitochondrial impairment, and hypothalamic-pituitary-adrenal axis dysregulation. The condition defies simple categorization, reflecting a systemic collapse of the body's energy production and regulatory systems, as though the vital force itself has been depleted or blocked at a fundamental level, leaving the entire organism unable to generate or sustain the energy required for normal life.",
+    "symptoms": ["Overwhelming fatigue lasting more than six months", "Post-exertional malaise with delayed recovery", "Unrefreshing sleep despite adequate hours", "Cognitive impairment and brain fog", "Orthostatic intolerance and dizziness upon standing", "Muscle and joint pain without swelling", "Sore throat and tender lymph nodes", "Sensitivity to light, sound, and chemicals"]
+  },
+  {
+    "name": "Irritable Bowel Syndrome",
+    "category": "physical",
+    "body_system": "Digestive / Nervous",
+    "description": "A functional gastrointestinal disorder characterized by chronic abdominal pain, bloating, and altered bowel habits in the absence of structural disease, now understood to involve disrupted communication between the gut and the brain through the gut-brain axis. IBS reflects a heightened visceral sensitivity where normal digestive processes are perceived as painful, combined with dysregulated motility driven by nervous system imbalance. The condition embodies the intimate connection between emotional state and digestive function, where anxiety, stress, and unprocessed emotions literally manifest as gut distress.",
+    "symptoms": ["Abdominal pain relieved by bowel movements", "Alternating diarrhea and constipation", "Bloating and visible abdominal distension", "Excessive gas and flatulence", "Mucus in the stool", "Urgency and incomplete evacuation", "Symptoms worsened by stress and certain foods", "Nausea and loss of appetite during flares"]
+  },
+  {
+    "name": "Adrenal Fatigue",
+    "category": "physical",
+    "body_system": "Endocrine / Adrenal",
+    "description": "A state of suboptimal adrenal function resulting from prolonged stress, in which the adrenal glands can no longer produce adequate cortisol, DHEA, and other hormones to meet the body's demands. While not recognized as a formal diagnosis in conventional medicine, adrenal fatigue is a well-established pattern in functional and traditional medicine, representing the depletion phase that follows sustained HPA axis activation. It reflects the exhaustion of the body's deepest energy reserves, the burning out of the fire that sustains the will, resilience, and capacity to respond to life's demands, leaving behind a profound weariness that no amount of sleep can fully resolve.",
+    "symptoms": ["Persistent fatigue worst in morning and mid-afternoon", "Difficulty waking up despite adequate sleep", "Craving for salt and salty foods", "Reliance on caffeine and stimulants to function", "Feeling overwhelmed by minor stresses", "Low blood pressure and lightheadedness on standing", "Decreased resilience and slow recovery from illness", "Diminished libido and general lack of motivation"]
+  }
+]

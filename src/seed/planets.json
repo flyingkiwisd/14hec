@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Sun",
+    "symbol": "\u2609",
+    "associated_signs": ["Leo"],
+    "body_systems": ["Heart", "Vitality", "Blood", "Spine"],
+    "energetic_quality": "Warming, vitalizing, illuminating",
+    "description": "The Sun represents the core vital force, governing the heart and circulatory vitality. It radiates warmth and life energy, strengthening constitution and illuminating the path to wellness. Solar herbs are warming tonics that invigorate the blood, support cardiac function, and restore depleted vitality."
+  },
+  {
+    "name": "Moon",
+    "symbol": "\u263D",
+    "associated_signs": ["Cancer"],
+    "body_systems": ["Stomach", "Breasts", "Lymph", "Menstruation"],
+    "energetic_quality": "Cooling, nurturing, rhythmic",
+    "description": "The Moon governs the rhythmic tides of the body, including digestion, fluid balance, and the menstrual cycle. Lunar herbs are cooling and moistening, supporting the lymphatic system and nurturing the body's innate rhythms. They soothe, nourish, and restore cyclical harmony."
+  },
+  {
+    "name": "Mercury",
+    "symbol": "\u263F",
+    "associated_signs": ["Gemini", "Virgo"],
+    "body_systems": ["Nervous system", "Lungs", "Hands", "Communication"],
+    "energetic_quality": "Stimulating, connecting, clarifying",
+    "description": "Mercury rules the nervous system and all pathways of communication within the body. Mercurial herbs stimulate mental clarity, support respiratory function, and enhance the transmission of signals throughout the nervous system. They clarify thought, sharpen perception, and connect mind to body."
+  },
+  {
+    "name": "Venus",
+    "symbol": "\u2640",
+    "associated_signs": ["Taurus", "Libra"],
+    "body_systems": ["Throat", "Kidneys", "Reproductive (female)", "Skin"],
+    "energetic_quality": "Harmonizing, beautifying, sensual",
+    "description": "Venus presides over beauty, harmony, and the pleasures of the senses. Venusian herbs support the kidneys, nourish the skin, balance female reproductive health, and soothe the throat. They bring equilibrium to the body, enhance radiance, and promote sensual well-being."
+  },
+  {
+    "name": "Mars",
+    "symbol": "\u2642",
+    "associated_signs": ["Aries", "Scorpio"],
+    "body_systems": ["Muscles", "Adrenals", "Blood", "Inflammation"],
+    "energetic_quality": "Heating, activating, protective",
+    "description": "Mars is the warrior planet, governing muscular strength, adrenal function, and the body's inflammatory response. Martial herbs are heating and stimulating, activating the immune system, moving stagnant blood, and providing protective energy against infection and weakness."
+  },
+  {
+    "name": "Jupiter",
+    "symbol": "\u2643",
+    "associated_signs": ["Sagittarius", "Pisces"],
+    "body_systems": ["Liver", "Thighs", "Fat", "Arterial expansion"],
+    "energetic_quality": "Expanding, optimistic, nourishing",
+    "description": "Jupiter is the great benefic, ruling expansion, growth, and abundance in the body. Jupiterian herbs support liver function, aid fat metabolism, and promote arterial health. They are deeply nourishing tonics that expand vitality, foster optimism, and encourage generous bodily function."
+  },
+  {
+    "name": "Saturn",
+    "symbol": "\u2644",
+    "associated_signs": ["Capricorn", "Aquarius"],
+    "body_systems": ["Bones", "Teeth", "Joints", "Skin", "Structure"],
+    "energetic_quality": "Contracting, structuring, grounding",
+    "description": "Saturn governs the structural framework of the body, including bones, teeth, joints, and connective tissue. Saturnian herbs are astringent and mineralizing, strengthening the skeletal system, promoting discipline in bodily processes, and grounding scattered energy into stable form."
+  },
+  {
+    "name": "Uranus",
+    "symbol": "\u2645",
+    "associated_signs": ["Aquarius"],
+    "body_systems": ["Nervous system", "Sudden disruption", "Bioelectricity"],
+    "energetic_quality": "Liberating, electric, awakening",
+    "description": "Uranus rules sudden shifts, electrical impulses, and revolutionary change within the body. Uranian herbs work on the bioelectric field and nervous system, producing rapid and sometimes unexpected effects. They liberate stagnant patterns, awaken dormant faculties, and catalyze breakthrough healing."
+  },
+  {
+    "name": "Neptune",
+    "symbol": "\u2646",
+    "associated_signs": ["Pisces"],
+    "body_systems": ["Pineal gland", "Lymph", "Psyche", "Dreams"],
+    "energetic_quality": "Dissolving, visionary, transcendent",
+    "description": "Neptune dissolves boundaries between the material and spiritual, governing the pineal gland, lymphatic flow, and the dream state. Neptunian herbs open visionary perception, support psychic sensitivity, and facilitate transcendent experiences. They dissolve rigidity and invite surrender to deeper currents of healing."
+  },
+  {
+    "name": "Pluto",
+    "symbol": "\u2647",
+    "associated_signs": ["Scorpio"],
+    "body_systems": ["Regeneration", "Elimination", "Deep transformation"],
+    "energetic_quality": "Transforming, purging, rebirthing",
+    "description": "Pluto rules the deepest processes of death and rebirth within the body. Plutonian herbs facilitate profound transformation, support the eliminatory organs, and catalyze regeneration at the cellular level. They purge what no longer serves and clear the way for radical renewal."
+  }
+]

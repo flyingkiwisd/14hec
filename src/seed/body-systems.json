@@ -1,0 +1,917 @@
+{
+  "body_systems": [
+    {
+      "name": "Heart",
+      "category": "organ",
+      "description": "The muscular organ at the center of the circulatory system, pumping oxygenated blood throughout the body. In traditional medicine, the heart is also the seat of consciousness, joy, and spirit (Shen in TCM). Its health reflects both cardiovascular function and emotional openness.",
+      "tcm_element": "Fire",
+      "ayurvedic_dosha": "Pitta/Sadhaka Pitta",
+      "ruling_planet": "Sun",
+      "zodiac_sign": "Leo"
+    },
+    {
+      "name": "Liver",
+      "category": "organ",
+      "description": "The body's primary detoxification organ, responsible for filtering blood, metabolizing hormones and toxins, producing bile, and storing glycogen. In TCM the liver governs the smooth flow of Qi throughout the body and is associated with vision, planning, and the emotion of anger.",
+      "tcm_element": "Wood",
+      "ayurvedic_dosha": "Pitta/Ranjaka Pitta",
+      "ruling_planet": "Jupiter",
+      "zodiac_sign": "Sagittarius"
+    },
+    {
+      "name": "Kidneys",
+      "category": "organ",
+      "description": "The paired organs that filter blood, regulate fluid balance, maintain electrolyte equilibrium, and eliminate metabolic waste as urine. In TCM the kidneys store Jing (essence), govern birth, growth, reproduction, and aging, and are the root of all yin and yang in the body.",
+      "tcm_element": "Water",
+      "ayurvedic_dosha": "Kapha/Vata",
+      "ruling_planet": "Venus",
+      "zodiac_sign": "Libra"
+    },
+    {
+      "name": "Lungs",
+      "category": "organ",
+      "description": "The paired respiratory organs responsible for gas exchange, bringing oxygen into the blood and releasing carbon dioxide. In TCM the lungs govern Qi and respiration, control the skin and body hair, and are associated with the emotion of grief. They are the body's interface with the atmosphere.",
+      "tcm_element": "Metal",
+      "ayurvedic_dosha": "Kapha/Avalambaka Kapha",
+      "ruling_planet": "Mercury",
+      "zodiac_sign": "Gemini"
+    },
+    {
+      "name": "Brain",
+      "category": "organ",
+      "description": "The central organ of the nervous system, governing cognition, perception, memory, motor control, and consciousness itself. The brain consumes roughly 20% of the body's energy and is exquisitely sensitive to nutritional status, blood flow, and toxic exposure.",
+      "tcm_element": "Water (Sea of Marrow)",
+      "ayurvedic_dosha": "Vata/Prana Vata",
+      "ruling_planet": "Mercury",
+      "zodiac_sign": "Gemini"
+    },
+    {
+      "name": "Stomach",
+      "category": "organ",
+      "description": "The muscular organ that receives food from the esophagus, secretes hydrochloric acid and digestive enzymes, and begins the process of protein breakdown. In TCM the stomach is the origin of post-natal Qi and its descending function is essential for proper digestion.",
+      "tcm_element": "Earth",
+      "ayurvedic_dosha": "Pitta/Pachaka Pitta",
+      "ruling_planet": "Moon",
+      "zodiac_sign": "Cancer"
+    },
+    {
+      "name": "Spleen",
+      "category": "organ",
+      "description": "An organ of the lymphatic system involved in blood filtration, immune surveillance, and recycling of old red blood cells. In TCM the spleen is the central organ of digestion and transformation, governing the extraction of nutrients from food and the production of blood and Qi.",
+      "tcm_element": "Earth",
+      "ayurvedic_dosha": "Kapha",
+      "ruling_planet": "Saturn",
+      "zodiac_sign": "Capricorn"
+    },
+    {
+      "name": "Skin",
+      "category": "tissue",
+      "description": "The body's largest organ, forming the protective boundary between the internal environment and the external world. The skin regulates temperature, provides immune defense, synthesizes vitamin D, and serves as a mirror of internal health. Skin conditions frequently reflect liver, digestive, or hormonal imbalances.",
+      "tcm_element": "Metal",
+      "ayurvedic_dosha": "Pitta/Bhrajaka Pitta",
+      "ruling_planet": "Venus",
+      "zodiac_sign": "Libra"
+    },
+    {
+      "name": "Bones",
+      "category": "structure",
+      "description": "The skeletal framework providing structural support, protection of vital organs, mineral storage, and blood cell production in the marrow. Bone health depends on adequate minerals, hormonal balance, weight-bearing activity, and vitamin D status.",
+      "tcm_element": "Water (Kidneys govern bones)",
+      "ayurvedic_dosha": "Vata",
+      "ruling_planet": "Saturn",
+      "zodiac_sign": "Capricorn"
+    },
+    {
+      "name": "Blood",
+      "category": "tissue",
+      "description": "The liquid connective tissue circulating through the cardiovascular system, carrying oxygen, nutrients, hormones, and immune cells to every cell while removing carbon dioxide and metabolic waste. Blood quality and volume are central to vitality in every traditional medical system.",
+      "tcm_element": "Fire/Earth (Heart governs, Spleen produces)",
+      "ayurvedic_dosha": "Pitta/Rakta Dhatu",
+      "ruling_planet": "Mars",
+      "zodiac_sign": "Aries"
+    },
+    {
+      "name": "Reproductive System",
+      "category": "system",
+      "description": "The organs and glands responsible for fertility, sexual function, and the continuation of the species. Includes the uterus, ovaries, testes, and associated hormonal axis. Reproductive health is intimately tied to overall vitality, hormonal balance, and the creative life force.",
+      "tcm_element": "Water (Kidney Jing)",
+      "ayurvedic_dosha": "Kapha/Shukra Dhatu",
+      "ruling_planet": "Venus",
+      "zodiac_sign": "Scorpio"
+    },
+    {
+      "name": "Digestive Tract",
+      "category": "system",
+      "description": "The continuous tube from mouth to anus responsible for mechanical and chemical breakdown of food, absorption of nutrients, and elimination of waste. Includes the esophagus, stomach, small intestine, large intestine, and associated organs. The gut is now recognized as a second brain with its own enteric nervous system.",
+      "tcm_element": "Earth",
+      "ayurvedic_dosha": "Pitta (Agni)",
+      "ruling_planet": "Moon",
+      "zodiac_sign": "Virgo"
+    },
+    {
+      "name": "Nervous System",
+      "category": "system",
+      "description": "The body's master communication network, comprising the brain, spinal cord, and peripheral nerves. Governs sensation, movement, thought, emotion, and the regulation of every organ system through electrical and chemical signaling.",
+      "tcm_element": "Water/Wood",
+      "ayurvedic_dosha": "Vata",
+      "ruling_planet": "Mercury",
+      "zodiac_sign": "Gemini"
+    },
+    {
+      "name": "Immune System",
+      "category": "system",
+      "description": "The complex network of organs, cells, and molecules that defends the body against pathogens, abnormal cells, and foreign substances. Includes the thymus, bone marrow, spleen, lymph nodes, and circulating white blood cells. Immune health is the foundation of resistance to disease.",
+      "tcm_element": "Metal/Earth (Wei Qi)",
+      "ayurvedic_dosha": "Kapha/Ojas",
+      "ruling_planet": "Mars",
+      "zodiac_sign": "Aries"
+    },
+    {
+      "name": "Endocrine System",
+      "category": "system",
+      "description": "The network of glands that produce, store, and secrete hormones directly into the bloodstream, regulating metabolism, growth, reproduction, mood, and virtually every physiological process. Includes the pituitary, thyroid, adrenals, pancreas, and gonads.",
+      "tcm_element": "Multiple (distributed)",
+      "ayurvedic_dosha": "Pitta (Agni system)",
+      "ruling_planet": "Moon",
+      "zodiac_sign": "Cancer"
+    },
+    {
+      "name": "Lymphatic System",
+      "category": "system",
+      "description": "The network of vessels, nodes, and organs that transports lymph fluid, filters pathogens and cellular debris, and returns interstitial fluid to the bloodstream. The lymphatic system is essential for immune function and fluid balance and has no pump of its own, relying on muscular movement and breathing.",
+      "tcm_element": "Water/Earth",
+      "ayurvedic_dosha": "Kapha",
+      "ruling_planet": "Moon",
+      "zodiac_sign": "Cancer"
+    },
+    {
+      "name": "Adrenal Glands",
+      "category": "gland",
+      "description": "Small glands atop each kidney that produce cortisol, adrenaline, aldosterone, and DHEA. The adrenals govern the body's stress response, energy regulation, blood pressure, and mineral balance. Chronic stress depletes adrenal reserves, leading to fatigue and hormonal cascade failures.",
+      "tcm_element": "Water (Kidney Yang)",
+      "ayurvedic_dosha": "Vata/Pitta",
+      "ruling_planet": "Mars",
+      "zodiac_sign": "Aries"
+    },
+    {
+      "name": "Thyroid",
+      "category": "gland",
+      "description": "A butterfly-shaped gland in the neck that produces hormones (T3 and T4) controlling metabolism, body temperature, heart rate, and energy production. Thyroid disorders are among the most common endocrine conditions, manifesting as either hyperactivity or sluggishness of metabolic function.",
+      "tcm_element": "Fire/Earth",
+      "ayurvedic_dosha": "Pitta/Vata",
+      "ruling_planet": "Mercury",
+      "zodiac_sign": "Gemini"
+    },
+    {
+      "name": "Pineal Gland",
+      "category": "gland",
+      "description": "A small pine-cone shaped endocrine gland in the brain that produces melatonin, regulating circadian rhythm and sleep-wake cycles. Across esoteric traditions the pineal is considered the seat of the third eye, governing intuition, visionary perception, and connection to higher consciousness.",
+      "tcm_element": "Water (Shen/Jing interface)",
+      "ayurvedic_dosha": "Vata/Sahasrara",
+      "ruling_planet": "Neptune",
+      "zodiac_sign": "Pisces"
+    },
+    {
+      "name": "Pancreas",
+      "category": "organ",
+      "description": "A dual-function organ that produces digestive enzymes (exocrine function) and hormones including insulin and glucagon (endocrine function) that regulate blood sugar levels. Pancreatic health is central to metabolic stability and diabetes prevention.",
+      "tcm_element": "Earth",
+      "ayurvedic_dosha": "Kapha/Pitta",
+      "ruling_planet": "Jupiter",
+      "zodiac_sign": "Virgo"
+    },
+    {
+      "name": "Gallbladder",
+      "category": "organ",
+      "description": "A small pear-shaped organ beneath the liver that stores and concentrates bile produced by the liver, releasing it into the small intestine to aid fat digestion. In TCM the gallbladder is paired with the liver and governs decision-making, courage, and judgment.",
+      "tcm_element": "Wood",
+      "ayurvedic_dosha": "Pitta",
+      "ruling_planet": "Jupiter",
+      "zodiac_sign": "Sagittarius"
+    },
+    {
+      "name": "Bladder",
+      "category": "organ",
+      "description": "A hollow muscular organ that stores urine received from the kidneys via the ureters and releases it through the urethra. The bladder's function is closely tied to kidney health and water metabolism. In TCM the bladder meridian is the longest in the body, running along the entire spine.",
+      "tcm_element": "Water",
+      "ayurvedic_dosha": "Vata/Kapha",
+      "ruling_planet": "Venus",
+      "zodiac_sign": "Libra"
+    },
+    {
+      "name": "Muscles",
+      "category": "tissue",
+      "description": "The contractile tissues that enable movement, maintain posture, generate heat, and support skeletal structure. Muscle health depends on adequate protein, minerals (especially magnesium, potassium, calcium), proper nerve signaling, and sufficient blood flow.",
+      "tcm_element": "Earth (Spleen governs muscles)",
+      "ayurvedic_dosha": "Kapha/Mamsa Dhatu",
+      "ruling_planet": "Mars",
+      "zodiac_sign": "Aries"
+    },
+    {
+      "name": "Eyes",
+      "category": "organ",
+      "description": "The sensory organs of vision, containing specialized photoreceptor cells that convert light into neural signals. Eye health is intimately connected to liver function in TCM, cardiovascular health (retinal blood supply), and antioxidant status. The eyes are considered extensions of the brain.",
+      "tcm_element": "Wood (Liver opens into the eyes)",
+      "ayurvedic_dosha": "Pitta/Alochaka Pitta",
+      "ruling_planet": "Sun",
+      "zodiac_sign": "Leo"
+    },
+    {
+      "name": "Oral Cavity",
+      "category": "structure",
+      "description": "The mouth, teeth, gums, and tongue, forming the gateway to the digestive system. Oral health is a critical indicator of systemic health, with periodontal disease linked to cardiovascular disease, diabetes, and chronic inflammation throughout the body.",
+      "tcm_element": "Earth/Water",
+      "ayurvedic_dosha": "Kapha/Pitta",
+      "ruling_planet": "Saturn",
+      "zodiac_sign": "Capricorn"
+    }
+  ],
+
+  "ailment_mappings": [
+    { "body_system": "Heart", "ailment": "High Blood Pressure", "relevance": "primary", "notes": "Hypertension directly strains the heart muscle and coronary arteries" },
+    { "body_system": "Heart", "ailment": "Heart Palpitations", "relevance": "primary", "notes": "Palpitations originate from cardiac rhythm disturbance" },
+    { "body_system": "Heart", "ailment": "Heart Disease", "relevance": "primary", "notes": "Structural and functional cardiac disease" },
+    { "body_system": "Heart", "ailment": "Poor Circulation", "relevance": "primary", "notes": "Inadequate cardiac output reduces peripheral circulation" },
+    { "body_system": "Heart", "ailment": "Grief", "relevance": "secondary", "notes": "Grief is the emotion of the heart in multiple traditions; manifests as chest tightness" },
+    { "body_system": "Heart", "ailment": "Anxiety", "relevance": "secondary", "notes": "Anxiety disrupts heart rhythm and heart rate variability" },
+
+    { "body_system": "Liver", "ailment": "Liver Stagnation", "relevance": "primary", "notes": "Direct liver dysfunction and sluggish detoxification" },
+    { "body_system": "Liver", "ailment": "Liver Disease", "relevance": "primary", "notes": "Hepatitis, cirrhosis, and fatty liver conditions" },
+    { "body_system": "Liver", "ailment": "Anger and Irritability", "relevance": "primary", "notes": "Anger is the emotion of the liver in TCM; liver qi stagnation manifests as irritability" },
+    { "body_system": "Liver", "ailment": "Hormonal Imbalance", "relevance": "secondary", "notes": "The liver metabolizes and conjugates steroid hormones" },
+    { "body_system": "Liver", "ailment": "Skin Conditions", "relevance": "secondary", "notes": "Skin problems often reflect liver detoxification overload" },
+    { "body_system": "Liver", "ailment": "Allergies", "relevance": "associated", "notes": "Histamine is metabolized by the liver; liver congestion worsens allergic response" },
+
+    { "body_system": "Kidneys", "ailment": "Urinary Tract Issues", "relevance": "primary", "notes": "Direct renal and urinary pathology" },
+    { "body_system": "Kidneys", "ailment": "Kidney Disease", "relevance": "primary", "notes": "Impaired renal filtration and elimination" },
+    { "body_system": "Kidneys", "ailment": "Edema and Water Retention", "relevance": "primary", "notes": "Kidney weakness impairs fluid regulation" },
+    { "body_system": "Kidneys", "ailment": "High Blood Pressure", "relevance": "secondary", "notes": "Kidneys regulate blood pressure through the renin-angiotensin system" },
+    { "body_system": "Kidneys", "ailment": "Fatigue", "relevance": "associated", "notes": "In TCM, kidney Jing depletion is a root cause of deep exhaustion" },
+
+    { "body_system": "Lungs", "ailment": "Respiratory Issues", "relevance": "primary", "notes": "Direct pulmonary pathology affecting gas exchange" },
+    { "body_system": "Lungs", "ailment": "Cold and Flu", "relevance": "primary", "notes": "Upper and lower respiratory viral infections" },
+    { "body_system": "Lungs", "ailment": "Allergies", "relevance": "primary", "notes": "Allergic rhinitis and asthma manifest in the respiratory tract" },
+    { "body_system": "Lungs", "ailment": "Grief", "relevance": "secondary", "notes": "In TCM, grief is the emotion of the lungs; unresolved grief weakens lung qi" },
+
+    { "body_system": "Brain", "ailment": "Headaches", "relevance": "primary", "notes": "Cephalic pain from vascular, tension, or neurological origin" },
+    { "body_system": "Brain", "ailment": "Insomnia", "relevance": "primary", "notes": "Sleep regulation is a brain function involving the hypothalamus and pineal gland" },
+    { "body_system": "Brain", "ailment": "Depression", "relevance": "primary", "notes": "Neurotransmitter imbalance and neuroinflammation" },
+    { "body_system": "Brain", "ailment": "Anxiety", "relevance": "primary", "notes": "Amygdala hyperactivation and prefrontal cortex dysregulation" },
+    { "body_system": "Brain", "ailment": "Vertigo and Dizziness", "relevance": "primary", "notes": "Central vertigo originates from brainstem or cerebellar dysfunction" },
+    { "body_system": "Brain", "ailment": "Seizure Disorders", "relevance": "primary", "notes": "Abnormal electrical activity in the cerebral cortex" },
+    { "body_system": "Brain", "ailment": "Lack of Clarity", "relevance": "primary", "notes": "Cognitive fog reflects impaired cerebral circulation or neurochemistry" },
+    { "body_system": "Brain", "ailment": "Consciousness Expansion", "relevance": "associated", "notes": "Higher cognitive states involve cortical and default mode network modulation" },
+
+    { "body_system": "Stomach", "ailment": "Digestive Stagnation", "relevance": "primary", "notes": "Sluggish gastric motility and enzyme production" },
+    { "body_system": "Stomach", "ailment": "Nausea", "relevance": "primary", "notes": "Nausea originates from gastric irritation or vagal stimulation" },
+    { "body_system": "Stomach", "ailment": "Digestive Ulcers", "relevance": "primary", "notes": "Erosion of the gastric mucosal lining" },
+
+    { "body_system": "Spleen", "ailment": "Immune Deficiency", "relevance": "secondary", "notes": "The spleen filters blood-borne pathogens and produces antibodies" },
+    { "body_system": "Spleen", "ailment": "Fatigue", "relevance": "secondary", "notes": "In TCM, spleen qi deficiency is a primary cause of fatigue and poor digestion" },
+
+    { "body_system": "Skin", "ailment": "Skin Conditions", "relevance": "primary", "notes": "Direct dermatological pathology" },
+    { "body_system": "Skin", "ailment": "Wound Healing", "relevance": "primary", "notes": "Skin is the tissue most visibly involved in wound repair" },
+    { "body_system": "Skin", "ailment": "Fungal Infections", "relevance": "primary", "notes": "Cutaneous fungal overgrowth" },
+
+    { "body_system": "Bones", "ailment": "Joint Pain", "relevance": "primary", "notes": "Joint structures connect bones and degeneration affects skeletal function" },
+    { "body_system": "Bones", "ailment": "Chronic Pain", "relevance": "secondary", "notes": "Musculoskeletal pain often involves bone and joint structures" },
+
+    { "body_system": "Blood", "ailment": "Chronic Inflammation", "relevance": "primary", "notes": "Inflammatory markers circulate in the blood; blood quality reflects systemic inflammation" },
+    { "body_system": "Blood", "ailment": "Poor Circulation", "relevance": "primary", "notes": "Blood viscosity and vessel health determine circulatory efficiency" },
+    { "body_system": "Blood", "ailment": "Bleeding Disorders", "relevance": "primary", "notes": "Coagulation cascade is a blood function" },
+    { "body_system": "Blood", "ailment": "High Blood Pressure", "relevance": "secondary", "notes": "Blood volume and viscosity contribute to arterial pressure" },
+
+    { "body_system": "Reproductive System", "ailment": "Menstrual Irregularity", "relevance": "primary", "notes": "Uterine and ovarian function governs menstrual cycling" },
+    { "body_system": "Reproductive System", "ailment": "Menopausal Symptoms", "relevance": "primary", "notes": "Declining ovarian hormone production" },
+    { "body_system": "Reproductive System", "ailment": "Prostate Issues", "relevance": "primary", "notes": "Prostate gland pathology" },
+    { "body_system": "Reproductive System", "ailment": "Low Libido", "relevance": "primary", "notes": "Sexual desire involves gonadal hormones and reproductive vitality" },
+    { "body_system": "Reproductive System", "ailment": "Pregnancy", "relevance": "primary", "notes": "Gestation is the primary function of the female reproductive system" },
+    { "body_system": "Reproductive System", "ailment": "Breastfeeding", "relevance": "primary", "notes": "Lactation involves mammary glands under reproductive endocrine control" },
+    { "body_system": "Reproductive System", "ailment": "Hormonal Imbalance", "relevance": "secondary", "notes": "Reproductive hormones are major contributors to overall endocrine balance" },
+    { "body_system": "Reproductive System", "ailment": "Hormone-Sensitive Cancers", "relevance": "associated", "notes": "Estrogen and testosterone-dependent cancers involve reproductive tissues" },
+
+    { "body_system": "Digestive Tract", "ailment": "Digestive Stagnation", "relevance": "primary", "notes": "Sluggish peristalsis throughout the GI tract" },
+    { "body_system": "Digestive Tract", "ailment": "Nausea", "relevance": "primary", "notes": "Gastrointestinal disturbance" },
+    { "body_system": "Digestive Tract", "ailment": "Digestive Ulcers", "relevance": "primary", "notes": "Mucosal erosion in the GI lining" },
+    { "body_system": "Digestive Tract", "ailment": "Parasitic Infections", "relevance": "primary", "notes": "Intestinal parasites inhabit the digestive tract" },
+
+    { "body_system": "Nervous System", "ailment": "Insomnia", "relevance": "primary", "notes": "Sleep is regulated by the central nervous system" },
+    { "body_system": "Nervous System", "ailment": "Anxiety", "relevance": "primary", "notes": "Sympathetic nervous system overactivation" },
+    { "body_system": "Nervous System", "ailment": "Depression", "relevance": "primary", "notes": "Neurotransmitter imbalances in the CNS" },
+    { "body_system": "Nervous System", "ailment": "Stress", "relevance": "primary", "notes": "Chronic sympathetic activation and vagal tone suppression" },
+    { "body_system": "Nervous System", "ailment": "Chronic Pain", "relevance": "primary", "notes": "Central sensitization and pain processing" },
+    { "body_system": "Nervous System", "ailment": "Nerve Pain and Neuralgia", "relevance": "primary", "notes": "Peripheral nerve damage and neuropathic signaling" },
+    { "body_system": "Nervous System", "ailment": "Seizure Disorders", "relevance": "primary", "notes": "Abnormal neuronal firing patterns" },
+    { "body_system": "Nervous System", "ailment": "Trauma and PTSD", "relevance": "primary", "notes": "Dysregulated autonomic nervous system and limbic hyperactivation" },
+    { "body_system": "Nervous System", "ailment": "Headaches", "relevance": "secondary", "notes": "Neural and vascular components of cephalic pain" },
+
+    { "body_system": "Immune System", "ailment": "Immune Deficiency", "relevance": "primary", "notes": "Weakened immune surveillance and response" },
+    { "body_system": "Immune System", "ailment": "Chronic Inflammation", "relevance": "primary", "notes": "Dysregulated immune-mediated inflammatory response" },
+    { "body_system": "Immune System", "ailment": "Allergies", "relevance": "primary", "notes": "Misdirected immune hypersensitivity" },
+    { "body_system": "Immune System", "ailment": "Autoimmune Conditions", "relevance": "primary", "notes": "Immune system attacks self-tissues" },
+    { "body_system": "Immune System", "ailment": "Cold and Flu", "relevance": "primary", "notes": "Acute immune response to viral pathogens" },
+    { "body_system": "Immune System", "ailment": "Fungal Infections", "relevance": "secondary", "notes": "Immune weakness allows fungal overgrowth" },
+    { "body_system": "Immune System", "ailment": "Parasitic Infections", "relevance": "secondary", "notes": "Immune insufficiency permits parasitic establishment" },
+
+    { "body_system": "Endocrine System", "ailment": "Hormonal Imbalance", "relevance": "primary", "notes": "Dysregulation of endocrine gland output" },
+    { "body_system": "Endocrine System", "ailment": "Fatigue", "relevance": "primary", "notes": "Adrenal and thyroid hormones govern energy metabolism" },
+    { "body_system": "Endocrine System", "ailment": "Blood Sugar Imbalance", "relevance": "primary", "notes": "Insulin and glucagon regulation from the pancreas" },
+    { "body_system": "Endocrine System", "ailment": "Menopausal Symptoms", "relevance": "primary", "notes": "Declining gonadal hormone production" },
+    { "body_system": "Endocrine System", "ailment": "Stress", "relevance": "secondary", "notes": "HPA axis activation and cortisol dysregulation" },
+
+    { "body_system": "Lymphatic System", "ailment": "Edema and Water Retention", "relevance": "primary", "notes": "Lymphatic congestion causes fluid accumulation" },
+    { "body_system": "Lymphatic System", "ailment": "Immune Deficiency", "relevance": "secondary", "notes": "Lymph nodes are sites of immune cell activation" },
+    { "body_system": "Lymphatic System", "ailment": "Chronic Inflammation", "relevance": "secondary", "notes": "Lymphatic stagnation perpetuates inflammatory waste accumulation" },
+
+    { "body_system": "Adrenal Glands", "ailment": "Fatigue", "relevance": "primary", "notes": "Adrenal depletion is a primary cause of chronic fatigue" },
+    { "body_system": "Adrenal Glands", "ailment": "Stress", "relevance": "primary", "notes": "Adrenals produce cortisol and adrenaline in the stress response" },
+
+    { "body_system": "Thyroid", "ailment": "Fatigue", "relevance": "secondary", "notes": "Hypothyroidism causes profound fatigue and metabolic slowing" },
+    { "body_system": "Thyroid", "ailment": "Hormonal Imbalance", "relevance": "secondary", "notes": "Thyroid hormones influence every other endocrine axis" },
+
+    { "body_system": "Pineal Gland", "ailment": "Insomnia", "relevance": "primary", "notes": "Melatonin production governs sleep onset" },
+    { "body_system": "Pineal Gland", "ailment": "Dream Enhancement", "relevance": "primary", "notes": "The pineal gland governs dream states and circadian rhythm" },
+    { "body_system": "Pineal Gland", "ailment": "Consciousness Expansion", "relevance": "primary", "notes": "Traditionally associated with the third eye and visionary states" },
+    { "body_system": "Pineal Gland", "ailment": "Spiritual Disconnection", "relevance": "primary", "notes": "Pineal calcification correlates with loss of spiritual sensitivity" },
+
+    { "body_system": "Pancreas", "ailment": "Blood Sugar Imbalance", "relevance": "primary", "notes": "Insulin and glucagon secretion from pancreatic islets" },
+    { "body_system": "Pancreas", "ailment": "Digestive Stagnation", "relevance": "secondary", "notes": "Pancreatic enzymes are essential for food breakdown" },
+
+    { "body_system": "Gallbladder", "ailment": "Liver Stagnation", "relevance": "secondary", "notes": "Bile stasis in the gallbladder accompanies liver congestion" },
+    { "body_system": "Gallbladder", "ailment": "Digestive Stagnation", "relevance": "secondary", "notes": "Insufficient bile release impairs fat digestion" },
+
+    { "body_system": "Bladder", "ailment": "Urinary Tract Issues", "relevance": "primary", "notes": "Bladder infections and dysfunction" },
+
+    { "body_system": "Muscles", "ailment": "Chronic Pain", "relevance": "primary", "notes": "Myofascial pain and tension" },
+    { "body_system": "Muscles", "ailment": "Joint Pain", "relevance": "secondary", "notes": "Surrounding muscle weakness contributes to joint instability" },
+
+    { "body_system": "Eyes", "ailment": "Eye Health", "relevance": "primary", "notes": "Direct visual organ pathology" },
+    { "body_system": "Eyes", "ailment": "Headaches", "relevance": "associated", "notes": "Eye strain and visual disturbances trigger headaches" },
+
+    { "body_system": "Oral Cavity", "ailment": "Dental and Gum Issues", "relevance": "primary", "notes": "Direct oral pathology" },
+
+    { "body_system": "Nervous System", "ailment": "Addiction Recovery", "relevance": "primary", "notes": "Dopamine reward circuitry and neuroplasticity" },
+    { "body_system": "Nervous System", "ailment": "Psychiatric Conditions", "relevance": "primary", "notes": "Neurotransmitter and neurochemical dysregulation" },
+    { "body_system": "Nervous System", "ailment": "Vertigo and Dizziness", "relevance": "primary", "notes": "Vestibular nerve and cerebellar processing" },
+    { "body_system": "Nervous System", "ailment": "Lack of Clarity", "relevance": "secondary", "notes": "Cognitive function depends on neural signaling efficiency" },
+
+    { "body_system": "Brain", "ailment": "Multiple Sclerosis", "relevance": "primary", "notes": "Demyelination of central nervous system white matter disrupts brain signaling" },
+    { "body_system": "Nervous System", "ailment": "Multiple Sclerosis", "relevance": "primary", "notes": "Myelin sheath destruction impairs nerve conduction throughout the CNS and peripheral nerves" },
+    { "body_system": "Immune System", "ailment": "Multiple Sclerosis", "relevance": "primary", "notes": "Autoimmune T-cell attack on myelin drives disease progression" },
+    { "body_system": "Eyes", "ailment": "Multiple Sclerosis", "relevance": "secondary", "notes": "Optic neuritis is often the first presenting symptom of MS" },
+    { "body_system": "Bladder", "ailment": "Multiple Sclerosis", "relevance": "secondary", "notes": "Neurogenic bladder dysfunction is common in MS due to spinal cord lesions" },
+    { "body_system": "Muscles", "ailment": "Multiple Sclerosis", "relevance": "secondary", "notes": "Spasticity and muscle weakness result from disrupted motor nerve signaling" },
+
+    { "body_system": "Reproductive System", "ailment": "PCOS (Polycystic Ovary Syndrome)", "relevance": "primary", "notes": "Ovarian cyst formation, anovulation, and disrupted menstrual cycling" },
+    { "body_system": "Endocrine System", "ailment": "PCOS (Polycystic Ovary Syndrome)", "relevance": "primary", "notes": "Androgen excess and insulin resistance reflect systemic endocrine dysregulation" },
+    { "body_system": "Pancreas", "ailment": "PCOS (Polycystic Ovary Syndrome)", "relevance": "secondary", "notes": "Insulin resistance and hyperinsulinemia drive androgen overproduction" },
+    { "body_system": "Adrenal Glands", "ailment": "PCOS (Polycystic Ovary Syndrome)", "relevance": "secondary", "notes": "Adrenal androgen excess contributes to PCOS symptom profile" },
+    { "body_system": "Skin", "ailment": "PCOS (Polycystic Ovary Syndrome)", "relevance": "associated", "notes": "Acne, hirsutism, and acanthosis nigricans are dermatological manifestations" },
+
+    { "body_system": "Reproductive System", "ailment": "Endometriosis", "relevance": "primary", "notes": "Endometrial-like tissue grows outside the uterus, causing adhesions, ovarian endometriomas, and fertility impairment" },
+    { "body_system": "Immune System", "ailment": "Endometriosis", "relevance": "secondary", "notes": "Immune dysfunction fails to clear ectopic endometrial tissue" },
+    { "body_system": "Digestive Tract", "ailment": "Endometriosis", "relevance": "secondary", "notes": "Bowel endometriosis causes pain with defecation and GI disturbance" },
+    { "body_system": "Bladder", "ailment": "Endometriosis", "relevance": "associated", "notes": "Bladder endometriosis can cause urinary pain and frequency" },
+
+    { "body_system": "Thyroid", "ailment": "Hyperthyroidism", "relevance": "primary", "notes": "Excessive thyroid hormone production from an overactive gland" },
+    { "body_system": "Endocrine System", "ailment": "Hyperthyroidism", "relevance": "primary", "notes": "Systemic metabolic acceleration from thyroid hormone excess" },
+    { "body_system": "Heart", "ailment": "Hyperthyroidism", "relevance": "secondary", "notes": "Thyroid hormone excess causes tachycardia, atrial fibrillation, and cardiac strain" },
+    { "body_system": "Nervous System", "ailment": "Hyperthyroidism", "relevance": "secondary", "notes": "Sympathetic nervous system overactivation drives anxiety and tremor" },
+    { "body_system": "Immune System", "ailment": "Hyperthyroidism", "relevance": "associated", "notes": "Graves' disease is an autoimmune cause of hyperthyroidism" },
+    { "body_system": "Eyes", "ailment": "Hyperthyroidism", "relevance": "associated", "notes": "Graves' ophthalmopathy causes eye bulging and visual disturbance" },
+    { "body_system": "Bones", "ailment": "Hyperthyroidism", "relevance": "associated", "notes": "Excess thyroid hormone accelerates bone resorption and osteoporosis risk" },
+
+    { "body_system": "Thyroid", "ailment": "Hypothyroidism", "relevance": "primary", "notes": "Insufficient thyroid hormone production from an underactive gland" },
+    { "body_system": "Endocrine System", "ailment": "Hypothyroidism", "relevance": "primary", "notes": "Systemic metabolic slowing from thyroid hormone deficiency" },
+    { "body_system": "Brain", "ailment": "Hypothyroidism", "relevance": "secondary", "notes": "Thyroid hormone deficiency impairs cognitive function and causes brain fog" },
+    { "body_system": "Heart", "ailment": "Hypothyroidism", "relevance": "secondary", "notes": "Hypothyroidism causes bradycardia and elevated cholesterol" },
+    { "body_system": "Skin", "ailment": "Hypothyroidism", "relevance": "secondary", "notes": "Dry skin and myxedema are characteristic dermatological signs" },
+    { "body_system": "Muscles", "ailment": "Hypothyroidism", "relevance": "associated", "notes": "Muscle weakness, cramps, and aches from slowed metabolic function" },
+
+    { "body_system": "Brain", "ailment": "Night Terrors", "relevance": "primary", "notes": "Disrupted sleep architecture involving abnormal arousal from deep NREM sleep" },
+    { "body_system": "Nervous System", "ailment": "Night Terrors", "relevance": "primary", "notes": "Autonomic nervous system activation causes intense fear response during sleep" },
+    { "body_system": "Adrenal Glands", "ailment": "Night Terrors", "relevance": "secondary", "notes": "Adrenaline and cortisol surges during episodes reflect HPA axis activation" },
+    { "body_system": "Pineal Gland", "ailment": "Night Terrors", "relevance": "associated", "notes": "Disrupted melatonin cycling may contribute to sleep architecture instability" },
+
+    { "body_system": "Immune System", "ailment": "Rheumatoid Arthritis", "relevance": "primary", "notes": "Autoimmune attack on synovial joint membranes drives the disease" },
+    { "body_system": "Bones", "ailment": "Rheumatoid Arthritis", "relevance": "primary", "notes": "Progressive joint erosion and bone destruction" },
+    { "body_system": "Muscles", "ailment": "Rheumatoid Arthritis", "relevance": "secondary", "notes": "Periarticular muscle wasting and weakness from disuse and inflammation" },
+    { "body_system": "Blood", "ailment": "Rheumatoid Arthritis", "relevance": "secondary", "notes": "Elevated inflammatory markers and anemia of chronic disease" },
+    { "body_system": "Lymphatic System", "ailment": "Rheumatoid Arthritis", "relevance": "associated", "notes": "Lymph node enlargement and lymphatic involvement in systemic inflammation" },
+    { "body_system": "Skin", "ailment": "Rheumatoid Arthritis", "relevance": "associated", "notes": "Rheumatoid nodules and vasculitis-related skin changes" },
+
+    { "body_system": "Immune System", "ailment": "Lupus (SLE)", "relevance": "primary", "notes": "Anti-nuclear antibody production and systemic autoimmune attack on multiple tissues" },
+    { "body_system": "Kidneys", "ailment": "Lupus (SLE)", "relevance": "primary", "notes": "Lupus nephritis is a life-threatening complication affecting kidney filtration" },
+    { "body_system": "Skin", "ailment": "Lupus (SLE)", "relevance": "primary", "notes": "Characteristic butterfly rash and photosensitive skin lesions" },
+    { "body_system": "Blood", "ailment": "Lupus (SLE)", "relevance": "secondary", "notes": "Cytopenias including anemia, leukopenia, and thrombocytopenia" },
+    { "body_system": "Heart", "ailment": "Lupus (SLE)", "relevance": "secondary", "notes": "Pericarditis and accelerated atherosclerosis" },
+    { "body_system": "Lungs", "ailment": "Lupus (SLE)", "relevance": "secondary", "notes": "Pleuritis and pulmonary inflammation" },
+    { "body_system": "Brain", "ailment": "Lupus (SLE)", "relevance": "secondary", "notes": "Neuropsychiatric lupus causes cognitive dysfunction, seizures, and psychosis" },
+    { "body_system": "Bones", "ailment": "Lupus (SLE)", "relevance": "associated", "notes": "Joint pain and arthritis without erosion is a common feature" },
+
+    { "body_system": "Thyroid", "ailment": "Hashimoto's Thyroiditis", "relevance": "primary", "notes": "Immune-mediated destruction of thyroid tissue" },
+    { "body_system": "Immune System", "ailment": "Hashimoto's Thyroiditis", "relevance": "primary", "notes": "Autoantibodies against thyroid peroxidase and thyroglobulin" },
+    { "body_system": "Endocrine System", "ailment": "Hashimoto's Thyroiditis", "relevance": "primary", "notes": "Progressive thyroid failure disrupts the entire endocrine axis" },
+    { "body_system": "Brain", "ailment": "Hashimoto's Thyroiditis", "relevance": "secondary", "notes": "Hashimoto's encephalopathy and cognitive impairment from thyroid hormone deficiency" },
+    { "body_system": "Heart", "ailment": "Hashimoto's Thyroiditis", "relevance": "associated", "notes": "Resulting hypothyroidism causes bradycardia and elevated cholesterol" },
+    { "body_system": "Muscles", "ailment": "Hashimoto's Thyroiditis", "relevance": "associated", "notes": "Myalgia and weakness from thyroid hormone deficiency" },
+
+    { "body_system": "Nervous System", "ailment": "Fibromyalgia", "relevance": "primary", "notes": "Central sensitization amplifies pain processing in the spinal cord and brain" },
+    { "body_system": "Muscles", "ailment": "Fibromyalgia", "relevance": "primary", "notes": "Widespread myofascial pain and tender points throughout the muscular system" },
+    { "body_system": "Brain", "ailment": "Fibromyalgia", "relevance": "secondary", "notes": "Altered pain processing, cognitive dysfunction, and sleep architecture disruption" },
+    { "body_system": "Endocrine System", "ailment": "Fibromyalgia", "relevance": "secondary", "notes": "HPA axis dysfunction and cortisol dysregulation" },
+    { "body_system": "Immune System", "ailment": "Fibromyalgia", "relevance": "associated", "notes": "Neuroinflammation and immune mediator involvement in pain sensitization" },
+    { "body_system": "Digestive Tract", "ailment": "Fibromyalgia", "relevance": "associated", "notes": "Irritable bowel symptoms frequently co-occur with fibromyalgia" },
+
+    { "body_system": "Digestive Tract", "ailment": "Crohn's Disease", "relevance": "primary", "notes": "Transmural inflammation of the gastrointestinal tract, especially ileum and colon" },
+    { "body_system": "Immune System", "ailment": "Crohn's Disease", "relevance": "primary", "notes": "Dysregulated mucosal immune response and Th1/Th17 pathway activation" },
+    { "body_system": "Stomach", "ailment": "Crohn's Disease", "relevance": "secondary", "notes": "Crohn's can affect the entire GI tract including the stomach, though less commonly" },
+    { "body_system": "Lymphatic System", "ailment": "Crohn's Disease", "relevance": "secondary", "notes": "Mesenteric lymph node enlargement and lymphatic obstruction" },
+    { "body_system": "Blood", "ailment": "Crohn's Disease", "relevance": "secondary", "notes": "Anemia from chronic blood loss and malabsorption of iron and B12" },
+    { "body_system": "Bones", "ailment": "Crohn's Disease", "relevance": "associated", "notes": "Calcium and vitamin D malabsorption increases osteoporosis risk" },
+
+    { "body_system": "Digestive Tract", "ailment": "Ulcerative Colitis", "relevance": "primary", "notes": "Continuous mucosal inflammation, ulceration, and bleeding of the colon and rectum" },
+    { "body_system": "Immune System", "ailment": "Ulcerative Colitis", "relevance": "primary", "notes": "Th2-mediated autoimmune attack on colonic mucosa" },
+    { "body_system": "Blood", "ailment": "Ulcerative Colitis", "relevance": "secondary", "notes": "Iron-deficiency anemia from chronic intestinal blood loss" },
+    { "body_system": "Liver", "ailment": "Ulcerative Colitis", "relevance": "associated", "notes": "Primary sclerosing cholangitis is an associated hepatobiliary complication" },
+
+    { "body_system": "Stomach", "ailment": "Celiac Disease", "relevance": "associated", "notes": "Gluten exposure begins gastric irritation; villous atrophy occurs in the small intestinal portion of the digestive tract" },
+    { "body_system": "Digestive Tract", "ailment": "Celiac Disease", "relevance": "primary", "notes": "Gluten-triggered destruction of intestinal villi" },
+    { "body_system": "Immune System", "ailment": "Celiac Disease", "relevance": "primary", "notes": "IgA-mediated autoimmune response to gluten-derived gliadin peptides" },
+    { "body_system": "Skin", "ailment": "Celiac Disease", "relevance": "secondary", "notes": "Dermatitis herpetiformis is the cutaneous manifestation of celiac disease" },
+    { "body_system": "Bones", "ailment": "Celiac Disease", "relevance": "secondary", "notes": "Calcium and vitamin D malabsorption leads to osteopenia and osteoporosis" },
+    { "body_system": "Nervous System", "ailment": "Celiac Disease", "relevance": "associated", "notes": "Gluten ataxia and peripheral neuropathy from neurological involvement" },
+    { "body_system": "Blood", "ailment": "Celiac Disease", "relevance": "associated", "notes": "Iron, folate, and B12 deficiency anemias from impaired absorption" },
+
+    { "body_system": "Pancreas", "ailment": "Type 1 Diabetes", "relevance": "primary", "notes": "Autoimmune destruction of pancreatic beta cells eliminates insulin production" },
+    { "body_system": "Endocrine System", "ailment": "Type 1 Diabetes", "relevance": "primary", "notes": "Absolute insulin deficiency disrupts glucose metabolism systemically" },
+    { "body_system": "Immune System", "ailment": "Type 1 Diabetes", "relevance": "primary", "notes": "T-cell mediated autoimmune attack on islets of Langerhans" },
+    { "body_system": "Blood", "ailment": "Type 1 Diabetes", "relevance": "secondary", "notes": "Chronic hyperglycemia damages blood vessels and alters blood chemistry" },
+    { "body_system": "Kidneys", "ailment": "Type 1 Diabetes", "relevance": "secondary", "notes": "Diabetic nephropathy is a major long-term complication" },
+    { "body_system": "Eyes", "ailment": "Type 1 Diabetes", "relevance": "secondary", "notes": "Diabetic retinopathy from chronic microvascular damage" },
+    { "body_system": "Nervous System", "ailment": "Type 1 Diabetes", "relevance": "secondary", "notes": "Diabetic neuropathy from nerve damage caused by hyperglycemia" },
+
+    { "body_system": "Immune System", "ailment": "Psoriatic Arthritis", "relevance": "primary", "notes": "Autoimmune-driven inflammation targeting both skin and joints" },
+    { "body_system": "Skin", "ailment": "Psoriatic Arthritis", "relevance": "primary", "notes": "Psoriasis plaques with characteristic silvery scaling" },
+    { "body_system": "Bones", "ailment": "Psoriatic Arthritis", "relevance": "primary", "notes": "Joint erosion and new bone formation in affected joints" },
+    { "body_system": "Muscles", "ailment": "Psoriatic Arthritis", "relevance": "secondary", "notes": "Enthesitis and tendon inflammation at muscle-bone junctions" },
+    { "body_system": "Eyes", "ailment": "Psoriatic Arthritis", "relevance": "associated", "notes": "Uveitis and eye inflammation can accompany psoriatic arthritis" },
+
+    { "body_system": "Immune System", "ailment": "Sjögren's Syndrome", "relevance": "primary", "notes": "Autoimmune lymphocytic infiltration of exocrine glands" },
+    { "body_system": "Eyes", "ailment": "Sjögren's Syndrome", "relevance": "primary", "notes": "Lacrimal gland destruction causes severe dry eye syndrome" },
+    { "body_system": "Oral Cavity", "ailment": "Sjögren's Syndrome", "relevance": "primary", "notes": "Salivary gland destruction causes xerostomia and dental complications" },
+    { "body_system": "Skin", "ailment": "Sjögren's Syndrome", "relevance": "secondary", "notes": "Cutaneous dryness and vasculitis-related skin changes" },
+    { "body_system": "Lungs", "ailment": "Sjögren's Syndrome", "relevance": "secondary", "notes": "Dry cough and interstitial lung involvement" },
+    { "body_system": "Kidneys", "ailment": "Sjögren's Syndrome", "relevance": "associated", "notes": "Interstitial nephritis and renal tubular acidosis" },
+    { "body_system": "Lymphatic System", "ailment": "Sjögren's Syndrome", "relevance": "associated", "notes": "Increased risk of lymphoma from chronic lymphocytic stimulation" },
+
+    { "body_system": "Heart", "ailment": "Raynaud's Phenomenon", "relevance": "primary", "notes": "Vasospasm of peripheral arteries driven by vascular hyperreactivity" },
+    { "body_system": "Blood", "ailment": "Raynaud's Phenomenon", "relevance": "secondary", "notes": "Disrupted blood flow to extremities during vasospastic episodes" },
+    { "body_system": "Nervous System", "ailment": "Raynaud's Phenomenon", "relevance": "secondary", "notes": "Sympathetic nervous system overactivation triggers arterial constriction" },
+    { "body_system": "Immune System", "ailment": "Raynaud's Phenomenon", "relevance": "associated", "notes": "Secondary Raynaud's often accompanies autoimmune connective tissue diseases" },
+    { "body_system": "Skin", "ailment": "Raynaud's Phenomenon", "relevance": "associated", "notes": "Fingertip ulcers and skin color changes reflect peripheral ischemia" },
+
+    { "body_system": "Immune System", "ailment": "Chronic Fatigue Syndrome", "relevance": "primary", "notes": "Immune dysfunction with natural killer cell impairment and chronic immune activation" },
+    { "body_system": "Nervous System", "ailment": "Chronic Fatigue Syndrome", "relevance": "primary", "notes": "Autonomic dysregulation, central sensitization, and neuroinflammation" },
+    { "body_system": "Endocrine System", "ailment": "Chronic Fatigue Syndrome", "relevance": "primary", "notes": "HPA axis blunting and cortisol dysregulation" },
+    { "body_system": "Adrenal Glands", "ailment": "Chronic Fatigue Syndrome", "relevance": "secondary", "notes": "Reduced cortisol output and impaired stress response capacity" },
+    { "body_system": "Brain", "ailment": "Chronic Fatigue Syndrome", "relevance": "secondary", "notes": "Neuroinflammation, cognitive impairment, and disrupted sleep architecture" },
+    { "body_system": "Muscles", "ailment": "Chronic Fatigue Syndrome", "relevance": "secondary", "notes": "Post-exertional malaise and impaired mitochondrial energy production in muscle tissue" },
+    { "body_system": "Lymphatic System", "ailment": "Chronic Fatigue Syndrome", "relevance": "associated", "notes": "Tender lymph nodes and lymphatic sluggishness" },
+
+    { "body_system": "Digestive Tract", "ailment": "Irritable Bowel Syndrome", "relevance": "primary", "notes": "Functional disorder of gastrointestinal motility and visceral sensitivity" },
+    { "body_system": "Stomach", "ailment": "Irritable Bowel Syndrome", "relevance": "secondary", "notes": "Functional dyspepsia frequently overlaps with IBS; colonic dysmotility drives alternating bowel habits" },
+    { "body_system": "Nervous System", "ailment": "Irritable Bowel Syndrome", "relevance": "primary", "notes": "Gut-brain axis dysregulation and visceral hypersensitivity" },
+    { "body_system": "Brain", "ailment": "Irritable Bowel Syndrome", "relevance": "secondary", "notes": "Central processing of visceral pain signals and stress-gut connection" },
+    { "body_system": "Spleen", "ailment": "Irritable Bowel Syndrome", "relevance": "associated", "notes": "In TCM, spleen qi deficiency is a root pattern underlying IBS with bloating and loose stools" },
+    { "body_system": "Immune System", "ailment": "Irritable Bowel Syndrome", "relevance": "associated", "notes": "Low-grade mucosal inflammation and mast cell activation in some IBS subtypes" },
+
+    { "body_system": "Adrenal Glands", "ailment": "Adrenal Fatigue", "relevance": "primary", "notes": "Depleted adrenal cortisol and DHEA output from chronic stress" },
+    { "body_system": "Endocrine System", "ailment": "Adrenal Fatigue", "relevance": "primary", "notes": "HPA axis dysregulation and downstream hormonal cascade disruption" },
+    { "body_system": "Nervous System", "ailment": "Adrenal Fatigue", "relevance": "secondary", "notes": "Sympathetic-parasympathetic imbalance and impaired stress resilience" },
+    { "body_system": "Immune System", "ailment": "Adrenal Fatigue", "relevance": "secondary", "notes": "Cortisol depletion impairs immune regulation and increases susceptibility to illness" },
+    { "body_system": "Brain", "ailment": "Adrenal Fatigue", "relevance": "secondary", "notes": "Cortisol dysregulation affects hippocampal function, memory, and cognitive clarity" },
+    { "body_system": "Thyroid", "ailment": "Adrenal Fatigue", "relevance": "associated", "notes": "Adrenal-thyroid axis interaction means adrenal depletion often suppresses thyroid function" }
+  ],
+
+  "plant_part_correspondences": [
+    {
+      "body_system": "Brain",
+      "is_food": 1,
+      "food_name": "Walnut",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "A walnut half resembles the two hemispheres of the brain, complete with wrinkled folds mimicking cerebral convolutions. Even the shell resembles the skull.",
+      "therapeutic_action": "Rich in omega-3 fatty acids (ALA), polyphenols, and vitamin E that support neuronal membrane integrity, reduce neuroinflammation, and improve cognitive function",
+      "notes": "One of the most celebrated examples of the Doctrine of Signatures across cultures"
+    },
+    {
+      "body_system": "Kidneys",
+      "is_food": 1,
+      "food_name": "Kidney Bean",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "The kidney bean is shaped exactly like a human kidney, including the hilum that mirrors the renal hilum where blood vessels enter and exit.",
+      "therapeutic_action": "Provides plant-based protein, molybdenum, folate, and iron. Supports kidney function through gentle diuretic action and mineral replenishment",
+      "notes": "Named specifically for its resemblance to the kidney organ"
+    },
+    {
+      "body_system": "Heart",
+      "is_food": 1,
+      "food_name": "Tomato",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "When sliced, a tomato reveals four chambers that mirror the four chambers of the human heart. Its red color echoes the color of blood and cardiac tissue.",
+      "therapeutic_action": "Rich in lycopene, a potent antioxidant that reduces LDL oxidation, lowers blood pressure, and protects against cardiovascular disease",
+      "notes": "The red color is produced by lycopene, the very compound most protective to the heart"
+    },
+    {
+      "body_system": "Bones",
+      "is_food": 1,
+      "food_name": "Celery",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Celery stalks resemble long bones. The plant is roughly 23% sodium, and bones are also roughly 23% sodium, an unusual nutritional parallel.",
+      "therapeutic_action": "Provides silicon, vitamin K, and organic sodium that support bone mineralization and joint lubrication. Anti-inflammatory polyacetylenes reduce joint swelling",
+      "notes": "The sodium content mirrors the mineral composition of bone tissue"
+    },
+    {
+      "body_system": "Stomach",
+      "is_food": 1,
+      "food_name": "Ginger",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "The gnarly shape of ginger root resembles the stomach organ. Its warming, pungent quality signals its action on gastric function.",
+      "therapeutic_action": "Gingerols and shogaols stimulate gastric motility, relieve nausea, reduce gastric inflammation, and support digestive enzyme secretion",
+      "notes": "Ginger has extensive clinical evidence for treating nausea and gastroparesis"
+    },
+    {
+      "body_system": "Eyes",
+      "is_food": 1,
+      "food_name": "Carrot",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "A cross-section of a carrot reveals a pattern resembling the human iris and pupil, with radiating lines similar to the iris pattern.",
+      "therapeutic_action": "Rich in beta-carotene (converted to vitamin A/retinol), essential for rhodopsin production in rod cells, night vision, and corneal health",
+      "notes": "Vitamin A deficiency remains the leading cause of preventable blindness worldwide"
+    },
+    {
+      "body_system": "Lungs",
+      "is_food": 1,
+      "food_name": "Grape",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "A cluster of grapes hanging on the vine resembles the alveolar clusters in the lungs, the tiny air sacs where gas exchange occurs.",
+      "therapeutic_action": "Resveratrol and proanthocyanidins reduce pulmonary inflammation, thin mucus, and protect alveolar tissue from oxidative damage",
+      "notes": "Grape seed extract has clinical evidence for respiratory protection"
+    },
+    {
+      "body_system": "Pancreas",
+      "is_food": 1,
+      "food_name": "Sweet Potato",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "The sweet potato resembles the elongated shape of the pancreas and has a naturally sweet flavor connected to blood sugar regulation.",
+      "therapeutic_action": "Despite its sweetness, sweet potato has a low glycemic index and contains caiapo, a compound shown to improve insulin sensitivity and lower fasting blood glucose",
+      "notes": "Traditional use in multiple cultures for blood sugar support"
+    },
+    {
+      "body_system": "Blood",
+      "is_food": 1,
+      "food_name": "Beet",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Beets are deep crimson-red, the color of blood. When sliced, they bleed red juice that stains like blood.",
+      "therapeutic_action": "Rich in dietary nitrates (converted to nitric oxide for vasodilation), iron, folate, and betaine. Supports red blood cell production, blood oxygenation, and cardiovascular function",
+      "notes": "Beet juice is clinically shown to lower blood pressure and improve athletic endurance through enhanced blood flow"
+    },
+    {
+      "body_system": "Reproductive System",
+      "is_food": 1,
+      "food_name": "Avocado",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "The avocado resembles the shape of the uterus and cervix. It takes exactly 9 months for an avocado to grow from blossom to ripened fruit.",
+      "therapeutic_action": "Rich in folate (essential for fetal neural tube development), healthy monounsaturated fats, vitamin E, and potassium that support hormonal balance and reproductive health",
+      "notes": "The word avocado derives from the Aztec word ahuacatl, meaning testicle, reflecting its traditional association with fertility"
+    },
+    {
+      "body_system": "Reproductive System",
+      "is_food": 1,
+      "food_name": "Fig",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Figs hang in pairs on the tree and when opened reveal a seed-filled interior resembling the internal structure of the testes or ovaries.",
+      "therapeutic_action": "Rich in zinc, magnesium, and B vitamins that support gonadal function. Contains ficin enzymes and polyphenols that modulate reproductive hormones",
+      "notes": "Figs have been associated with fertility across Mediterranean, Middle Eastern, and Indian traditions for millennia"
+    },
+    {
+      "body_system": "Liver",
+      "is_food": 1,
+      "food_name": "Artichoke",
+      "correspondence_type": "nutritional",
+      "signature_description": "The artichoke's layered, protective structure mirrors the liver's lobular architecture.",
+      "therapeutic_action": "Contains cynarin and silymarin-like compounds that stimulate bile production, protect hepatocytes from toxic damage, and lower LDL cholesterol",
+      "notes": "Artichoke leaf extract has strong clinical evidence as a hepatoprotective agent"
+    },
+    {
+      "body_system": "Liver",
+      "is_food": 1,
+      "food_name": "Lemon",
+      "correspondence_type": "nutritional",
+      "signature_description": "The bright yellow color and bitter-sour taste signal its action on the hepatobiliary system.",
+      "therapeutic_action": "Citric acid and d-limonene stimulate bile production and liver detoxification enzymes. Vitamin C acts as a primary antioxidant in liver tissue",
+      "notes": "Warm lemon water is a widespread folk remedy for morning liver support"
+    },
+    {
+      "body_system": "Kidneys",
+      "is_food": 1,
+      "food_name": "Watermelon",
+      "correspondence_type": "nutritional",
+      "signature_description": "Watermelon's high water content and its role as a natural diuretic signal its affinity for the urinary system.",
+      "therapeutic_action": "Contains citrulline (converted to arginine for nitric oxide production), potassium, and abundant water that supports kidney flushing, reduces uric acid, and prevents stone formation",
+      "notes": "Watermelon seed tea is a traditional kidney tonic in many cultures"
+    },
+    {
+      "body_system": "Bones",
+      "is_food": 1,
+      "food_name": "Sesame Seeds",
+      "correspondence_type": "nutritional",
+      "signature_description": "Small, hard seeds that must be cracked open to reveal their nutrients, like accessing the marrow within bone.",
+      "therapeutic_action": "Extremely rich in calcium, magnesium, zinc, and phosphorus, the primary minerals of bone tissue. Contains sesamin, which may inhibit osteoclast activity",
+      "notes": "Sesame is one of the highest plant sources of calcium, critical for bone density"
+    },
+    {
+      "body_system": "Skin",
+      "is_food": 1,
+      "food_name": "Cucumber",
+      "correspondence_type": "nutritional",
+      "signature_description": "The cucumber's smooth, hydrated skin mirrors healthy human skin. Its high water and silica content signal its dermatological affinity.",
+      "therapeutic_action": "Contains silica (essential for collagen synthesis), vitamin C, caffeic acid, and abundant water that hydrate skin from within. Topically cooling and anti-inflammatory",
+      "notes": "Topical cucumber application for skin care dates back thousands of years"
+    },
+    {
+      "body_system": "Heart",
+      "is_food": 1,
+      "food_name": "Pomegranate",
+      "correspondence_type": "nutritional",
+      "signature_description": "The deep red, juice-filled seeds resemble blood cells contained within chambers, echoing the heart's chambered structure.",
+      "therapeutic_action": "Punicalagins and punicic acid reduce arterial plaque formation, lower blood pressure, and decrease LDL oxidation. Among the most potent cardiovascular-protective foods known",
+      "notes": "Clinical trials demonstrate pomegranate juice reverses carotid artery thickness"
+    },
+    {
+      "body_system": "Digestive Tract",
+      "is_food": 1,
+      "food_name": "Papaya",
+      "correspondence_type": "nutritional",
+      "signature_description": "When sliced open, papaya reveals a hollow interior resembling the GI tract, with seeds clustered like intestinal villi.",
+      "therapeutic_action": "Contains papain, a proteolytic enzyme that aids protein digestion, reduces bloating, and soothes intestinal inflammation. Rich in fiber for peristaltic support",
+      "notes": "Papain is used therapeutically as a digestive enzyme supplement"
+    },
+    {
+      "body_system": "Immune System",
+      "is_food": 1,
+      "food_name": "Mushroom (Shiitake, Maitake, Reishi)",
+      "correspondence_type": "nutritional",
+      "signature_description": "Mushrooms grow from decaying matter, transforming death into life, mirroring the immune system's role in destroying pathogens and renewing the body.",
+      "therapeutic_action": "Beta-glucan polysaccharides activate macrophages, natural killer cells, and dendritic cells. Lentinan (shiitake) and grifolan (maitake) are potent immunomodulators",
+      "notes": "Medicinal mushrooms have millennia of use in TCM and increasingly strong clinical evidence"
+    },
+    {
+      "body_system": "Brain",
+      "is_food": 1,
+      "food_name": "Blueberry",
+      "correspondence_type": "nutritional",
+      "signature_description": "The deep blue-purple color indicates high anthocyanin content, compounds with particular affinity for crossing the blood-brain barrier.",
+      "therapeutic_action": "Anthocyanins improve hippocampal neuroplasticity, enhance memory consolidation, reduce neuroinflammation, and protect against age-related cognitive decline",
+      "notes": "Clinical trials show regular blueberry consumption delays brain aging by up to 2.5 years"
+    },
+    {
+      "body_system": "Muscles",
+      "is_food": 1,
+      "food_name": "Banana",
+      "correspondence_type": "nutritional",
+      "signature_description": "The curved shape of a banana suggests muscle fibers, and its use by athletes reflects its muscular affinity.",
+      "therapeutic_action": "Rich in potassium, magnesium, and natural sugars that prevent muscle cramps, support electrolyte balance, and provide quick energy for muscular contraction",
+      "notes": "Potassium is essential for muscle depolarization and contraction cycles"
+    },
+    {
+      "body_system": "Thyroid",
+      "is_food": 1,
+      "food_name": "Brazil Nut",
+      "correspondence_type": "nutritional",
+      "signature_description": "Brazil nuts grow in a pod-like shell cluster resembling a thyroid gland, and their selenium content directly serves thyroid function.",
+      "therapeutic_action": "The single richest food source of selenium, essential for the deiodinase enzymes that convert T4 to active T3. One nut provides the full daily selenium requirement",
+      "notes": "Selenium deficiency is a major cause of impaired thyroid hormone conversion"
+    },
+    {
+      "body_system": "Lymphatic System",
+      "is_food": 1,
+      "food_name": "Olive",
+      "correspondence_type": "nutritional",
+      "signature_description": "Olives resemble small lymph nodes, and olive oil has long been used to support lymphatic drainage through massage.",
+      "therapeutic_action": "Oleocanthal and hydroxytyrosol have potent anti-inflammatory properties that reduce lymphatic congestion. Oleic acid supports the fluidity of lymphatic vessel membranes",
+      "notes": "Olive oil is the primary fat of the Mediterranean diet, associated with reduced chronic inflammation"
+    },
+    {
+      "body_system": "Adrenal Glands",
+      "is_food": 1,
+      "food_name": "Dark Leafy Greens (Kale, Spinach)",
+      "correspondence_type": "nutritional",
+      "signature_description": "The deep green color indicates high magnesium content (central atom of chlorophyll), the most critical mineral for adrenal function.",
+      "therapeutic_action": "Provide magnesium, B vitamins, vitamin C, and iron, all of which are rapidly depleted during chronic stress and essential for adrenal hormone synthesis",
+      "notes": "Vitamin C is found in higher concentration in the adrenal glands than almost any other organ"
+    },
+    {
+      "body_system": "Pineal Gland",
+      "is_food": 1,
+      "food_name": "Tart Cherry",
+      "correspondence_type": "nutritional",
+      "signature_description": "The deep red-purple color and small round shape of tart cherries mirror the tiny pineal gland, and they are one of the few natural food sources of melatonin.",
+      "therapeutic_action": "Contains bioavailable melatonin that directly supports pineal function, regulates circadian rhythm, and improves sleep quality. Also rich in anthocyanins with neuroprotective properties",
+      "notes": "Clinical trials demonstrate tart cherry juice improves sleep duration and quality in older adults"
+    },
+    {
+      "body_system": "Gallbladder",
+      "is_food": 1,
+      "food_name": "Radish",
+      "correspondence_type": "nutritional",
+      "signature_description": "The pungent, bitter taste of radish signals its cholagogue action, stimulating bile flow from the gallbladder.",
+      "therapeutic_action": "Contains glucosinolates and isothiocyanates that stimulate bile production, promote gallbladder contraction, and help prevent gallstone formation",
+      "notes": "Black radish is used medicinally throughout Europe as a specific gallbladder tonic"
+    },
+    {
+      "body_system": "Oral Cavity",
+      "is_food": 1,
+      "food_name": "Clove",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "The small, nail-shaped dried flower bud has been placed directly on sore teeth for centuries, its shape fitting into tooth sockets.",
+      "therapeutic_action": "Eugenol is a potent local anesthetic and antimicrobial. Clove oil numbs dental pain on contact and kills oral pathogens including those causing gingivitis and periodontitis",
+      "notes": "Clove oil remains an ingredient in modern dental preparations and was among the first local anesthetics used in dentistry"
+    },
+    {
+      "body_system": "Endocrine System",
+      "is_food": 1,
+      "food_name": "Maca Root",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "This Andean root grows at extreme altitude where endocrine function must adapt to harsh conditions, signaling its adaptogenic endocrine affinity.",
+      "therapeutic_action": "Macamides and macaenes modulate the hypothalamic-pituitary axis, supporting balanced hormone production without containing hormones themselves. Improves energy, libido, and fertility",
+      "notes": "Maca is one of the few plants with clinical evidence for broadly supporting endocrine balance across both sexes"
+    },
+    {
+      "body_system": "Spleen",
+      "is_food": 1,
+      "food_name": "Pumpkin",
+      "correspondence_type": "nutritional",
+      "signature_description": "The orange color indicates beta-carotene, and its grounding, earthy nature aligns with the TCM Earth element governing the spleen.",
+      "therapeutic_action": "Rich in beta-carotene, iron, and zinc, all supporting immune cell production in the spleen. The gentle, nourishing quality supports spleen qi in TCM dietary therapy",
+      "notes": "Sweet, warming foods are considered spleen-nourishing in TCM dietary therapy"
+    },
+
+    {
+      "body_system": "Heart",
+      "part_type": "flower",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "Flowers, as the heart of the plant and the organ of reproduction and attraction, correspond to the human heart. Rose and hawthorn flowers are premier heart remedies.",
+      "therapeutic_action": "Flower medicines tend to work on the emotional and energetic heart as well as the physical organ, opening grief, restoring joy, and regulating cardiac rhythm",
+      "notes": "Hawthorn flower is the most widely used cardiac herb in European phytotherapy"
+    },
+    {
+      "body_system": "Brain",
+      "part_type": "seed_fruit",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Seeds contain the concentrated intelligence and DNA blueprint of the entire plant. Nuts and seeds, especially walnuts, resemble the brain and feed it.",
+      "therapeutic_action": "Seeds and nuts provide essential fatty acids, phospholipids, and trace minerals critical for neuronal membrane structure and neurotransmitter synthesis",
+      "notes": "The concentrated genetic information in a seed parallels the brain as the body's information center"
+    },
+    {
+      "body_system": "Kidneys",
+      "part_type": "root",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "Roots grow underground in contact with water and minerals, echoing the kidneys' role in filtering and mineral regulation. Root medicines often have diuretic or tonifying kidney action.",
+      "therapeutic_action": "Root medicines like dandelion root, marshmallow root, and nettle root support kidney filtration, fluid balance, and mineral retention",
+      "notes": "The root's underground, water-extracting function mirrors kidney filtration"
+    },
+    {
+      "body_system": "Lungs",
+      "part_type": "leaf",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Leaves are the lungs of the plant, performing gas exchange (photosynthesis). Lung-shaped leaves like mullein especially indicate pulmonary affinity.",
+      "therapeutic_action": "Leaf medicines for the lungs include mullein, coltsfoot, lungwort, and eucalyptus, which open airways, thin mucus, and support respiration",
+      "notes": "The stomata of leaves exchange CO2 and O2, just as alveoli exchange gases in human lungs"
+    },
+    {
+      "body_system": "Liver",
+      "part_type": "root",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "Deep taproots that penetrate dense earth mirror the liver's deep work of detoxification and transformation. Many liver herbs are bitter roots.",
+      "therapeutic_action": "Bitter root medicines like dandelion, burdock, yellow dock, and Oregon grape root stimulate bile production, support hepatic detoxification enzymes, and clear liver congestion",
+      "notes": "The bitterness of these roots activates hepatobiliary function through bitter receptor stimulation"
+    },
+    {
+      "body_system": "Digestive Tract",
+      "part_type": "root",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "Roots are the digestive system of the plant, absorbing nutrients from the soil. Aromatic roots like ginger directly support gastric function.",
+      "therapeutic_action": "Root medicines provide carminative, digestive-stimulating, and anti-nausea actions. Ginger root, turmeric root, and calamus root are premier digestive remedies",
+      "notes": "The root absorbs and transforms nutrients from soil just as the gut absorbs and transforms food"
+    },
+    {
+      "body_system": "Bones",
+      "part_type": "bark",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Bark is the skeleton and structural support of the tree, corresponding to the skeletal system. Hard, mineralizing barks correspond to bone.",
+      "therapeutic_action": "Bark medicines like white willow, cramp bark, and oak bark provide anti-inflammatory, astringent, and mineralizing actions that support skeletal integrity",
+      "notes": "Bark provides structural rigidity to trees just as bone provides structural rigidity to the body"
+    },
+    {
+      "body_system": "Skin",
+      "part_type": "bark",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Bark is the skin of the tree, its outermost protective layer. This direct correspondence makes bark medicines potent for skin conditions.",
+      "therapeutic_action": "Bark medicines like slippery elm, witch hazel, and white oak provide astringent, wound-healing, and protective actions for skin conditions",
+      "notes": "The bark protects the tree from the external environment just as skin protects the body"
+    },
+    {
+      "body_system": "Blood",
+      "part_type": "resin_sap",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Resin and sap are the blood of the plant, flowing through vascular tissue to nourish and protect. Red resins especially correspond to blood.",
+      "therapeutic_action": "Resin and sap medicines like dragon's blood, myrrh, and pine resin have blood-moving, wound-sealing, and antimicrobial actions that directly correspond to blood function",
+      "notes": "Sap flows through plant vasculature just as blood flows through human vasculature"
+    },
+    {
+      "body_system": "Reproductive System",
+      "part_type": "flower",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Flowers are the reproductive organs of the plant, containing stamens and pistils. This direct homology makes flower medicines potent for reproductive issues.",
+      "therapeutic_action": "Flower medicines like red clover blossom, chamomile, and jasmine support hormonal balance, fertility, and reproductive organ health",
+      "notes": "Pollen, ovules, and the act of pollination directly mirror human reproductive processes"
+    },
+    {
+      "body_system": "Reproductive System",
+      "part_type": "seed_fruit",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Seeds are the product of plant reproduction, carrying the genetic blueprint for new life. Fruits protect and nourish seeds, echoing the womb.",
+      "therapeutic_action": "Seed medicines like vitex berry, saw palmetto berry, and raspberry provide hormonal modulation and reproductive tonic actions",
+      "notes": "The seed-to-fruit relationship mirrors the egg-to-womb relationship in human reproduction"
+    },
+    {
+      "body_system": "Nervous System",
+      "part_type": "flower",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "Flowers represent the plant's highest expression and most refined energies, corresponding to the subtle electrical nature of the nervous system.",
+      "therapeutic_action": "Flower nervines like lavender, chamomile, passionflower, and linden calm nervous system excitability, promote GABA activity, and restore parasympathetic tone",
+      "notes": "The delicate, aromatic nature of flowers resonates with the refined signaling of the nervous system"
+    },
+    {
+      "body_system": "Immune System",
+      "part_type": "fungal_body",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "Fungi inhabit the boundary between life and decay, mirroring the immune system's role as the body's boundary defense and regeneration force.",
+      "therapeutic_action": "Medicinal fungi like reishi, chaga, turkey tail, and lion's mane contain beta-glucans and triterpenes that modulate immune cell activity and cytokine production",
+      "notes": "Mycelial networks in soil echo the distributed network architecture of the immune system"
+    },
+    {
+      "body_system": "Muscles",
+      "part_type": "stem",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "The stem provides muscular support and locomotion-like flexibility to the plant, bending without breaking. Fibrous stems correspond to muscular tissue.",
+      "therapeutic_action": "Stem and stalk medicines provide anti-spasmodic, relaxant, and strengthening actions for muscular tissue",
+      "notes": "The vascular bundles in stems resemble the parallel fiber arrangement of skeletal muscle"
+    },
+    {
+      "body_system": "Eyes",
+      "part_type": "flower",
+      "correspondence_type": "doctrine_of_signatures",
+      "signature_description": "Bright, open, eye-like flowers like eyebright (Euphrasia) visually resemble the eye, with patterns mimicking the iris and pupil.",
+      "therapeutic_action": "Eyebright, calendula, and chamomile flowers provide anti-inflammatory, antimicrobial, and astringent actions that soothe and protect ocular tissue",
+      "notes": "Eyebright (Euphrasia officinalis) is named for its specific visual resemblance to the eye"
+    },
+    {
+      "body_system": "Stomach",
+      "part_type": "root",
+      "correspondence_type": "traditional_herbalism",
+      "signature_description": "Underground roots absorb and process nutrients from the earth, mirroring the stomach's role in receiving and breaking down food.",
+      "therapeutic_action": "Warming aromatic roots like ginger, galangal, and calamus stimulate gastric acid, improve motility, and reduce nausea through direct gastric action",
+      "notes": "The root is the first point of nutrient extraction in the plant, just as the stomach is in the body"
+    },
+
+    {
+      "body_system": "Bladder",
+      "is_food": 1,
+      "food_name": "Cranberry",
+      "correspondence_type": "nutritional",
+      "signature_description": "Cranberries grow in bogs (water-rich environments), and their tart, astringent quality signals affinity for the urinary tract.",
+      "therapeutic_action": "Proanthocyanidins prevent bacterial adhesion (especially E. coli) to the bladder wall, reducing UTI recurrence. Urinary acidification creates a hostile environment for pathogens",
+      "notes": "One of the best-studied foods for urinary tract health, with strong clinical evidence"
+    },
+    {
+      "body_system": "Pancreas",
+      "is_food": 1,
+      "food_name": "Bitter Melon",
+      "correspondence_type": "nutritional",
+      "signature_description": "The intensely bitter taste and bumpy, irregular surface signal its action on metabolic organs. Used across Asia, Africa, and the Caribbean for blood sugar regulation.",
+      "therapeutic_action": "Contains charantin, vicine, and polypeptide-p, compounds that mimic insulin action, increase glucose uptake, and improve pancreatic beta-cell function",
+      "notes": "Bitter melon is used traditionally as a food medicine for diabetes in Ayurvedic, Chinese, and African healing systems"
+    },
+    {
+      "body_system": "Spleen",
+      "is_food": 1,
+      "food_name": "Dates",
+      "correspondence_type": "tcm",
+      "signature_description": "Red dates (jujube) are a foundational blood-building and spleen-nourishing food in TCM, their sweet taste and warm nature directly tonifying spleen qi.",
+      "therapeutic_action": "Rich in iron, B vitamins, and natural sugars that support blood production and spleen qi. Cyclic AMP in jujubes supports immune cell proliferation in the spleen",
+      "notes": "Red dates appear in more TCM formulas than almost any other food-herb, specifically for spleen qi support"
+    }
+  ]
+}
