@@ -117,15 +117,15 @@ export default function WellnessNavigator({ navigate }: WellnessNavigatorProps) 
                     className="rounded-2xl p-4 transition-all duration-200"
                     style={{
                       background: isExpanded
-                        ? 'linear-gradient(135deg, rgba(74, 222, 128, 0.08), rgba(13, 12, 20, 0.85))'
+                        ? 'linear-gradient(135deg, rgba(93, 168, 126, 0.08), rgba(16, 15, 12, 0.85))'
                         : 'rgba(255, 255, 255, 0.03)',
                       border: isExpanded
-                        ? '1px solid rgba(74, 222, 128, 0.15)'
+                        ? '1px solid rgba(93, 168, 126, 0.15)'
                         : '1px solid rgba(255, 255, 255, 0.06)',
                     }}
                     onMouseEnter={(e) => {
                       if (!isExpanded) {
-                        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(74, 222, 128, 0.1)'
+                        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(93, 168, 126, 0.1)'
                       }
                     }}
                     onMouseLeave={(e) => {

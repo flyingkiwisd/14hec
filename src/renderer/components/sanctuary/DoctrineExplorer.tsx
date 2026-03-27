@@ -41,7 +41,7 @@ export default function DoctrineExplorer({ navigate }: DoctrineExplorerProps) {
       {/* Header */}
       <div className="hero-section mb-8"
            style={{
-             background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.06) 0%, rgba(13, 12, 20, 0.85) 40%, rgba(20, 83, 45, 0.04) 100%)',
+             background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.06) 0%, rgba(16, 15, 12, 0.85) 40%, rgba(20, 83, 45, 0.04) 100%)',
              border: '1px solid rgba(245, 158, 11, 0.08)'
            }}>
         <div className="hero-orb w-40 h-40 bg-amber-500 top-0 right-0" />
@@ -83,7 +83,7 @@ export default function DoctrineExplorer({ navigate }: DoctrineExplorerProps) {
                   style={{
                     background: selectedEntry?.plantName === entry.plantName
                       ? 'rgba(245, 158, 11, 0.08)'
-                      : 'rgba(24, 23, 33, 0.5)',
+                      : 'rgba(26, 25, 21, 0.5)',
                     border: selectedEntry?.plantName === entry.plantName
                       ? '1px solid rgba(245, 158, 11, 0.15)'
                       : '1px solid rgba(255, 255, 255, 0.04)',
@@ -113,7 +113,7 @@ export default function DoctrineExplorer({ navigate }: DoctrineExplorerProps) {
             <div className="animate-fade-in">
               <div className="glass-panel p-6 mb-4"
                    style={{
-                     background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.06), rgba(13, 12, 20, 0.85))',
+                     background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.06), rgba(16, 15, 12, 0.85))',
                      border: '1px solid rgba(245, 158, 11, 0.08)'
                    }}>
                 <div className="flex items-start justify-between mb-4">
@@ -135,13 +135,13 @@ export default function DoctrineExplorer({ navigate }: DoctrineExplorerProps) {
 
                 <div className="space-y-3">
                   <div className="rounded-xl p-4"
-                       style={{ background: 'rgba(24, 23, 33, 0.4)', border: '1px solid rgba(255,255,255,0.04)' }}>
+                       style={{ background: 'rgba(26, 25, 21, 0.4)', border: '1px solid rgba(255,255,255,0.04)' }}>
                     <div className="section-subtitle mb-1.5">The Signature</div>
                     <p className="text-sm text-earth-300 italic leading-relaxed">{selectedEntry.signature}</p>
                   </div>
 
                   <div className="rounded-xl p-4"
-                       style={{ background: 'rgba(24, 23, 33, 0.4)', border: '1px solid rgba(255,255,255,0.04)' }}>
+                       style={{ background: 'rgba(26, 25, 21, 0.4)', border: '1px solid rgba(255,255,255,0.04)' }}>
                     <div className="section-subtitle mb-1.5">Body Correspondence</div>
                     <p className="text-sm text-earth-300">{selectedEntry.bodyPart}</p>
                   </div>

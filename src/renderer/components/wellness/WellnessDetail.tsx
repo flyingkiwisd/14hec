@@ -36,8 +36,8 @@ export default function WellnessDetail({ id, navigate }: WellnessDetailProps) {
 
       {/* Header */}
       <div className="hero-section mb-8">
-        <div className="hero-orb w-64 h-64 -top-20 -right-20" style={{ background: 'rgba(74, 222, 128, 0.2)' }} />
-        <div className="hero-orb w-40 h-40 -bottom-10 -left-10" style={{ background: 'rgba(74, 222, 128, 0.1)', animationDelay: '2s' }} />
+        <div className="hero-orb w-64 h-64 -top-20 -right-20" style={{ background: 'rgba(93, 168, 126, 0.2)' }} />
+        <div className="hero-orb w-40 h-40 -bottom-10 -left-10" style={{ background: 'rgba(93, 168, 126, 0.1)', animationDelay: '2s' }} />
         <div className="relative z-10">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-lg opacity-50">{goal.category_icon}</span>
@@ -47,7 +47,7 @@ export default function WellnessDetail({ id, navigate }: WellnessDetailProps) {
           <p className="text-earth-300 leading-relaxed">{goal.description}</p>
 
           {goal.desired_outcome && (
-            <div className="mt-4 rounded-xl p-3" style={{ background: 'rgba(74, 222, 128, 0.06)', border: '1px solid rgba(74, 222, 128, 0.1)' }}>
+            <div className="mt-4 rounded-xl p-3" style={{ background: 'rgba(93, 168, 126, 0.06)', border: '1px solid rgba(93, 168, 126, 0.1)' }}>
               <span className="text-[10px] text-botanical-500 uppercase tracking-wider font-medium">Desired Outcome</span>
               <p className="text-sm text-botanical-300 mt-1">{goal.desired_outcome}</p>
             </div>
