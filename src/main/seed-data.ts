@@ -30,6 +30,9 @@ export function seedDatabase(db: Database.Database): void {
     seedPlants(db)
     seedBodySystems(db)
     seedTeachingsAndJournal(db)
+    seedEthicalPractice(db)
+    seedWellnessGoals(db)
+    seedHMBSAssociations(db)
   })
 
   transaction()
@@ -315,6 +318,89 @@ function seedTeachingsAndJournal(db: Database.Database): void {
   }
 }
 
+function seedEthicalPractice(db: Database.Database): void {
+  const data = loadJson('ethical-practice.json')
+  const getPlant = db.prepare('SELECT id FROM plants WHERE common_name = ?')
+
+  const stmt = db.prepare(`
+    INSERT INTO ethical_practice (
+      plant_id,
+      use_context_daily, use_context_practitioner, use_context_ceremonial,
+      use_context_group_vs_private, cultural_respect_notes, misuse_risks,
+      facilitator_qualifications, facilitator_qualities, facilitator_red_flags, preparation_framework,
+      physiological_contraindications, psychological_considerations, environmental_considerations,
+      dosage_sensitivity, interaction_notes, contraindication_severity,
+      native_ecosystems, wildcrafted_vs_cultivated, sustainable_harvesting,
+      ethical_sourcing_concerns, sourcing_standards,
+      traditional_preparation, modern_preparation, preparation_potency_notes, intentional_practices,
+      psychospiritual_effects, archetypal_resonance, nervous_system_influence,
+      consciousness_interaction, spirit_teaching,
+      integration_body, integration_heart, integration_mind, integration_spirit,
+      healthy_integration_signs, incomplete_integration_signs, when_to_seek_support
+    ) VALUES (
+      @plant_id,
+      @use_context_daily, @use_context_practitioner, @use_context_ceremonial,
+      @use_context_group_vs_private, @cultural_respect_notes, @misuse_risks,
+      @facilitator_qualifications, @facilitator_qualities, @facilitator_red_flags, @preparation_framework,
+      @physiological_contraindications, @psychological_considerations, @environmental_considerations,
+      @dosage_sensitivity, @interaction_notes, @contraindication_severity,
+      @native_ecosystems, @wildcrafted_vs_cultivated, @sustainable_harvesting,
+      @ethical_sourcing_concerns, @sourcing_standards,
+      @traditional_preparation, @modern_preparation, @preparation_potency_notes, @intentional_practices,
+      @psychospiritual_effects, @archetypal_resonance, @nervous_system_influence,
+      @consciousness_interaction, @spirit_teaching,
+      @integration_body, @integration_heart, @integration_mind, @integration_spirit,
+      @healthy_integration_signs, @incomplete_integration_signs, @when_to_seek_support
+    )
+  `)
+
+  for (const entry of data) {
+    const plant = getPlant.get(entry.plant) as { id: number } | undefined
+    if (plant) {
+      stmt.run({
+        plant_id: plant.id,
+        use_context_daily: entry.use_context_daily || null,
+        use_context_practitioner: entry.use_context_practitioner || null,
+        use_context_ceremonial: entry.use_context_ceremonial || null,
+        use_context_group_vs_private: entry.use_context_group_vs_private || null,
+        cultural_respect_notes: entry.cultural_respect_notes || null,
+        misuse_risks: entry.misuse_risks || null,
+        facilitator_qualifications: entry.facilitator_qualifications || null,
+        facilitator_qualities: entry.facilitator_qualities || null,
+        facilitator_red_flags: entry.facilitator_red_flags || null,
+        preparation_framework: entry.preparation_framework || null,
+        physiological_contraindications: entry.physiological_contraindications || null,
+        psychological_considerations: entry.psychological_considerations || null,
+        environmental_considerations: entry.environmental_considerations || null,
+        dosage_sensitivity: entry.dosage_sensitivity || null,
+        interaction_notes: entry.interaction_notes || null,
+        contraindication_severity: entry.contraindication_severity || null,
+        native_ecosystems: entry.native_ecosystems || null,
+        wildcrafted_vs_cultivated: entry.wildcrafted_vs_cultivated || null,
+        sustainable_harvesting: entry.sustainable_harvesting || null,
+        ethical_sourcing_concerns: entry.ethical_sourcing_concerns || null,
+        sourcing_standards: entry.sourcing_standards || null,
+        traditional_preparation: entry.traditional_preparation || null,
+        modern_preparation: entry.modern_preparation || null,
+        preparation_potency_notes: entry.preparation_potency_notes || null,
+        intentional_practices: entry.intentional_practices || null,
+        psychospiritual_effects: entry.psychospiritual_effects || null,
+        archetypal_resonance: entry.archetypal_resonance || null,
+        nervous_system_influence: entry.nervous_system_influence || null,
+        consciousness_interaction: entry.consciousness_interaction || null,
+        spirit_teaching: entry.spirit_teaching || null,
+        integration_body: entry.integration_body || null,
+        integration_heart: entry.integration_heart || null,
+        integration_mind: entry.integration_mind || null,
+        integration_spirit: entry.integration_spirit || null,
+        healthy_integration_signs: entry.healthy_integration_signs || null,
+        incomplete_integration_signs: entry.incomplete_integration_signs || null,
+        when_to_seek_support: entry.when_to_seek_support || null
+      })
+    }
+  }
+}
+
 function seedBodySystems(db: Database.Database): void {
   const data = loadJson('body-systems.json') as any
 
@@ -387,6 +473,90 @@ function seedBodySystems(db: Database.Database): void {
         food_name: corr.food_name || null,
         notes: corr.notes || null
       })
+    }
+  }
+}
+
+function seedWellnessGoals(db: Database.Database): void {
+  const data = JSON.parse(readFileSync(join(__dirname, '../../src/seed', 'wellness-goals.json'), 'utf-8'))
+
+  // ── Insert wellness categories ──────────────────────────────────────
+  const insertCategory = db.prepare(`
+    INSERT OR IGNORE INTO wellness_categories (name, slug, description, icon, sort_order)
+    VALUES (@name, @slug, @description, @icon, @sort_order)
+  `)
+
+  for (const cat of data.wellness_categories) {
+    insertCategory.run(cat)
+  }
+
+  // ── Insert wellness goals ──────────────────────────────────────
+  const getCategory = db.prepare('SELECT id FROM wellness_categories WHERE name = ?')
+  const insertGoal = db.prepare(`
+    INSERT OR IGNORE INTO wellness_goals (category_id, name, description, desired_outcome, body_system, evidence_summary, lifestyle_notes)
+    VALUES (@category_id, @name, @description, @desired_outcome, @body_system, @evidence_summary, @lifestyle_notes)
+  `)
+
+  for (const goal of data.wellness_goals) {
+    const category = getCategory.get(goal.category) as { id: number } | undefined
+    if (category) {
+      insertGoal.run({
+        category_id: category.id,
+        name: goal.name,
+        description: goal.description,
+        desired_outcome: goal.desired_outcome || null,
+        body_system: goal.body_system || null,
+        evidence_summary: goal.evidence_summary || null,
+        lifestyle_notes: goal.lifestyle_notes || null
+      })
+    }
+  }
+
+  // ── Insert plant-wellness-goal mappings ──────────────────────────────
+  const getPlant = db.prepare('SELECT id FROM plants WHERE common_name = ?')
+  const getGoal = db.prepare('SELECT id FROM wellness_goals WHERE name = ?')
+  const insertMapping = db.prepare(`
+    INSERT OR IGNORE INTO plant_wellness_goals (plant_id, wellness_goal_id, mechanism, efficacy_notes, evidence_level, dosage_notes)
+    VALUES (@plant_id, @wellness_goal_id, @mechanism, @efficacy_notes, @evidence_level, @dosage_notes)
+  `)
+
+  for (const mapping of data.plant_wellness_mappings) {
+    const plant = getPlant.get(mapping.plant) as { id: number } | undefined
+    const goal = getGoal.get(mapping.goal) as { id: number } | undefined
+    if (plant && goal) {
+      insertMapping.run({
+        plant_id: plant.id,
+        wellness_goal_id: goal.id,
+        mechanism: mapping.mechanism || null,
+        efficacy_notes: mapping.efficacy_notes || null,
+        evidence_level: mapping.evidence_level || 'traditional',
+        dosage_notes: mapping.dosage_notes || null
+      })
+    }
+  }
+}
+
+function seedHMBSAssociations(db: Database.Database): void {
+  const data = loadJson('hmbs-associations.json')
+  const getPlant = db.prepare('SELECT id FROM plants WHERE common_name = ?')
+
+  const stmt = db.prepare(`
+    INSERT OR IGNORE INTO plant_hmbs_associations (plant_id, domain, strength, reason, plant_part_affinity)
+    VALUES (@plant_id, @domain, @strength, @reason, @plant_part_affinity)
+  `)
+
+  for (const entry of data) {
+    const plant = getPlant.get(entry.plant) as { id: number } | undefined
+    if (plant && entry.associations) {
+      for (const assoc of entry.associations) {
+        stmt.run({
+          plant_id: plant.id,
+          domain: assoc.domain,
+          strength: assoc.strength || 'primary',
+          reason: assoc.reason || null,
+          plant_part_affinity: assoc.plant_part_affinity || null
+        })
+      }
     }
   }
 }

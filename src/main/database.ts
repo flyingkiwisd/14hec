@@ -407,25 +407,6 @@ CREATE INDEX IF NOT EXISTS idx_ethical_practice_plant ON ethical_practice(plant_
   `
 }
 
-function getEmbeddedPresenceSchema(): string {
-  return `
--- Plant Presence Energetics: How plants interact with our field through living proximity
--- Not consumption — the gift of sharing space with living plant intelligence
-CREATE TABLE IF NOT EXISTS plant_presence_energetics (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  plant_id INTEGER NOT NULL UNIQUE REFERENCES plants(id),
-  home_placement TEXT,
-  field_interaction TEXT,
-  energetic_gift TEXT,
-  presence_practice TEXT,
-  spatial_influence TEXT,
-  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE INDEX IF NOT EXISTS idx_presence_plant ON plant_presence_energetics(plant_id);
-  `
-}
-
 function getEmbeddedWellnessGoalsSchema(): string {
   return `
 CREATE TABLE IF NOT EXISTS wellness_categories (
@@ -471,6 +452,25 @@ CREATE INDEX IF NOT EXISTS idx_wellness_goals_category ON wellness_goals(categor
 CREATE INDEX IF NOT EXISTS idx_wellness_goals_body_system ON wellness_goals(body_system);
 CREATE INDEX IF NOT EXISTS idx_pwg_plant ON plant_wellness_goals(plant_id);
 CREATE INDEX IF NOT EXISTS idx_pwg_goal ON plant_wellness_goals(wellness_goal_id);
+  `
+}
+
+function getEmbeddedPresenceSchema(): string {
+  return `
+-- Plant Presence Energetics: How plants interact with our field through living proximity
+-- Not consumption — the gift of sharing space with living plant intelligence
+CREATE TABLE IF NOT EXISTS plant_presence_energetics (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  plant_id INTEGER NOT NULL UNIQUE REFERENCES plants(id),
+  home_placement TEXT,
+  field_interaction TEXT,
+  energetic_gift TEXT,
+  presence_practice TEXT,
+  spatial_influence TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_presence_plant ON plant_presence_energetics(plant_id);
   `
 }
 

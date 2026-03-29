@@ -113,6 +113,8 @@ export function registerIpcHandlers(): void {
 
     const presenceEnergetics = db.prepare('SELECT * FROM plant_presence_energetics WHERE plant_id = ?').get(id) || null
 
+    const ethicalPractice = db.prepare('SELECT * FROM ethical_practice WHERE plant_id = ?').get(id) || null
+
     return {
       ...plant,
       parts,
@@ -123,7 +125,8 @@ export function registerIpcHandlers(): void {
       researchNotes,
       contraindications,
       teachings,
-      presenceEnergetics
+      presenceEnergetics,
+      ethicalPractice
     }
   })
 
@@ -402,6 +405,16 @@ export function registerIpcHandlers(): void {
   })
 
   // ── Plant Teachings ──────────────────────────────────
+  ipcMain.handle('db:teachings:getAll', () => {
+    const db = getDb()
+    return db.prepare(`
+      SELECT pt.*, p.common_name, p.latin_name, p.category
+      FROM plant_teachings pt
+      JOIN plants p ON pt.plant_id = p.id
+      ORDER BY p.common_name
+    `).all()
+  })
+
   ipcMain.handle('db:teachings:getByPlantId', (_event, plantId: number) => {
     const db = getDb()
     return db.prepare('SELECT * FROM plant_teachings WHERE plant_id = ?').get(plantId) || null
@@ -411,6 +424,12 @@ export function registerIpcHandlers(): void {
   ipcMain.handle('db:presence:getByPlantId', (_event, plantId: number) => {
     const db = getDb()
     return db.prepare('SELECT * FROM plant_presence_energetics WHERE plant_id = ?').get(plantId) || null
+  })
+
+  // ── Ethical Practice ──────────────────────────────────
+  ipcMain.handle('db:ethicalPractice:getByPlantId', (_event, plantId: number) => {
+    const db = getDb()
+    return db.prepare('SELECT * FROM ethical_practice WHERE plant_id = ?').get(plantId) || null
   })
 
   // ── Journal Prompts ──────────────────────────────────
@@ -633,6 +652,127 @@ export function registerIpcHandlers(): void {
       LEFT JOIN collection_plants cp ON c.id = cp.collection_id AND cp.plant_id = ?
       ORDER BY c.name
     `).all(plantId)
+  })
+
+  // ── Wellness Goals ──────────────────────────────────────
+  ipcMain.handle('db:wellness:getCategories', () => {
+    const db = getDb()
+    const categories = db.prepare(`
+      SELECT wc.*, COUNT(wg.id) as goal_count
+      FROM wellness_categories wc
+      LEFT JOIN wellness_goals wg ON wc.id = wg.category_id
+      GROUP BY wc.id
+      ORDER BY wc.sort_order
+    `).all()
+    return categories
+  })
+
+  ipcMain.handle('db:wellness:getGoalsByCategory', (_event, categoryId: number) => {
+    const db = getDb()
+    const goals = db.prepare(`
+      SELECT wg.*, wc.name as category_name, wc.slug as category_slug,
+             COUNT(pwg.id) as plant_count
+      FROM wellness_goals wg
+      JOIN wellness_categories wc ON wg.category_id = wc.id
+      LEFT JOIN plant_wellness_goals pwg ON wg.id = pwg.wellness_goal_id
+      WHERE wg.category_id = ?
+      GROUP BY wg.id
+      ORDER BY wg.name
+    `).all(categoryId)
+    return goals
+  })
+
+  ipcMain.handle('db:wellness:getGoalById', (_event, id: number) => {
+    const db = getDb()
+    const goal = db.prepare(`
+      SELECT wg.*, wc.name as category_name, wc.slug as category_slug, wc.icon as category_icon
+      FROM wellness_goals wg
+      JOIN wellness_categories wc ON wg.category_id = wc.id
+      WHERE wg.id = ?
+    `).get(id)
+    if (!goal) return null
+
+    const plantRecommendations = db.prepare(`
+      SELECT pwg.*, p.id as plant_id, p.common_name, p.latin_name, p.category as plant_category,
+             pp.part_type, pr.name as preparation_name
+      FROM plant_wellness_goals pwg
+      JOIN plants p ON pwg.plant_id = p.id
+      LEFT JOIN plant_parts pp ON pwg.plant_part_id = pp.id
+      LEFT JOIN preparations pr ON pwg.preparation_id = pr.id
+      WHERE pwg.wellness_goal_id = ?
+      ORDER BY p.common_name
+    `).all(id)
+
+    return { ...goal, plantRecommendations }
+  })
+
+  ipcMain.handle('db:wellness:search', (_event, search: string) => {
+    const db = getDb()
+    const s = `%${search}%`
+    const goals = db.prepare(`
+      SELECT wg.*, wc.name as category_name, wc.slug as category_slug, wc.icon as category_icon,
+             COUNT(pwg.id) as plant_count
+      FROM wellness_goals wg
+      JOIN wellness_categories wc ON wg.category_id = wc.id
+      LEFT JOIN plant_wellness_goals pwg ON wg.id = pwg.wellness_goal_id
+      WHERE wg.name LIKE ? OR wg.description LIKE ? OR wg.desired_outcome LIKE ? OR wc.name LIKE ?
+      GROUP BY wg.id
+      ORDER BY wc.sort_order, wg.name
+    `).all(s, s, s, s)
+    return goals
+  })
+
+// ── HMBS Associations ────────────────────────────────────
+
+  ipcMain.handle('db:hmbs:getPlants', (_event, domain?: string, strength?: string) => {
+    const db = getDb()
+    let sql = `
+      SELECT h.*, p.common_name, p.latin_name, p.category, p.energetic_quality
+      FROM plant_hmbs_associations h
+      JOIN plants p ON h.plant_id = p.id
+    `
+    const conditions: string[] = []
+    const params: any[] = []
+
+    if (domain) {
+      conditions.push('h.domain = ?')
+      params.push(domain)
+    }
+    if (strength) {
+      conditions.push('h.strength = ?')
+      params.push(strength)
+    }
+
+    if (conditions.length > 0) {
+      sql += ' WHERE ' + conditions.join(' AND ')
+    }
+
+    sql += ` ORDER BY CASE h.strength WHEN 'primary' THEN 1 WHEN 'secondary' THEN 2 WHEN 'tertiary' THEN 3 END, p.common_name`
+
+    return db.prepare(sql).all(...params)
+  })
+
+  ipcMain.handle('db:hmbs:getByPlantId', (_event, plantId: number) => {
+    const db = getDb()
+    return db.prepare(`
+      SELECT * FROM plant_hmbs_associations WHERE plant_id = ? ORDER BY
+      CASE strength WHEN 'primary' THEN 1 WHEN 'secondary' THEN 2 WHEN 'tertiary' THEN 3 END
+    `).all(plantId)
+  })
+
+  ipcMain.handle('db:hmbs:getSummary', () => {
+    const db = getDb()
+    return db.prepare(`
+      SELECT
+        domain,
+        COUNT(*) as total,
+        SUM(CASE WHEN strength = 'primary' THEN 1 ELSE 0 END) as primary_count,
+        SUM(CASE WHEN strength = 'secondary' THEN 1 ELSE 0 END) as secondary_count,
+        SUM(CASE WHEN strength = 'tertiary' THEN 1 ELSE 0 END) as tertiary_count
+      FROM plant_hmbs_associations
+      GROUP BY domain
+      ORDER BY CASE domain WHEN 'heart' THEN 1 WHEN 'mind' THEN 2 WHEN 'body' THEN 3 WHEN 'spirit' THEN 4 END
+    `).all()
   })
 }
 

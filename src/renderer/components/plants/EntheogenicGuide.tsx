@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import type { Page } from '../../App'
-import type { Plant, PlantDetail as PlantDetailType } from '../../types'
+import type { Plant, PlantDetail as PlantDetailType, EthicalPractice } from '../../types'
 
 interface EntheogenicGuideProps {
   navigate: (page: Page) => void
@@ -49,6 +49,170 @@ const INTEGRATION_PROTOCOLS: JourneyProtocol[] = [
   }
 ]
 
+type EthicalTab = 'context' | 'facilitation' | 'safety' | 'sourcing' | 'preparation' | 'energetic' | 'integration'
+
+const ETHICAL_TABS: { key: EthicalTab; label: string; icon: string }[] = [
+  { key: 'context', label: 'Context & Ethics', icon: '\u2696' },
+  { key: 'facilitation', label: 'Facilitation', icon: '\u2B50' },
+  { key: 'safety', label: 'Safety', icon: '\u26A0' },
+  { key: 'sourcing', label: 'Sourcing', icon: '\u2618' },
+  { key: 'preparation', label: 'Preparation', icon: '\u2697' },
+  { key: 'energetic', label: 'Energetic Signature', icon: '\u2728' },
+  { key: 'integration', label: 'Integration', icon: '\u221E' },
+]
+
+function EthicalPracticePanel({ data }: { data: EthicalPractice }) {
+  const [activeTab, setActiveTab] = useState<EthicalTab>('context')
+
+  const renderField = (label: string, value: string | null) => {
+    if (!value) return null
+    return (
+      <div className="mb-3">
+        <div className="text-xs font-medium text-earth-400 mb-1">{label}</div>
+        <p className="text-xs text-earth-300 leading-relaxed">{value}</p>
+      </div>
+    )
+  }
+
+  const renderSeverities = (json: string | null) => {
+    if (!json) return null
+    try {
+      const items = JSON.parse(json) as { item: string; level: string }[]
+      return (
+        <div className="mb-3">
+          <div className="text-xs font-medium text-earth-400 mb-1.5">Contraindication Severity</div>
+          <div className="flex flex-wrap gap-1.5">
+            {items.map((item, i) => (
+              <span
+                key={i}
+                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium"
+                style={{
+                  background: item.level === 'strict'
+                    ? 'rgba(239, 68, 68, 0.12)'
+                    : 'rgba(245, 158, 11, 0.12)',
+                  color: item.level === 'strict'
+                    ? 'rgb(252, 165, 165)'
+                    : 'rgb(253, 230, 138)',
+                  border: item.level === 'strict'
+                    ? '1px solid rgba(239, 68, 68, 0.2)'
+                    : '1px solid rgba(245, 158, 11, 0.2)'
+                }}
+              >
+                <span className="opacity-70">{item.level === 'strict' ? '\u2718' : '\u26A0'}</span>
+                {item.item}
+              </span>
+            ))}
+          </div>
+        </div>
+      )
+    } catch {
+      return null
+    }
+  }
+
+  const tabContent: Record<EthicalTab, JSX.Element> = {
+    context: (
+      <div className="animate-fade-in">
+        {renderField('Daily / Self-Guided Use', data.use_context_daily)}
+        {renderField('Practitioner-Guided Use', data.use_context_practitioner)}
+        {renderField('Ceremonial Use', data.use_context_ceremonial)}
+        {renderField('Group vs. Private', data.use_context_group_vs_private)}
+        {renderField('Cultural Respect', data.cultural_respect_notes)}
+        {renderField('Misuse Risks', data.misuse_risks)}
+      </div>
+    ),
+    facilitation: (
+      <div className="animate-fade-in">
+        {renderField('Facilitator Qualifications', data.facilitator_qualifications)}
+        {renderField('Key Qualities of a Safe Guide', data.facilitator_qualities)}
+        {renderField('Red Flags to Avoid', data.facilitator_red_flags)}
+        {renderField('Preparation & Integration Framework', data.preparation_framework)}
+      </div>
+    ),
+    safety: (
+      <div className="animate-fade-in">
+        {renderField('Physiological Contraindications', data.physiological_contraindications)}
+        {renderField('Psychological Considerations', data.psychological_considerations)}
+        {renderField('Environmental Considerations', data.environmental_considerations)}
+        {renderField('Dosage Sensitivity', data.dosage_sensitivity)}
+        {renderField('Interaction Notes', data.interaction_notes)}
+        {renderSeverities(data.contraindication_severity)}
+      </div>
+    ),
+    sourcing: (
+      <div className="animate-fade-in">
+        {renderField('Native Ecosystems', data.native_ecosystems)}
+        {renderField('Wildcrafted vs. Cultivated', data.wildcrafted_vs_cultivated)}
+        {renderField('Sustainable Harvesting', data.sustainable_harvesting)}
+        {renderField('Ethical Sourcing Concerns', data.ethical_sourcing_concerns)}
+        {renderField('Sourcing Standards', data.sourcing_standards)}
+      </div>
+    ),
+    preparation: (
+      <div className="animate-fade-in">
+        {renderField('Traditional Preparation', data.traditional_preparation)}
+        {renderField('Modern Preparation', data.modern_preparation)}
+        {renderField('Potency Notes', data.preparation_potency_notes)}
+        {renderField('Intentional Practices', data.intentional_practices)}
+      </div>
+    ),
+    energetic: (
+      <div className="animate-fade-in">
+        {renderField('Psychospiritual Effects', data.psychospiritual_effects)}
+        {renderField('Archetypal Resonance', data.archetypal_resonance)}
+        {renderField('Nervous System Influence', data.nervous_system_influence)}
+        {renderField('Consciousness Interaction', data.consciousness_interaction)}
+        {renderField('Spirit Teaching', data.spirit_teaching)}
+      </div>
+    ),
+    integration: (
+      <div className="animate-fade-in">
+        {renderField('Body Integration', data.integration_body)}
+        {renderField('Heart Integration', data.integration_heart)}
+        {renderField('Mind Integration', data.integration_mind)}
+        {renderField('Spirit Integration', data.integration_spirit)}
+        {renderField('Signs of Healthy Integration', data.healthy_integration_signs)}
+        {renderField('Signs of Incomplete Integration', data.incomplete_integration_signs)}
+        {renderField('When to Seek Support', data.when_to_seek_support)}
+      </div>
+    ),
+  }
+
+  return (
+    <div className="mt-5">
+      <div className="section-subtitle mb-3">Ethical Practice Guide</div>
+      {/* Tab bar */}
+      <div className="flex flex-wrap gap-1.5 mb-4">
+        {ETHICAL_TABS.map((tab) => (
+          <button
+            key={tab.key}
+            onClick={() => setActiveTab(tab.key)}
+            className="px-2.5 py-1.5 rounded-lg text-[11px] font-medium transition-all duration-200"
+            style={{
+              background: activeTab === tab.key
+                ? 'rgba(124, 94, 237, 0.15)'
+                : 'rgba(24, 23, 33, 0.5)',
+              border: activeTab === tab.key
+                ? '1px solid rgba(124, 94, 237, 0.25)'
+                : '1px solid rgba(255, 255, 255, 0.04)',
+              color: activeTab === tab.key
+                ? 'rgb(196, 181, 253)'
+                : 'rgb(156, 163, 175)'
+            }}
+          >
+            <span className="mr-1 opacity-60">{tab.icon}</span>
+            {tab.label}
+          </button>
+        ))}
+      </div>
+      {/* Tab content */}
+      <div className="rounded-xl p-4" style={{ background: 'rgba(24, 23, 33, 0.4)', border: '1px solid rgba(255, 255, 255, 0.04)' }}>
+        {tabContent[activeTab]}
+      </div>
+    </div>
+  )
+}
+
 export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
   const [entheogenicPlants, setEntheogenicPlants] = useState<Plant[]>([])
   const [selectedPlant, setSelectedPlant] = useState<PlantDetailType | null>(null)
@@ -80,7 +244,7 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
 
       {/* Safety Banner */}
       <div className="glass-panel p-4 mb-6"
-           style={{ background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(13, 12, 20, 0.8))', border: '1px solid rgba(245, 158, 11, 0.08)' }}>
+           style={{ background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(16, 15, 12, 0.8))', border: '1px solid rgba(245, 158, 11, 0.08)' }}>
         <div className="flex items-start gap-3">
           <span className="text-sm text-amber-500/70 mt-0.5">{'\u26A0'}</span>
           <div>
@@ -107,7 +271,7 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
                 style={{
                   background: selectedPlant?.id === plant.id
                     ? 'rgba(124, 94, 237, 0.1)'
-                    : 'rgba(24, 23, 33, 0.5)',
+                    : 'rgba(26, 25, 21, 0.5)',
                   border: selectedPlant?.id === plant.id
                     ? '1px solid rgba(124, 94, 237, 0.2)'
                     : '1px solid rgba(255, 255, 255, 0.04)',
@@ -133,13 +297,13 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
                 className="w-full text-left p-3.5 rounded-xl transition-all duration-200 ease-out-expo"
                 style={{
                   background: selectedProtocol?.name === protocol.name
-                    ? 'rgba(74, 222, 128, 0.08)'
-                    : 'rgba(24, 23, 33, 0.5)',
+                    ? 'rgba(93, 168, 126, 0.08)'
+                    : 'rgba(26, 25, 21, 0.5)',
                   border: selectedProtocol?.name === protocol.name
-                    ? '1px solid rgba(74, 222, 128, 0.15)'
+                    ? '1px solid rgba(93, 168, 126, 0.15)'
                     : '1px solid rgba(255, 255, 255, 0.04)',
                   boxShadow: selectedProtocol?.name === protocol.name
-                    ? '0 0 24px rgba(74, 222, 128, 0.06)'
+                    ? '0 0 24px rgba(93, 168, 126, 0.06)'
                     : undefined
                 }}
               >
@@ -180,7 +344,7 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
                       .filter((c) => c.psychoactive)
                       .map((compound) => (
                         <div key={compound.id} className="rounded-xl p-3"
-                             style={{ background: 'rgba(24, 23, 33, 0.5)', border: '1px solid rgba(255,255,255,0.04)' }}>
+                             style={{ background: 'rgba(26, 25, 21, 0.5)', border: '1px solid rgba(255,255,255,0.04)' }}>
                           <div className="text-sm text-celestial-300 font-medium">{compound.name}</div>
                           <div className="text-xs text-earth-500">{compound.compound_type}</div>
                           <p className="text-xs text-earth-400 mt-1 leading-relaxed">{compound.pharmacological_action}</p>
@@ -195,7 +359,7 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
                   <div className="section-subtitle mb-2">Celestial Governance</div>
                   {selectedPlant.planetAssociations.map((assoc) => (
                     <div key={assoc.planet_id} className="flex items-center gap-3 mb-2 rounded-xl p-3"
-                         style={{ background: 'rgba(24, 23, 33, 0.4)', border: '1px solid rgba(255,255,255,0.04)' }}>
+                         style={{ background: 'rgba(26, 25, 21, 0.4)', border: '1px solid rgba(255,255,255,0.04)' }}>
                       <span className="text-xl">{assoc.planet_symbol}</span>
                       <span className="text-earth-200">{assoc.planet_name}</span>
                       {assoc.notes && <span className="text-xs text-earth-500">- {assoc.notes}</span>}
@@ -212,7 +376,7 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
                       .filter((a) => a.evidence_level === 'clinical')
                       .map((assoc) => (
                         <div key={assoc.id} className="rounded-xl p-3"
-                             style={{ background: 'rgba(34, 197, 94, 0.05)', border: '1px solid rgba(34, 197, 94, 0.1)' }}>
+                             style={{ background: 'rgba(61, 138, 94, 0.05)', border: '1px solid rgba(61, 138, 94, 0.1)' }}>
                           <div className="text-sm text-green-300">{assoc.ailment_name}</div>
                           <p className="text-xs text-earth-400 mt-1 leading-relaxed">{assoc.efficacy_notes}</p>
                         </div>
@@ -221,7 +385,7 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
                 </div>
               )}
 
-              {selectedPlant.safety_notes && (
+              {selectedPlant.safety_notes && !selectedPlant.ethicalPractice && (
                 <div className="rounded-xl p-4 mb-5"
                      style={{ background: 'rgba(239, 68, 68, 0.05)', border: '1px solid rgba(239, 68, 68, 0.1)' }}>
                   <div className="flex items-center gap-2 mb-2">
@@ -234,10 +398,15 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
 
               {selectedPlant.doctrine_of_signatures && (
                 <div className="rounded-xl p-4"
-                     style={{ background: 'rgba(24, 23, 33, 0.4)', border: '1px solid rgba(255,255,255,0.04)' }}>
+                     style={{ background: 'rgba(26, 25, 21, 0.4)', border: '1px solid rgba(255,255,255,0.04)' }}>
                   <div className="section-subtitle mb-1">Doctrine of Signatures</div>
                   <p className="text-xs text-earth-400 italic leading-relaxed">{selectedPlant.doctrine_of_signatures}</p>
                 </div>
+              )}
+
+              {/* Ethical Practice Guide */}
+              {selectedPlant.ethicalPractice && (
+                <EthicalPracticePanel data={selectedPlant.ethicalPractice} />
               )}
             </div>
           )}
@@ -259,7 +428,7 @@ export default function EntheogenicGuide({ navigate }: EntheogenicGuideProps) {
                     )}
                     {/* Timeline dot */}
                     <div className="absolute left-0 top-1 w-[15px] h-[15px] rounded-full border-2 border-botanical-600 bg-earth-950"
-                         style={{ boxShadow: '0 0 8px rgba(74, 222, 128, 0.2)' }} />
+                         style={{ boxShadow: '0 0 8px rgba(93, 168, 126, 0.2)' }} />
                     <div className="text-xs text-botanical-500 mb-1 font-medium">{phase.duration}</div>
                     <h4 className="text-sm font-display font-semibold text-earth-200 mb-1.5">{phase.name}</h4>
                     <p className="text-xs text-earth-400 leading-relaxed">{phase.guidance}</p>

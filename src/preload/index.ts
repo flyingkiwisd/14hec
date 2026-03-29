@@ -32,10 +32,14 @@ const api = {
   getBodySystemByName: (name: string) => ipcRenderer.invoke('db:bodySystems:getByName', name),
 
   // Plant Teachings
+  getAllTeachings: () => ipcRenderer.invoke('db:teachings:getAll'),
   getTeachingsByPlantId: (plantId: number) => ipcRenderer.invoke('db:teachings:getByPlantId', plantId),
 
   // Plant Presence Energetics
   getPresenceByPlantId: (plantId: number) => ipcRenderer.invoke('db:presence:getByPlantId', plantId),
+
+  // Ethical Practice
+  getEthicalPracticeByPlantId: (plantId: number) => ipcRenderer.invoke('db:ethicalPractice:getByPlantId', plantId),
 
   // Journal
   getJournalPrompts: (filters?: any) => ipcRenderer.invoke('db:journal:getPrompts', filters),
@@ -52,7 +56,18 @@ const api = {
   deleteCollection: (id: number) => ipcRenderer.invoke('db:collections:delete', id),
   addPlantToCollection: (collectionId: number, plantId: number, notes?: string) => ipcRenderer.invoke('db:collections:addPlant', collectionId, plantId, notes),
   removePlantFromCollection: (collectionId: number, plantId: number) => ipcRenderer.invoke('db:collections:removePlant', collectionId, plantId),
-  getCollectionsForPlant: (plantId: number) => ipcRenderer.invoke('db:collections:getForPlant', plantId)
+  getCollectionsForPlant: (plantId: number) => ipcRenderer.invoke('db:collections:getForPlant', plantId),
+
+  // Wellness Goals
+  getWellnessCategories: () => ipcRenderer.invoke('db:wellness:getCategories'),
+  getWellnessGoalsByCategory: (categoryId: number) => ipcRenderer.invoke('db:wellness:getGoalsByCategory', categoryId),
+  getWellnessGoalById: (id: number) => ipcRenderer.invoke('db:wellness:getGoalById', id),
+  searchWellnessGoals: (search: string) => ipcRenderer.invoke('db:wellness:search', search),
+
+  // HMBS Associations
+  getHMBSPlants: (domain?: string, strength?: string) => ipcRenderer.invoke('db:hmbs:getPlants', domain, strength),
+  getHMBSByPlantId: (plantId: number) => ipcRenderer.invoke('db:hmbs:getByPlantId', plantId),
+  getHMBSSummary: () => ipcRenderer.invoke('db:hmbs:getSummary')
 }
 
 contextBridge.exposeInMainWorld('api', api)

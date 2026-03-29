@@ -1,3 +1,6 @@
+-- HMBS (Heart, Mind, Body, Spirit) Domain Associations
+-- Maps every plant to one or more domains with strength and reasoning
+
 CREATE TABLE IF NOT EXISTS plant_hmbs_associations (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   plant_id INTEGER NOT NULL REFERENCES plants(id),

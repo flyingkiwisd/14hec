@@ -70,6 +70,7 @@ export interface PlantDetail extends Plant {
   contraindications: Contraindication[]
   teachings: PlantTeaching | null
   presenceEnergetics: PlantPresenceEnergetics | null
+  ethicalPractice: EthicalPractice | null
 }
 
 export interface PlanetAssociation {
@@ -218,6 +219,12 @@ export interface PlantTeaching {
   created_at: string
 }
 
+export interface PlantTeachingWithPlant extends PlantTeaching {
+  common_name: string
+  latin_name: string
+  category: string
+}
+
 // ── Plant Presence Energetics ──────────────────────────────────────
 export interface PlantPresenceEnergetics {
   id: number
@@ -227,6 +234,57 @@ export interface PlantPresenceEnergetics {
   energetic_gift: string
   presence_practice: string
   spatial_influence: string
+  created_at: string
+}
+
+// ── Ethical Practice ──────────────────────────────────────
+export interface EthicalPractice {
+  id: number
+  plant_id: number
+  // Ethical Use & Context
+  use_context_daily: string | null
+  use_context_practitioner: string | null
+  use_context_ceremonial: string | null
+  use_context_group_vs_private: string | null
+  cultural_respect_notes: string | null
+  misuse_risks: string | null
+  // Facilitation Guidelines
+  facilitator_qualifications: string | null
+  facilitator_qualities: string | null
+  facilitator_red_flags: string | null
+  preparation_framework: string | null
+  // Contraindications & Safety
+  physiological_contraindications: string | null
+  psychological_considerations: string | null
+  environmental_considerations: string | null
+  dosage_sensitivity: string | null
+  interaction_notes: string | null
+  contraindication_severity: string | null
+  // Sourcing & Ecological Integrity
+  native_ecosystems: string | null
+  wildcrafted_vs_cultivated: string | null
+  sustainable_harvesting: string | null
+  ethical_sourcing_concerns: string | null
+  sourcing_standards: string | null
+  // Preparation & Energetic Relationship
+  traditional_preparation: string | null
+  modern_preparation: string | null
+  preparation_potency_notes: string | null
+  intentional_practices: string | null
+  // Energetic Signature & Divine Intelligence
+  psychospiritual_effects: string | null
+  archetypal_resonance: string | null
+  nervous_system_influence: string | null
+  consciousness_interaction: string | null
+  spirit_teaching: string | null
+  // Integration
+  integration_body: string | null
+  integration_heart: string | null
+  integration_mind: string | null
+  integration_spirit: string | null
+  healthy_integration_signs: string | null
+  incomplete_integration_signs: string | null
+  when_to_seek_support: string | null
   created_at: string
 }
 
@@ -327,6 +385,83 @@ export interface CollectionForPlant {
   contains_plant: number
 }
 
+// ── Wellness Goals ──────────────────────────────────────
+export interface WellnessCategory {
+  id: number
+  name: string
+  slug: string
+  description: string
+  icon: string
+  sort_order: number
+  goal_count: number
+  created_at: string
+}
+
+export interface WellnessGoal {
+  id: number
+  category_id: number
+  category_name: string
+  category_slug: string
+  name: string
+  description: string
+  desired_outcome: string | null
+  body_system: string | null
+  evidence_summary: string | null
+  lifestyle_notes: string | null
+  plant_count: number
+  created_at: string
+}
+
+export interface WellnessGoalDetail extends WellnessGoal {
+  category_icon: string
+  plantRecommendations: WellnessPlantRecommendation[]
+}
+
+export interface WellnessPlantRecommendation {
+  id: number
+  plant_id: number
+  wellness_goal_id: number
+  common_name: string
+  latin_name: string
+  plant_category: string
+  part_type: string | null
+  preparation_name: string | null
+  mechanism: string | null
+  efficacy_notes: string | null
+  evidence_level: string
+  dosage_notes: string | null
+  notes: string | null
+}
+
+export interface PlantHMBSAssociation {
+  id: number
+  plant_id: number
+  domain: 'heart' | 'mind' | 'body' | 'spirit'
+  strength: 'primary' | 'secondary' | 'tertiary'
+  reason: string | null
+  plant_part_affinity: string | null
+}
+
+export interface HMBSPlant {
+  plant_id: number
+  common_name: string
+  latin_name: string
+  category: string
+  domain: 'heart' | 'mind' | 'body' | 'spirit'
+  strength: 'primary' | 'secondary' | 'tertiary'
+  reason: string | null
+  plant_part_affinity: string | null
+  energetic_quality: string | null
+}
+
+export interface HMBSDomainSummary {
+  domain: 'heart' | 'mind' | 'body' | 'spirit'
+  total: number
+  primary: number
+  secondary: number
+  tertiary: number
+}
+
 declare global {
   interface Window {
     api: {
@@ -350,10 +485,14 @@ declare global {
       getBodySystemByName: (name: string) => Promise<BodySystemDetail | null>
 
       // Plant Teachings
+      getAllTeachings: () => Promise<PlantTeachingWithPlant[]>
       getTeachingsByPlantId: (plantId: number) => Promise<PlantTeaching | null>
 
       // Plant Presence Energetics
       getPresenceByPlantId: (plantId: number) => Promise<PlantPresenceEnergetics | null>
+
+      // Ethical Practice
+      getEthicalPracticeByPlantId: (plantId: number) => Promise<EthicalPractice | null>
 
       // Journal
       getJournalPrompts: (filters?: { plantId?: number | null; category?: string }) => Promise<JournalPrompt[]>
@@ -385,6 +524,17 @@ declare global {
       addPlantToCollection: (collectionId: number, plantId: number, notes?: string) => Promise<{ success: boolean }>
       removePlantFromCollection: (collectionId: number, plantId: number) => Promise<{ success: boolean }>
       getCollectionsForPlant: (plantId: number) => Promise<CollectionForPlant[]>
+
+      // Wellness Goals
+      getWellnessCategories: () => Promise<WellnessCategory[]>
+      getWellnessGoalsByCategory: (categoryId: number) => Promise<WellnessGoal[]>
+      getWellnessGoalById: (id: number) => Promise<WellnessGoalDetail | null>
+      searchWellnessGoals: (search: string) => Promise<WellnessGoal[]>
+
+      // HMBS Associations
+      getHMBSPlants: (domain?: string, strength?: string) => Promise<HMBSPlant[]>
+      getHMBSByPlantId: (plantId: number) => Promise<PlantHMBSAssociation[]>
+      getHMBSSummary: () => Promise<HMBSDomainSummary[]>
     }
   }
 }

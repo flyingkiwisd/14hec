@@ -16,6 +16,8 @@ import DoctrineExplorer from './components/sanctuary/DoctrineExplorer'
 import BodySystemsView from './components/bodysystems/BodySystemsView'
 import JournalView from './components/journal/JournalView'
 import CollectionsView from './components/collections/CollectionsView'
+import WellnessNavigator from './components/wellness/WellnessNavigator'
+import WellnessDetail from './components/wellness/WellnessDetail'
 import Dashboard from './components/Dashboard'
 import DisclaimerModal from './components/common/DisclaimerModal'
 
@@ -39,6 +41,8 @@ export type Page =
   | { view: 'journal' }
   | { view: 'collections' }
   | { view: 'collection-detail'; id: number }
+  | { view: 'wellness' }
+  | { view: 'wellness-detail'; id: number }
 
 export default function App() {
   const [page, setPage] = useState<Page>({ view: 'dashboard' })
@@ -98,6 +102,10 @@ export default function App() {
         return <CollectionsView navigate={navigate} />
       case 'collection-detail':
         return <CollectionsView id={page.id} navigate={navigate} />
+      case 'wellness':
+        return <WellnessNavigator navigate={navigate} />
+      case 'wellness-detail':
+        return <WellnessDetail id={page.id} navigate={navigate} />
       default:
         return <Dashboard navigate={navigate} />
     }
