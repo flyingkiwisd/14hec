@@ -31,7 +31,8 @@ function createSchema(): void {
     '001-initial-schema.sql',
     '002-body-systems.sql',
     '003-teachings-journal.sql',
-    '004-presence-energetics.sql'
+    '004-presence-energetics.sql',
+    '005-collections.sql'
   ]
 
   for (const migration of migrations) {
@@ -49,6 +50,9 @@ function createSchema(): void {
 }
 
 function getEmbeddedSchema(migration: string): string {
+  if (migration === '005-collections.sql') {
+    return getEmbeddedCollectionsSchema()
+  }
   if (migration === '004-presence-energetics.sql') {
     return getEmbeddedPresenceSchema()
   }
@@ -356,5 +360,31 @@ CREATE TABLE IF NOT EXISTS plant_presence_energetics (
 );
 
 CREATE INDEX IF NOT EXISTS idx_presence_plant ON plant_presence_energetics(plant_id);
+  `
+}
+
+function getEmbeddedCollectionsSchema(): string {
+  return `
+-- Plant Collections: personal groupings of plants for quick reference
+CREATE TABLE IF NOT EXISTS collections (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  description TEXT,
+  icon TEXT DEFAULT '🌿',
+  color TEXT DEFAULT 'botanical',
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS collection_plants (
+  collection_id INTEGER NOT NULL REFERENCES collections(id) ON DELETE CASCADE,
+  plant_id INTEGER NOT NULL REFERENCES plants(id),
+  notes TEXT,
+  added_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (collection_id, plant_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_collection_plants_collection ON collection_plants(collection_id);
+CREATE INDEX IF NOT EXISTS idx_collection_plants_plant ON collection_plants(plant_id);
   `
 }

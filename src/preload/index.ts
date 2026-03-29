@@ -42,7 +42,17 @@ const api = {
   getJournalEntries: (filters?: any) => ipcRenderer.invoke('db:journal:getEntries', filters),
   createJournalEntry: (entry: any) => ipcRenderer.invoke('db:journal:createEntry', entry),
   updateJournalEntry: (id: number, updates: any) => ipcRenderer.invoke('db:journal:updateEntry', id, updates),
-  deleteJournalEntry: (id: number) => ipcRenderer.invoke('db:journal:deleteEntry', id)
+  deleteJournalEntry: (id: number) => ipcRenderer.invoke('db:journal:deleteEntry', id),
+
+  // Collections
+  getCollections: () => ipcRenderer.invoke('db:collections:getAll'),
+  getCollectionById: (id: number) => ipcRenderer.invoke('db:collections:getById', id),
+  createCollection: (data: any) => ipcRenderer.invoke('db:collections:create', data),
+  updateCollection: (id: number, updates: any) => ipcRenderer.invoke('db:collections:update', id, updates),
+  deleteCollection: (id: number) => ipcRenderer.invoke('db:collections:delete', id),
+  addPlantToCollection: (collectionId: number, plantId: number, notes?: string) => ipcRenderer.invoke('db:collections:addPlant', collectionId, plantId, notes),
+  removePlantFromCollection: (collectionId: number, plantId: number) => ipcRenderer.invoke('db:collections:removePlant', collectionId, plantId),
+  getCollectionsForPlant: (plantId: number) => ipcRenderer.invoke('db:collections:getForPlant', plantId)
 }
 
 contextBridge.exposeInMainWorld('api', api)
